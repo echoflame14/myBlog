@@ -1,5 +1,8 @@
 #home
-	header
-		h3 Becoming a Junior Dev is My Goal.
-		h3 This blog will chronicle my journey to reaching that goal
-	
+	div(ng-repeat="item in posts").post
+		header
+			h1 {{item.title}}
+			h4 {{item.time}}
+		img(src="{{item.imgSrc}}", alt="{{item.imgAlt}}")
+		article
+			p {{item.article}}

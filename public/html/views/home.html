@@ -1,1 +1,1 @@
-<div id="home"><header><h3>Becoming a Junior Dev is My Goal.</h3><h3>This blog will chronicle my journey to reaching that goal</h3></header></div>
+<div id="home"><div class="post" ng-repeat="item in posts"><header><h1>{{item.title}}</h1><h4>{{item.time}}</h4></header><img src="{{item.imgSrc}}" alt="{{item.imgAlt}}"/><article><p>{{item.article}}</p></article></div></div>

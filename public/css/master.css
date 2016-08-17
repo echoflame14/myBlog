@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed";
 * {
   box-sizing: border-box; }
 
@@ -11,12 +12,14 @@ header#mainHeader {
   flex-direction: column;
   align-items: center; }
   header#mainHeader h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
     height: 25vh;
     line-height: 25vh;
     font-size: 2.5em;
     width: 100vw;
     text-align: center; }
   header#mainHeader nav#mainNav {
+    font-family: 'Roboto Condensed', sans-serif;
     width: 100vw;
     height: 5vh;
     padding-bottom: 1vh;
@@ -37,16 +40,31 @@ header#mainHeader {
 ui-view {
   width: 100vw; }
   ui-view #home {
-    width: 100%; }
-    ui-view #home article {
-      witdh: 100%;
-      background: red;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; }
+    ui-view #home .post {
       display: flex;
-      flex-directon: column;
-      align-content: center; }
-      ui-view #home article header {
-        width: 100%; }
-        ui-view #home article header h3 {
-          text-align: center; }
+      flex-direction: column;
+      margin: 0 auto;
+      width: 95vw; }
+      ui-view #home .post header {
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-bottom: 3vh; }
+        ui-view #home .post header h1 {
+          font-family: 'Roboto Condensed', sans-serif;
+          margin-bottom: 1vh; }
+      ui-view #home .post img {
+        margin: 0 auto;
+        width: 92vw; }
+      ui-view #home .post article {
+        padding: 3vh 0;
+        border-bottom: 2px black solid;
+        margin-bottom: 10vh; }
+        ui-view #home .post article p {
+          font-family: helvetica;
+          font-size: .9em;
+          line-height: 1.5em; }
 
 /*# sourceMappingURL=master.css.map */
