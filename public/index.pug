@@ -1,0 +1,22 @@
+doctype html
+html(lang='en', ng-app="app")
+	head
+		title Climbing the Mountain w/ josh
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', href='./css/master.css')
+
+	body(ng-controller="ctrl")
+		h1 {{test}}
+
+
+		// Angular Cdn
+		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
+		// jquery Cdn
+		script(src="http://code.jquery.com/jquery-3.1.0.min.js")
+		// Angular files
+		script(type="text/javascript", src="../js/app.js")
+		script(type="text/javascript", src="../js/ctrl.js")
+		script(type="text/javascript", src="../js/srvc.js")
+		// Personal etc js
+		script(type="text/javascript", src="../js/script.js")
