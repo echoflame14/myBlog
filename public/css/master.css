@@ -1,19 +1,38 @@
 @import url(reset.css);
 * {
-  color: blue; }
+  box-sizing: border-box; }
 
 header#mainHeader {
   width: 100vw;
-  height: 6vh;
+  height: 30vh;
   background: white;
-  margin-bottom: 2vh; }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  height: 4vh;
-  text-align: center; }
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  header#mainHeader h1 {
+    height: 25vh;
+    line-height: 25vh;
+    font-size: 2.5em;
+    width: 100vw;
+    text-align: center; }
+  header#mainHeader nav#mainNav {
+    width: 100vw;
+    height: 5vh;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #7DD6C2; }
+    header#mainHeader nav#mainNav ul {
+      margin: 0 auto;
+      height: 5vh;
+      width: 90vw;
+      display: flex;
+      justify-content: space-around; }
+      header#mainHeader nav#mainNav ul li {
+        font-size: .9em;
+        line-height: 5vh;
+        transition: all 140ms ease-in-out; }
+      header#mainHeader nav#mainNav ul li:hover {
+        color: #c3ba6d; }
 
 ui-view {
   width: 100vw; }
