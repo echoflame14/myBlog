@@ -7,8 +7,13 @@ html(lang='en', ng-app="app")
 		link(rel='stylesheet', href='./css/master.css')
 
 	body(ng-controller="ctrl")
-		h1 {{test}}
+		header#mainHeader
+			h1 Climbing the Mountain: a Beginner web dev story
+			#ham
 		ui-view
+		footer
+			h1 next page
+
 
 
 		// Angular Cdn

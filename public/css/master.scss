@@ -2,6 +2,37 @@
 @import "_colors.scss";
 @import "_tools.scss";
 
-*{
-	background:$red;
+header#mainHeader{
+	width:100vw;
+	height:6vh;
+	background:white;
+	margin-bottom:2vh;
+}
+footer{
+	position:fixed;
+	bottom:0;
+	width:100vw;
+	height:4vh;
+	text-align:center;
+}
+
+
+ui-view{
+	width:100vw;
+	#home{
+		width:100%;
+		article{
+			witdh:100%;
+			background:red;;
+			display:flex;
+			flex-directon:column;
+			align-content:center;
+			header{
+				width:100%;
+				h3{
+					text-align:center;
+				}
+			}
+		}
+	}
 }

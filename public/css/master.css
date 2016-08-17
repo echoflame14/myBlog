@@ -2,7 +2,32 @@
 * {
   color: blue; }
 
-* {
-  background: #d5cc30; }
+header#mainHeader {
+  width: 100vw;
+  height: 6vh;
+  background: white;
+  margin-bottom: 2vh; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 4vh;
+  text-align: center; }
+
+ui-view {
+  width: 100vw; }
+  ui-view #home {
+    width: 100%; }
+    ui-view #home article {
+      witdh: 100%;
+      background: red;
+      display: flex;
+      flex-directon: column;
+      align-content: center; }
+      ui-view #home article header {
+        width: 100%; }
+        ui-view #home article header h3 {
+          text-align: center; }
 
 /*# sourceMappingURL=master.css.map */
