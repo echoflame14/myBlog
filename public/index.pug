@@ -8,10 +8,14 @@ html(lang='en', ng-app="app")
 
 	body(ng-controller="ctrl")
 		h1 {{test}}
+		ui-view
 
 
 		// Angular Cdn
 		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
+		// Ui-router Cdn
+		script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js")
+
 		// jquery Cdn
 		script(src="http://code.jquery.com/jquery-3.1.0.min.js")
 		// Angular files
