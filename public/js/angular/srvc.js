@@ -31,4 +31,7 @@ angular.module("app").service("srvc", function(){
 		}
 
 	};
+	this.makePost = function(){
+		console.log("make a post bruh");
+	};
 });
