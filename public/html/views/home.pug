@@ -1,11 +1,4 @@
 #home
-	div(ng-repeat="item in posts").post
-		header
-			h1 {{item.title}}
-			h4 {{item.time}}
-		img(src="{{item.imgSrc}}", alt="{{item.imgAlt}}")
-		article
-			p {{item.article}}
 	#aboutMe
 		header
 			h1 ABOUT ME
@@ -14,3 +7,11 @@
 			p I'm a beginner Web Developer, currently attending DevMountain.
 			a(href="#")
 				p View my portfolio
+	div(ng-repeat="item in posts").post
+		header
+
+			h1 {{item.posttitle}}
+			h4 {{item.posttime}}
+		img(src="{{item.postimgsrc}}", alt="{{item.postimgalt}}")
+		article
+			p {{item.posttext}}

@@ -54,7 +54,7 @@ ui-view{
 	#home{
 		width:100vw;
 		display:flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		.post{
 			display:flex;
 			flex-direction:column;
