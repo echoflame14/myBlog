@@ -19,6 +19,7 @@ angular.module("app").service("srvc", function(){
 			title: "LET'S DO THIS!",
 			time: this.getTime(),
 			imgAlt: "coming soon",
+			imgSrc: "img/day-1.jpg",
 			article: "Today I start my blog. Writing anything other than code feels strange to me.. I've been at DevMountain for 7 weeks now."
 		},
 		post0: {
