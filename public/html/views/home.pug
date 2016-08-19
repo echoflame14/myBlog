@@ -2,16 +2,17 @@
 	#aboutMe
 		header
 			h1 ABOUT ME
-		img(src="https://avatars3.githubusercontent.com/u/16170598?v=3&s=460", alt="A picture of me")
 		article
-			p I'm a beginner Web Developer, currently attending DevMountain.
-			a(href="#")
-				p View my portfolio
-	div(ng-repeat="item in posts").post
-		header
-
-			h1 {{item.posttitle}}
-			h4 {{item.posttime}}
-		img(src="{{item.postimgsrc}}", alt="{{item.postimgalt}}")
-		article
-			p {{item.posttext}}
+			img(src="https://avatars3.githubusercontent.com/u/16170598?v=3&s=460", alt="A picture of me")
+			.content
+				p I'm a beginner Web Developer, currently attending DevMountain.
+				a(href="#")
+					p View my portfolio
+	.container
+		div(ng-repeat="item in posts").post
+			header
+				h1 {{item.posttitle}}
+				h4 {{item.posttime}}
+			img(src="{{item.postimgsrc}}", alt="{{item.postimgalt}}")
+			article
+				p {{item.posttext}}

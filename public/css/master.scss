@@ -2,6 +2,7 @@
 @import "_colors.scss";
 @import "_tools.scss";
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed';
+@import '_queries.scss';
 //fontbox
 //font-family: 'Roboto Condensed', sans-serif
 //font-family: 'Open Sans Condensed', sans-serif
@@ -57,13 +58,12 @@ ui-view{
 	width:100vw;
 	#home{
 		width:100vw;
-		display:flex;
-		flex-direction: column-reverse;
-		.post{
+		.container{
 			display:flex;
-			flex-direction:column;
-			margin:0 auto;
-			width:95vw;
+			flex-direction:column-reverse;
+		}
+		.post{
+
 			header{
 				text-align:center;
 				h1{
@@ -72,17 +72,10 @@ ui-view{
 				}
 				font-family: 'Open Sans Condensed', sans-serif;
 				margin-bottom:3vh;
-
-			}
-			img{
-				margin:0 auto;
-				width:92vw;
 			}
 			article{
 				p{
 					font-family: helvetica;
-					font-size: .9em;
-					line-height:1.5em;
 				}
 				padding:3vh 0;
 				border-bottom: 2px black solid;
@@ -90,21 +83,13 @@ ui-view{
 			}
 		}
 		#aboutMe{
-
-			display:flex;
-			flex-direction: column;
-			width:100vw;
-			align-items: center;
 			header{
 				margin-bottom:3vh;
 				padding:2vh 0;
 				border: solid 3px $highlight;
-				width:80vw;
-				text-align:center;
 				font-family: 'Roboto Condensed', sans-serif;
 			}
 			img{
-				width:80vw;
 				border-radius:100%;
 				margin-bottom:3vh;
 			}
@@ -113,10 +98,7 @@ ui-view{
 					color:black;
 				}
 				p{
-					font-size:1em;
 					font-family: helvetica;
-					text-align:center;
-					margin-bottom:1vh;
 				}
 			}
 		}

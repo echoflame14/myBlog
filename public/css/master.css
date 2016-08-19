@@ -1,5 +1,118 @@
 @import url(reset.css);
 @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed";
+@media only screen and (max-width: 425px) and (min-width: 0px) {
+  ui-view #home {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse; }
+    ui-view #home .post {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 95vw; }
+      ui-view #home .post img {
+        margin: 0 auto;
+        width: 92vw; }
+      ui-view #home .post article p {
+        font-size: .9em;
+        line-height: 1.5em; }
+    ui-view #home #aboutMe {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      align-items: center; }
+      ui-view #home #aboutMe header {
+        width: 80vw;
+        text-align: center; }
+      ui-view #home #aboutMe article {
+        display: flex;
+        flex-direction: column; }
+        ui-view #home #aboutMe article img {
+          width: 80vw;
+          margin: 0 auto; }
+        ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
+          color: black; }
+        ui-view #home #aboutMe article p {
+          font-size: 1em;
+          text-align: center;
+          margin-bottom: 1vh; } }
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  ui-view #home {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse; }
+    ui-view #home .post {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 95vw; }
+      ui-view #home .post img {
+        margin: 0 auto;
+        width: 92vw; }
+      ui-view #home .post article p {
+        font-size: .9em;
+        line-height: 1.5em; }
+    ui-view #home #aboutMe {
+      width: 100vw; }
+      ui-view #home #aboutMe header {
+        margin: 0 auto;
+        width: 80vw;
+        text-align: center; }
+      ui-view #home #aboutMe article {
+        width: 80vw;
+        margin: 0 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        ui-view #home #aboutMe article img {
+          width: 40vw;
+          margin: 0 5vw; }
+        ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
+          color: black; }
+        ui-view #home #aboutMe article p {
+          font-size: 1em;
+          text-align: center;
+          margin-bottom: 1vh; } }
+@media only screen and (min-width: 769px) {
+  ui-view #home {
+    width: 100vw; }
+    ui-view #home .post {
+      float: left;
+      display: flex;
+      flex-direction: column;
+      width: 60vw;
+      margin: 0 5vw 2vh 5vw; }
+      ui-view #home .post img {
+        margin: 0 auto;
+        width: 60vw; }
+      ui-view #home .post article p {
+        font-size: .9em;
+        line-height: 1.5em; }
+    ui-view #home #aboutMe {
+      width: 30vw;
+      float: right; }
+      ui-view #home #aboutMe header {
+        margin: 0 auto;
+        width: 30vw;
+        text-align: center; }
+      ui-view #home #aboutMe article {
+        width: 30vw;
+        margin: 0 0vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; }
+        ui-view #home #aboutMe article img {
+          width: 25vw;
+          margin: 0;
+          float: right;
+          padding-bottom: 3vh; }
+        ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
+          color: black; }
+        ui-view #home #aboutMe article p {
+          font-size: 1em;
+          text-align: center;
+          margin-bottom: 1vh; } }
 * {
   box-sizing: border-box; }
 
@@ -43,54 +156,34 @@ header#mainHeader {
 ui-view {
   width: 100vw; }
   ui-view #home {
-    width: 100vw;
-    display: flex;
-    flex-direction: column-reverse; }
-    ui-view #home .post {
+    width: 100vw; }
+    ui-view #home .container {
       display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      width: 95vw; }
-      ui-view #home .post header {
-        text-align: center;
-        font-family: 'Open Sans Condensed', sans-serif;
-        margin-bottom: 3vh; }
-        ui-view #home .post header h1 {
-          font-family: 'Roboto Condensed', sans-serif;
-          margin-bottom: 1vh; }
-      ui-view #home .post img {
-        margin: 0 auto;
-        width: 92vw; }
-      ui-view #home .post article {
-        padding: 3vh 0;
-        border-bottom: 2px black solid;
-        margin-bottom: 10vh; }
-        ui-view #home .post article p {
-          font-family: helvetica;
-          font-size: .9em;
-          line-height: 1.5em; }
-    ui-view #home #aboutMe {
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      align-items: center; }
-      ui-view #home #aboutMe header {
-        margin-bottom: 3vh;
-        padding: 2vh 0;
-        border: solid 3px #7DD6C2;
-        width: 80vw;
-        text-align: center;
-        font-family: 'Roboto Condensed', sans-serif; }
-      ui-view #home #aboutMe img {
-        width: 80vw;
-        border-radius: 100%;
-        margin-bottom: 3vh; }
-      ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
-        color: black; }
-      ui-view #home #aboutMe article p {
-        font-size: 1em;
-        font-family: helvetica;
-        text-align: center;
+      flex-direction: column-reverse; }
+    ui-view #home .post header {
+      text-align: center;
+      font-family: 'Open Sans Condensed', sans-serif;
+      margin-bottom: 3vh; }
+      ui-view #home .post header h1 {
+        font-family: 'Roboto Condensed', sans-serif;
         margin-bottom: 1vh; }
+    ui-view #home .post article {
+      padding: 3vh 0;
+      border-bottom: 2px black solid;
+      margin-bottom: 10vh; }
+      ui-view #home .post article p {
+        font-family: helvetica; }
+    ui-view #home #aboutMe header {
+      margin-bottom: 3vh;
+      padding: 2vh 0;
+      border: solid 3px #7DD6C2;
+      font-family: 'Roboto Condensed', sans-serif; }
+    ui-view #home #aboutMe img {
+      border-radius: 100%;
+      margin-bottom: 3vh; }
+    ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
+      color: black; }
+    ui-view #home #aboutMe article p {
+      font-family: helvetica; }
 
 /*# sourceMappingURL=master.css.map */
