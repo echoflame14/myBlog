@@ -12,11 +12,14 @@ html(lang='en', ng-app="app")
 				span(ng-click="makePost()") n
 			nav#mainNav
 				ul
-					li Home
-					li About
-					li Photos
-					li Projects
-					li Contact
+					li
+						a(ui-sref='/home', title="home") Home
+					li
+						a(ui-sref="/about", title="about") About
+					li
+						a(ui-sref="/projects", title="projects") Projects
+					li
+						a(ui-sref="/contact", title="contact") Contact
 
 
 

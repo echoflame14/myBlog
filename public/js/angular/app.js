@@ -5,5 +5,17 @@ angular.module("app", ["ui.router"])
 		.state("/home", {
 			url:"/",
 			templateUrl:"html/views/home.html"
+		})
+		.state("/about", {
+			url:"/about",
+			templateUrl:"html/views/about.html"
+		})
+		.state("/projects", {
+			url:"/proj",
+			templateUrl: "html/views/proj.html"
+		})
+		.state("/contact", {
+			url:"/contact",
+			templateUrl:"html/views/contact.html"
 		});
 });
