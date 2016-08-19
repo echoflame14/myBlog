@@ -40,9 +40,13 @@ header#mainHeader{
 				font-size:.9em;
 				line-height:5vh;
 				transition: all 140ms ease-in-out;
-			}
-			li:hover{
-				color:$brown;
+				a,a:visited{
+					color:black;
+					text-decoration:none;
+				}
+				a:hover{
+					color:$brown;
+				}
 			}
 		}
 	}
