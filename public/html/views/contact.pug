@@ -1,1 +1,26 @@
-h1 CONTACT
+#aboutPage
+	#deets
+		header
+			h1 Contact Details
+		section
+			ul
+				li Email
+				li Phone
+				li Skype
+				li Linkedin
+		hr
+	#message
+		header
+			h1 Send Me a Message
+		section
+			form(id="UsrMessage", method="post")
+				section
+					h3 Name
+					input(type="text", name="name")
+				section
+					h3 Email
+					input(type="text", name="Email", value="")
+				section
+					h3 Message
+					input(type="text", name="Message", value="", id="bigBox")
+				input(type="submit", name="submit", value="Submit")
