@@ -1,5 +1,3 @@
-@import url(reset.css);
-@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed";
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   ui-view #home {
     width: 100vw;
@@ -111,84 +109,5 @@
           font-size: 1em;
           text-align: center;
           margin-bottom: 1vh; } }
-* {
-  box-sizing: border-box; }
 
-header#mainHeader {
-  width: 100vw;
-  height: 30vh;
-  background: white;
-  margin-bottom: 5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  header#mainHeader h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    height: 25vh;
-    line-height: 25vh;
-    font-size: 2.5em;
-    width: 100vw;
-    text-align: center; }
-  header#mainHeader nav#mainNav {
-    font-family: 'Roboto Condensed', sans-serif;
-    width: 100vw;
-    height: 5vh;
-    padding-bottom: 1vh;
-    border-bottom: 2px solid #7DD6C2; }
-    header#mainHeader nav#mainNav ul {
-      margin: 0 auto;
-      height: 5vh;
-      width: 90vw;
-      display: flex;
-      justify-content: space-around; }
-      header#mainHeader nav#mainNav ul li {
-        font-size: .9em;
-        line-height: 5vh;
-        transition: all 140ms ease-in-out; }
-        header#mainHeader nav#mainNav ul li a, header#mainHeader nav#mainNav ul li a:visited {
-          color: black;
-          text-decoration: none; }
-        header#mainHeader nav#mainNav ul li a:hover {
-          color: #c3ba6d; }
-
-ui-view {
-  width: 100vw; }
-  ui-view #home {
-    width: 100vw; }
-    ui-view #home .container {
-      display: flex;
-      flex-direction: column-reverse; }
-    ui-view #home .post header {
-      text-align: center;
-      font-family: 'Open Sans Condensed', sans-serif;
-      margin-bottom: 3vh; }
-      ui-view #home .post header h1 {
-        font-family: 'Roboto Condensed', sans-serif;
-        margin-bottom: 1vh; }
-    ui-view #home .post img {
-      border-radius: 2vw;
-      border-bottom-left-radius: 0px;
-      box-shadow: -0.2vw 0.2vw 0.2vw rgba(125, 214, 194, 0.59);
-      border: 1px rgba(1, 1, 1, 0.28) solid;
-      border-bottom: none;
-      border-left: none; }
-    ui-view #home .post article {
-      padding: 3vh 0;
-      border-bottom: 2px black solid;
-      margin-bottom: 10vh; }
-      ui-view #home .post article p {
-        font-family: helvetica; }
-    ui-view #home #aboutMe header {
-      margin-bottom: 3vh;
-      padding: 2vh 0;
-      border: solid 3px #7DD6C2;
-      font-family: 'Roboto Condensed', sans-serif; }
-    ui-view #home #aboutMe img {
-      border-radius: 100%;
-      margin-bottom: 3vh; }
-    ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
-      color: black; }
-    ui-view #home #aboutMe article p {
-      font-family: helvetica; }
-
-/*# sourceMappingURL=master.css.map */
+/*# sourceMappingURL=_queries.css.map */

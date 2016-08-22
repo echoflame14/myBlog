@@ -73,7 +73,16 @@ ui-view{
 				font-family: 'Open Sans Condensed', sans-serif;
 				margin-bottom:3vh;
 			}
+			img{
+				border-radius:2vw;
+				border-bottom-left-radius: 0px;
+				box-shadow:-0.2vw 0.2vw 0.2vw $highlight-shadow;
+				border:1px $lowLight solid;
+				border-bottom:none;
+				border-left:none;
+			}
 			article{
+
 				p{
 					font-family: helvetica;
 				}
