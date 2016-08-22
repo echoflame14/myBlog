@@ -113,3 +113,38 @@ ui-view{
 		}
 	}
 }
+#contactPage{
+	display:flex;
+	justify-content:space-around;
+	#deets{
+		width:40vw;
+		header{
+			width:40vw;
+			height:5vh;
+			background:$highlight;
+			border:solid $lowLight 2px;
+			text-align:center;
+			line-height:5vh;
+			margin-bottom:3vh;
+		}
+		section{
+			ul{
+				width:38vw;
+				margin:0 auto;
+				display:flex;
+				flex-direction:column;
+				justify-content:space-around;
+				li{
+					margin-bottom:2vh;
+					h1{
+						color:$highlight;
+						text-shadow:-2px 2px 1px rgb(237, 237, 237);
+					}
+				}
+			}
+		}
+	}
+	#message{
+		width:40vw;
+	}
+}

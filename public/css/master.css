@@ -191,4 +191,31 @@ ui-view {
     ui-view #home #aboutMe article p {
       font-family: helvetica; }
 
+#contactPage {
+  display: flex;
+  justify-content: space-around; }
+  #contactPage #deets {
+    width: 40vw; }
+    #contactPage #deets header {
+      width: 40vw;
+      height: 5vh;
+      background: #7DD6C2;
+      border: solid rgba(1, 1, 1, 0.28) 2px;
+      text-align: center;
+      line-height: 5vh;
+      margin-bottom: 3vh; }
+    #contactPage #deets section ul {
+      width: 38vw;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      #contactPage #deets section ul li {
+        margin-bottom: 2vh; }
+        #contactPage #deets section ul li h1 {
+          color: #7DD6C2;
+          text-shadow: -2px 2px 1px #ededed; }
+  #contactPage #message {
+    width: 40vw; }
+
 /*# sourceMappingURL=master.css.map */
