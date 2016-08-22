@@ -119,12 +119,14 @@ ui-view{
 	#deets{
 		width:40vw;
 		header{
+			display:flex;
+			align-items:center;
+			justify-content:space-around;
 			width:40vw;
 			height:5vh;
 			background:$highlight;
 			border:solid $lowLight 2px;
 			text-align:center;
-			line-height:5vh;
 			margin-bottom:3vh;
 		}
 		section{
@@ -135,10 +137,14 @@ ui-view{
 				flex-direction:column;
 				justify-content:space-around;
 				li{
-					margin-bottom:2vh;
+					margin-bottom:3vh;
 					h1{
+						margin-bottom:1vh;
 						color:$highlight;
 						text-shadow:-2px 2px 1px rgb(237, 237, 237);
+					}
+					h2{
+						padding-left:0.5vw;
 					}
 				}
 			}
@@ -146,5 +152,46 @@ ui-view{
 	}
 	#message{
 		width:40vw;
+		header{
+			display:flex;
+			align-items:center;
+			justify-content:space-around;
+			width:40vw;
+			height:5vh;
+			background:$highlight;
+			border:solid $lowLight 2px;
+			text-align:center;
+			margin-bottom:3vh;
+		}
+		section{
+			width:40vw;
+			form{
+				section{
+					display:flex;
+					justify-content:space-around;
+					margin-bottom:3vh;
+					h3{
+						text-align:left;
+						line-height:3vh;
+						width:10vw;
+					}
+					input{
+						width:30vw;
+						border:solid black 1px;
+						height:3vh;
+						background-color:white;
+					}
+					#bigBox{
+						height:14vh;
+					}
+				}
+				input{
+					border:solid black 1px;
+					float: right;
+					background-color: $highlight;
+					color:black;
+				}
+			}
+		}
 	}
 }

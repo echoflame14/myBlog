@@ -197,12 +197,14 @@ ui-view {
   #contactPage #deets {
     width: 40vw; }
     #contactPage #deets header {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       width: 40vw;
       height: 5vh;
       background: #7DD6C2;
       border: solid rgba(1, 1, 1, 0.28) 2px;
       text-align: center;
-      line-height: 5vh;
       margin-bottom: 3vh; }
     #contactPage #deets section ul {
       width: 38vw;
@@ -211,11 +213,46 @@ ui-view {
       flex-direction: column;
       justify-content: space-around; }
       #contactPage #deets section ul li {
-        margin-bottom: 2vh; }
+        margin-bottom: 3vh; }
         #contactPage #deets section ul li h1 {
+          margin-bottom: 1vh;
           color: #7DD6C2;
           text-shadow: -2px 2px 1px #ededed; }
+        #contactPage #deets section ul li h2 {
+          padding-left: 0.5vw; }
   #contactPage #message {
     width: 40vw; }
+    #contactPage #message header {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 40vw;
+      height: 5vh;
+      background: #7DD6C2;
+      border: solid rgba(1, 1, 1, 0.28) 2px;
+      text-align: center;
+      margin-bottom: 3vh; }
+    #contactPage #message section {
+      width: 40vw; }
+      #contactPage #message section form section {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3vh; }
+        #contactPage #message section form section h3 {
+          text-align: left;
+          line-height: 3vh;
+          width: 10vw; }
+        #contactPage #message section form section input {
+          width: 30vw;
+          border: solid black 1px;
+          height: 3vh;
+          background-color: white; }
+        #contactPage #message section form section #bigBox {
+          height: 14vh; }
+      #contactPage #message section form input {
+        border: solid black 1px;
+        float: right;
+        background-color: #7DD6C2;
+        color: black; }
 
 /*# sourceMappingURL=master.css.map */
