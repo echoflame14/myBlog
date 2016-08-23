@@ -61,16 +61,18 @@ header#mainHeader{
 			justify-content:space-around;
 			li{
 				text-align:center;
-				width:10vw;
 				font-size:.9em;
 				line-height:5vh;
 				transition: all 140ms ease-in-out;
 				a,a:visited{
 					color:white;
 					text-decoration:none;
+					padding-bottom:1.3vh;
+					padding:1.3vh 2vw;
+					transition:all 0.222s ease-in-out;
 				}
 			}
-			li.active{
+			a.active{
 				background-color:$highlight;
 				border:solid $lowLight 1px;
 				border-bottom:none;
