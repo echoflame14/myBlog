@@ -152,7 +152,21 @@ ui-view{
 	display:flex;
 	justify-content:space-around;
 	#deets{
+		position:relative;
+		.bar{
+			position: absolute;
+			bottom:-5vh;;
+			height:1vh;
+			background:$highlight-shadow;
+			width:40vw;
+			clear:both;
+		}
+		background-color:$white;
 		width:40vw;
+		border-top-right-radius:0.3vw;
+		border-top-left-radius:0.3vw;
+		border-bottom-right-radius:0.2vw;
+		box-shadow:0.2vw 0.2vw 0.25vw $highlight-shadow;
 		header{
 			display:flex;
 			align-items:center;
@@ -164,6 +178,8 @@ ui-view{
 			text-align:center;
 			margin-bottom:3vh;
 			color:white;
+			border-top-right-radius:0.3vw;
+			border-top-left-radius:0.3vw;
 		}
 		section{
 			ul{
@@ -187,8 +203,23 @@ ui-view{
 		}
 	}
 	#message{
+		box-shadow:0.2vw 0.2vw 0.25vw $highlight-shadow;
 		width:40vw;
+		border-top-right-radius:0.3vw;
+		border-top-left-radius:0.3vw;
+		background-color:$white;
+		position: relative;
+		.bar{
+			position: absolute;
+			bottom:-5vh;;
+			height:1vh;
+			background:$highlight-shadow;
+			width:40vw;
+			clear:both;
+		}
 		header{
+			border-top-right-radius:0.3vw;
+			border-top-left-radius:0.3vw;
 			display:flex;
 			align-items:center;
 			justify-content:space-around;
@@ -203,30 +234,44 @@ ui-view{
 		section{
 			width:40vw;
 			form{
+
 				section{
+					text-ailgn:left;
 					display:flex;
 					justify-content:space-around;
 					margin-bottom:3vh;
 					h3{
 						text-align:left;
-						line-height:3vh;
-						width:10vw;
+						width:8vw;
+						padding-left:2vw;
 					}
 					input{
 						width:30vw;
 						border:solid black 1px;
 						height:3vh;
 						background-color:white;
+						line-height:1em;
+						border-top-right-radius:0.4vw;
+						border-top-left-radius:0.2vw;
+						border-bottom-right-radius:0.4vw;
 					}
 					#bigBox{
+						border-top-right-radius:0.4vw;
+						border-top-left-radius:0.2vw;
+						border-bottom-right-radius:0.4vw;
+						border:solid black 1px;
 						height:14vh;
+						width:30vw;
+						margin:0 auto;
 					}
 				}
 				input{
+					border-radius:0.3vw;
 					border:solid black 1px;
 					float: right;
 					background-color: $highlight;
 					color:white;
+					margin-right:1vw;
 				}
 			}
 		}

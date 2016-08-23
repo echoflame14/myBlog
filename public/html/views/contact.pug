@@ -17,7 +17,7 @@
 					h1 linkedin
 					h2
 						a(href="www.linkedin.com/in/josh-peterson-b9093910b") www.linkedin.com/in/josh-peterson-b9093910b
-		hr
+		.bar
 	#message
 		header
 			h1 Send Me a Message
@@ -28,8 +28,10 @@
 					input(type="text", name="name")
 				section
 					h3 Email
-					input(type="text", name="Email", value="")
+					input(type="text", name="Email")
 				section
 					h3 Message
-					input(type="text", name="Message", value="", id="bigBox")
+					textarea(name="Message", rows="8", cols="40", id="bigBox")
+
 				input(type="submit", name="submit", value="Submit")
+		.bar

@@ -191,7 +191,7 @@ ui-view {
     ui-view #home .post img {
       border-radius: 2vw;
       border-bottom-left-radius: 0px;
-      box-shadow: -0.2vw 0.2vw 0.2vw rgba(125, 214, 194, 0.59);
+      box-shadow: -0.2vw 0.2vw 0.2vw rgba(26, 26, 26, 0.47);
       border: 1px rgba(1, 1, 1, 0.28) solid;
       border-bottom: none;
       border-left: none; }
@@ -225,7 +225,20 @@ ui-view {
   display: flex;
   justify-content: space-around; }
   #contactPage #deets {
-    width: 40vw; }
+    position: relative;
+    background-color: #dfdbdb;
+    width: 40vw;
+    border-top-right-radius: 0.3vw;
+    border-top-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.2vw;
+    box-shadow: 0.2vw 0.2vw 0.25vw rgba(26, 26, 26, 0.47); }
+    #contactPage #deets .bar {
+      position: absolute;
+      bottom: -5vh;
+      height: 1vh;
+      background: rgba(26, 26, 26, 0.47);
+      width: 40vw;
+      clear: both; }
     #contactPage #deets header {
       display: flex;
       align-items: center;
@@ -236,7 +249,9 @@ ui-view {
       border: solid rgba(1, 1, 1, 0.28) 2px;
       text-align: center;
       margin-bottom: 3vh;
-      color: white; }
+      color: white;
+      border-top-right-radius: 0.3vw;
+      border-top-left-radius: 0.3vw; }
     #contactPage #deets section ul {
       width: 38vw;
       margin: 0 auto;
@@ -252,8 +267,22 @@ ui-view {
         #contactPage #deets section ul li h2 {
           padding-left: 0.5vw; }
   #contactPage #message {
-    width: 40vw; }
+    box-shadow: 0.2vw 0.2vw 0.25vw rgba(26, 26, 26, 0.47);
+    width: 40vw;
+    border-top-right-radius: 0.3vw;
+    border-top-left-radius: 0.3vw;
+    background-color: #dfdbdb;
+    position: relative; }
+    #contactPage #message .bar {
+      position: absolute;
+      bottom: -5vh;
+      height: 1vh;
+      background: rgba(26, 26, 26, 0.47);
+      width: 40vw;
+      clear: both; }
     #contactPage #message header {
+      border-top-right-radius: 0.3vw;
+      border-top-left-radius: 0.3vw;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -267,24 +296,37 @@ ui-view {
     #contactPage #message section {
       width: 40vw; }
       #contactPage #message section form section {
+        text-ailgn: left;
         display: flex;
         justify-content: space-around;
         margin-bottom: 3vh; }
         #contactPage #message section form section h3 {
           text-align: left;
-          line-height: 3vh;
-          width: 10vw; }
+          width: 8vw;
+          padding-left: 2vw; }
         #contactPage #message section form section input {
           width: 30vw;
           border: solid black 1px;
           height: 3vh;
-          background-color: white; }
+          background-color: white;
+          line-height: 1em;
+          border-top-right-radius: 0.4vw;
+          border-top-left-radius: 0.2vw;
+          border-bottom-right-radius: 0.4vw; }
         #contactPage #message section form section #bigBox {
-          height: 14vh; }
+          border-top-right-radius: 0.4vw;
+          border-top-left-radius: 0.2vw;
+          border-bottom-right-radius: 0.4vw;
+          border: solid black 1px;
+          height: 14vh;
+          width: 30vw;
+          margin: 0 auto; }
       #contactPage #message section form input {
+        border-radius: 0.3vw;
         border: solid black 1px;
         float: right;
         background-color: #3B3A3A;
-        color: white; }
+        color: white;
+        margin-right: 1vw; }
 
 /*# sourceMappingURL=master.css.map */

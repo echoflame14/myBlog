@@ -19,7 +19,7 @@ angular.module("app").service("srvc", function($http){
 			console.log("then in service completed", response);
 			return response.data;
 		});
-	}
+	};
 	this.makePost = function(){
 		console.log("make a post bruh");
 	};

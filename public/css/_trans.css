@@ -1,0 +1,11 @@
+#home #aboutMe header {
+  transition: all 0.2s ease-in-out; }
+#home #aboutMe header:hover {
+  transform: scale(1.01); }
+
+#home #aboutMe article .content a p {
+  transition: all, 0.1s, ease-in; }
+#home #aboutMe article .content a p:hover {
+  transform: scale(1.05); }
+
+/*# sourceMappingURL=_trans.css.map */

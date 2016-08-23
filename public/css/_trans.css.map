@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIE,qBAAM;EACL,UAAU,EAAE,oBAAoB;AAEjC,2BAAY;EACX,SAAS,EAAE,WAAW;;AAUpB,mCAAC;EACA,UAAU,EAAE,kBAAkB;AAE/B,yCAAO;EAEN,SAAS,EAAE,WAAW",
+"sources": ["_trans.scss"],
+"names": [],
+"file": "_trans.css"
+}
