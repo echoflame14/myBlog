@@ -85,7 +85,7 @@
         margin: 0 auto;
         width: 92vw; }
       ui-view #home .post article p {
-        font-size: .9em;
+        font-size: 1em;
         line-height: 1.5em; }
     ui-view #home #aboutMe {
       width: 100vw; }
