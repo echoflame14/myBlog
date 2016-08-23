@@ -1,4 +1,7 @@
 @media only screen and (max-width: 425px) and (min-width: 0px) {
+  body header#mainHeader h1 {
+    font-size: 1.4em; }
+
   ui-view #home {
     width: 100vw;
     display: flex;
@@ -23,6 +26,7 @@
         width: 80vw;
         text-align: center; }
       ui-view #home #aboutMe article {
+        width: 100vw;
         display: flex;
         flex-direction: column; }
         ui-view #home #aboutMe article img {
@@ -30,10 +34,43 @@
           margin: 0 auto; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
+          ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
+            width: 30vw; }
         ui-view #home #aboutMe article p {
+          width: 90vw;
+          margin: 0 auto;
+          padding: 2vh 0;
           font-size: 1em;
           text-align: center;
-          margin-bottom: 1vh; } }
+          margin-bottom: 1vh; }
+
+  #contactPage {
+    flex-direction: column; }
+    #contactPage #deets {
+      margin: 0 auto;
+      width: 95vw;
+      margin-bottom: 3vh; }
+      #contactPage #deets header {
+        margin: 0 auto;
+        width: 95vw; }
+      #contactPage #deets section ul {
+        width: 90vw;
+        margin: 0 auto; }
+        #contactPage #deets section ul li h2 {
+          width: 70vw;
+          margin-left: 3vw; }
+    #contactPage #message {
+      margin: 0 auto;
+      margin-bottom: 10vw;
+      padding-bottom: 2vh;
+      width: 95vw; }
+      #contactPage #message form section h3 {
+        width: 20vw;
+        margin-right: 8vw; }
+      #contactPage #message form section input {
+        width: 65vw; }
+      #contactPage #message form section #bigBox {
+        width: 65vw; } }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   ui-view #home {
     width: 100vw;
@@ -67,10 +104,40 @@
           margin: 0 5vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
+          ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
+            width: 20vw; }
         ui-view #home #aboutMe article p {
           font-size: 1em;
           text-align: center;
-          margin-bottom: 1vh; } }
+          margin-bottom: 1vh; }
+
+  #contactPage {
+    flex-direction: column; }
+    #contactPage #deets {
+      margin: 0 auto;
+      width: 95vw;
+      margin-bottom: 3vh; }
+      #contactPage #deets header {
+        margin: 0 auto;
+        width: 95vw; }
+      #contactPage #deets section ul {
+        width: 90vw;
+        margin: 0 auto; }
+        #contactPage #deets section ul li h2 {
+          width: 70vw;
+          margin-left: 3vw; }
+    #contactPage #message {
+      margin: 0 auto;
+      margin-bottom: 10vw;
+      padding-bottom: 2vh;
+      width: 95vw; }
+      #contactPage #message form section h3 {
+        width: 20vw;
+        margin-right: 8vw; }
+      #contactPage #message form section input {
+        width: 65vw; }
+      #contactPage #message form section #bigBox {
+        width: 65vw; } }
 @media only screen and (min-width: 769px) {
   ui-view #home {
     width: 100vw; }
@@ -101,13 +168,38 @@
         align-items: center;
         justify-content: space-around; }
         ui-view #home #aboutMe article img {
-          width: 25vw;
-          padding-bottom: 3vh; }
+          width: 25vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
         ui-view #home #aboutMe article p {
+          padding: 2vh 0;
           font-size: 1em;
           text-align: center;
-          margin-bottom: 1vh; } }
+          margin-bottom: 1vh; }
+
+  #contactPage #deets {
+    width: 40vw;
+    margin-bottom: 3vh; }
+    #contactPage #deets header {
+      margin: 0 auto;
+      width: 40vw; }
+    #contactPage #deets section ul {
+      width: 38vw;
+      margin: 0 auto; }
+      #contactPage #deets section ul li h2 {
+        width: 30vw;
+        margin-left: 1vw; }
+  #contactPage #message {
+    margin-bottom: 10vw;
+    padding-bottom: 2vh;
+    width: 40vw; }
+    #contactPage #message form section h3 {
+      width: 5vw;
+      margin-right: 2vw; }
+    #contactPage #message form section input {
+      width: 30vw; }
+    #contactPage #message form section #bigBox {
+      width: 30vw;
+      margin-right: 1vw; } }
 
 /*# sourceMappingURL=_queries.css.map */

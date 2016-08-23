@@ -1,6 +1,9 @@
 @import url(reset.css);
 @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed";
 @media only screen and (max-width: 425px) and (min-width: 0px) {
+  body header#mainHeader h1 {
+    font-size: 1.4em; }
+
   ui-view #home {
     width: 100vw;
     display: flex;
@@ -25,6 +28,7 @@
         width: 80vw;
         text-align: center; }
       ui-view #home #aboutMe article {
+        width: 100vw;
         display: flex;
         flex-direction: column; }
         ui-view #home #aboutMe article img {
@@ -32,10 +36,43 @@
           margin: 0 auto; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
+          ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
+            width: 30vw; }
         ui-view #home #aboutMe article p {
+          width: 90vw;
+          margin: 0 auto;
+          padding: 2vh 0;
           font-size: 1em;
           text-align: center;
-          margin-bottom: 1vh; } }
+          margin-bottom: 1vh; }
+
+  #contactPage {
+    flex-direction: column; }
+    #contactPage #deets {
+      margin: 0 auto;
+      width: 95vw;
+      margin-bottom: 3vh; }
+      #contactPage #deets header {
+        margin: 0 auto;
+        width: 95vw; }
+      #contactPage #deets section ul {
+        width: 90vw;
+        margin: 0 auto; }
+        #contactPage #deets section ul li h2 {
+          width: 70vw;
+          margin-left: 3vw; }
+    #contactPage #message {
+      margin: 0 auto;
+      margin-bottom: 10vw;
+      padding-bottom: 2vh;
+      width: 95vw; }
+      #contactPage #message form section h3 {
+        width: 20vw;
+        margin-right: 8vw; }
+      #contactPage #message form section input {
+        width: 65vw; }
+      #contactPage #message form section #bigBox {
+        width: 65vw; } }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   ui-view #home {
     width: 100vw;
@@ -69,10 +106,40 @@
           margin: 0 5vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
+          ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
+            width: 20vw; }
         ui-view #home #aboutMe article p {
           font-size: 1em;
           text-align: center;
-          margin-bottom: 1vh; } }
+          margin-bottom: 1vh; }
+
+  #contactPage {
+    flex-direction: column; }
+    #contactPage #deets {
+      margin: 0 auto;
+      width: 95vw;
+      margin-bottom: 3vh; }
+      #contactPage #deets header {
+        margin: 0 auto;
+        width: 95vw; }
+      #contactPage #deets section ul {
+        width: 90vw;
+        margin: 0 auto; }
+        #contactPage #deets section ul li h2 {
+          width: 70vw;
+          margin-left: 3vw; }
+    #contactPage #message {
+      margin: 0 auto;
+      margin-bottom: 10vw;
+      padding-bottom: 2vh;
+      width: 95vw; }
+      #contactPage #message form section h3 {
+        width: 20vw;
+        margin-right: 8vw; }
+      #contactPage #message form section input {
+        width: 65vw; }
+      #contactPage #message form section #bigBox {
+        width: 65vw; } }
 @media only screen and (min-width: 769px) {
   ui-view #home {
     width: 100vw; }
@@ -103,14 +170,39 @@
         align-items: center;
         justify-content: space-around; }
         ui-view #home #aboutMe article img {
-          width: 25vw;
-          padding-bottom: 3vh; }
+          width: 25vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
         ui-view #home #aboutMe article p {
+          padding: 2vh 0;
           font-size: 1em;
           text-align: center;
-          margin-bottom: 1vh; } }
+          margin-bottom: 1vh; }
+
+  #contactPage #deets {
+    width: 40vw;
+    margin-bottom: 3vh; }
+    #contactPage #deets header {
+      margin: 0 auto;
+      width: 40vw; }
+    #contactPage #deets section ul {
+      width: 38vw;
+      margin: 0 auto; }
+      #contactPage #deets section ul li h2 {
+        width: 30vw;
+        margin-left: 1vw; }
+  #contactPage #message {
+    margin-bottom: 10vw;
+    padding-bottom: 2vh;
+    width: 40vw; }
+    #contactPage #message form section h3 {
+      width: 5vw;
+      margin-right: 2vw; }
+    #contactPage #message form section input {
+      width: 30vw; }
+    #contactPage #message form section #bigBox {
+      width: 30vw;
+      margin-right: 1vw; } }
 #home #aboutMe header {
   transition: all 0.2s ease-in-out; }
 #home #aboutMe header:hover {
@@ -128,7 +220,11 @@ a, a:hover, a:visited {
   color: black;
   text-decoration: none; }
 
+html {
+  min-width: 198px; }
+
 body {
+  min-width: 198px;
   background-color: #CDCDCD; }
 
 header#mainHeader {
@@ -217,7 +313,6 @@ ui-view {
       color: black; }
       ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p {
         margin: 0 auto;
-        width: 10vw;
         border: 1px #3B3A3A solid;
         padding: 0.3vw; }
     ui-view #home #aboutMe article p {
@@ -229,7 +324,6 @@ ui-view {
   #contactPage #deets {
     position: relative;
     background-color: #dfdbdb;
-    width: 40vw;
     border-top-right-radius: 0.3vw;
     border-top-left-radius: 0.3vw;
     border-bottom-right-radius: 0.2vw;
@@ -239,13 +333,11 @@ ui-view {
       bottom: -5vh;
       height: 1vh;
       background: rgba(26, 26, 26, 0.47);
-      width: 40vw;
       clear: both; }
     #contactPage #deets header {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      width: 40vw;
       height: 5vh;
       background: #3B3A3A;
       border: solid rgba(1, 1, 1, 0.28) 2px;
@@ -255,7 +347,6 @@ ui-view {
       border-top-right-radius: 0.3vw;
       border-top-left-radius: 0.3vw; }
     #contactPage #deets section ul {
-      width: 38vw;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -270,7 +361,6 @@ ui-view {
           padding-left: 0.5vw; }
   #contactPage #message {
     box-shadow: 0.2vw 0.2vw 0.25vw rgba(26, 26, 26, 0.47);
-    width: 40vw;
     border-top-right-radius: 0.3vw;
     border-top-left-radius: 0.3vw;
     background-color: #dfdbdb;
@@ -280,7 +370,6 @@ ui-view {
       bottom: -5vh;
       height: 1vh;
       background: rgba(26, 26, 26, 0.47);
-      width: 40vw;
       clear: both; }
     #contactPage #message header {
       border-top-right-radius: 0.3vw;
@@ -288,47 +377,41 @@ ui-view {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      width: 40vw;
       height: 5vh;
       background: #3B3A3A;
       border: solid rgba(1, 1, 1, 0.28) 2px;
       text-align: center;
       margin-bottom: 3vh;
       color: white; }
-    #contactPage #message section {
-      width: 40vw; }
-      #contactPage #message section form section {
-        text-ailgn: left;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 3vh; }
-        #contactPage #message section form section h3 {
-          text-align: left;
-          width: 8vw;
-          padding-left: 2vw; }
-        #contactPage #message section form section input {
-          width: 30vw;
-          border: solid black 1px;
-          height: 3vh;
-          background-color: white;
-          line-height: 1em;
-          border-top-right-radius: 0.4vw;
-          border-top-left-radius: 0.2vw;
-          border-bottom-right-radius: 0.4vw; }
-        #contactPage #message section form section #bigBox {
-          border-top-right-radius: 0.4vw;
-          border-top-left-radius: 0.2vw;
-          border-bottom-right-radius: 0.4vw;
-          border: solid black 1px;
-          height: 14vh;
-          width: 30vw;
-          margin: 0 auto; }
-      #contactPage #message section form input {
-        border-radius: 0.3vw;
+    #contactPage #message section form section {
+      text-ailgn: left;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 3vh; }
+      #contactPage #message section form section h3 {
+        text-align: left;
+        width: 8vw;
+        padding-left: 2vw; }
+      #contactPage #message section form section input {
         border: solid black 1px;
-        float: right;
-        background-color: #3B3A3A;
-        color: white;
-        margin-right: 1vw; }
+        height: 3vh;
+        background-color: white;
+        line-height: 1em;
+        border-top-right-radius: 0.4vw;
+        border-top-left-radius: 0.2vw;
+        border-bottom-right-radius: 0.4vw; }
+      #contactPage #message section form section #bigBox {
+        border-top-right-radius: 0.4vw;
+        border-top-left-radius: 0.2vw;
+        border-bottom-right-radius: 0.4vw;
+        border: solid black 1px;
+        height: 14vh; }
+    #contactPage #message section form input {
+      border-radius: 0.3vw;
+      border: solid black 1px;
+      float: right;
+      background-color: #3B3A3A;
+      color: white;
+      margin-right: 1vw; }
 
 /*# sourceMappingURL=master.css.map */

@@ -1,4 +1,12 @@
 @media only screen and (max-width: 425px) and (min-width:0px){
+	//indexpage
+	body{
+		header#mainHeader{
+			h1{
+				font-size:1.4em;
+			}
+		}
+	}
 	ui-view{
 		#home{
 			width:100vw;
@@ -30,6 +38,7 @@
 					text-align:center;
 				}
 				article{
+					width:100vw;
 					display:flex;
 					flex-direction:column;
 					img{
@@ -38,11 +47,68 @@
 					}
 					a, a:visited, a:hover{
 						color:black;
+						p{
+							width:30vw;
+						}
 					}
 					p{
+						width:90vw;
+						margin:0 auto;
+						padding:2vh 0;
 						font-size:1em;
 						text-align:center;
 						margin-bottom:1vh;
+					}
+				}
+			}
+		}
+	}
+	#contactPage{
+		flex-direction:column;
+		#deets{
+			margin:0 auto;
+			width:95vw;
+			margin-bottom:3vh;
+			header{
+				margin:0 auto;
+				width:95vw;
+			}
+			section{
+				ul{
+					width:90vw;
+					margin:0 auto;
+					li{
+						h1{
+						}
+						h2{
+							width:70vw;
+
+							margin-left:3vw;
+						}
+					}
+				}
+			}
+		}
+		#message{
+			margin:0 auto;
+			margin-bottom:10vw;
+			padding-bottom:2vh;
+			width:95vw;
+			header{
+
+			}
+			form{
+				section{
+					h3{
+						width:20vw;
+						margin-right:8vw;
+					}
+					input{
+						width:65vw;
+					}
+					#bigBox{
+						width:65vw;
+
 					}
 				}
 			}
@@ -91,11 +157,65 @@
 					}
 					a, a:visited, a:hover{
 						color:black;
+						p{
+							width: 20vw;
+						}
 					}
 					p{
 						font-size:1em;
 						text-align:center;
 						margin-bottom:1vh;
+					}
+				}
+			}
+		}
+	}
+	#contactPage{
+		flex-direction:column;
+		#deets{
+			margin:0 auto;
+			width:95vw;
+			margin-bottom:3vh;
+			header{
+				margin:0 auto;
+				width:95vw;
+			}
+			section{
+				ul{
+					width:90vw;
+					margin:0 auto;
+					li{
+						h1{
+						}
+						h2{
+							width:70vw;
+
+							margin-left:3vw;
+						}
+					}
+				}
+			}
+		}
+		#message{
+			margin:0 auto;
+			margin-bottom:10vw;
+			padding-bottom:2vh;
+			width:95vw;
+			header{
+
+			}
+			form{
+				section{
+					h3{
+						width:20vw;
+						margin-right:8vw;
+					}
+					input{
+						width:65vw;
+					}
+					#bigBox{
+						width:65vw;
+
 					}
 				}
 			}
@@ -141,15 +261,60 @@
 					justify-content:space-around;
 					img{
 						width:25vw;
-						padding-bottom:3vh;
 					}
 					a, a:visited, a:hover{
 						color:black;
 					}
 					p{
+						padding:2vh 0;
 						font-size:1em;
 						text-align:center;
 						margin-bottom:1vh;
+					}
+				}
+			}
+		}
+	}
+	#contactPage{
+		#deets{
+			width:40vw;
+			margin-bottom:3vh;
+			header{
+				margin:0 auto;
+				width:40vw;
+			}
+			section{
+				ul{
+					width:38vw;
+					margin:0 auto;
+					li{
+						h1{
+						}
+						h2{
+							width:30vw;
+
+							margin-left:1vw;
+						}
+					}
+				}
+			}
+		}
+		#message{
+			margin-bottom:10vw;
+			padding-bottom:2vh;
+			width:40vw;
+			form{
+				section{
+					h3{
+						width:5vw;
+						margin-right:2vw;
+					}
+					input{
+						width:30vw;
+					}
+					#bigBox{
+						width:30vw;
+						margin-right:1vw;
 					}
 				}
 			}

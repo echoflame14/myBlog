@@ -18,8 +18,11 @@ a, a:hover, a:visited{
 }
 
 
-
+html{
+	min-width:198px;
+}
 body{
+	min-width:198px;
 	background-color: $gray;
 }
 
@@ -138,7 +141,7 @@ ui-view{
 					color:black;
 					p{
 						margin:0 auto;
-						width:10vw;
+						//width assigned with queries
 						border:1px $highlight solid;
 						padding:0.3vw;
 					}
@@ -160,11 +163,9 @@ ui-view{
 			bottom:-5vh;;
 			height:1vh;
 			background:$highlight-shadow;
-			width:40vw;
 			clear:both;
 		}
 		background-color:$white;
-		width:40vw;
 		border-top-right-radius:0.3vw;
 		border-top-left-radius:0.3vw;
 		border-bottom-right-radius:0.2vw;
@@ -173,7 +174,6 @@ ui-view{
 			display:flex;
 			align-items:center;
 			justify-content:space-around;
-			width:40vw;
 			height:5vh;
 			background:$highlight;
 			border:solid $lowLight 2px;
@@ -185,7 +185,6 @@ ui-view{
 		}
 		section{
 			ul{
-				width:38vw;
 				margin:0 auto;
 				display:flex;
 				flex-direction:column;
@@ -206,7 +205,6 @@ ui-view{
 	}
 	#message{
 		box-shadow:0.2vw 0.2vw 0.25vw $highlight-shadow;
-		width:40vw;
 		border-top-right-radius:0.3vw;
 		border-top-left-radius:0.3vw;
 		background-color:$white;
@@ -216,7 +214,6 @@ ui-view{
 			bottom:-5vh;;
 			height:1vh;
 			background:$highlight-shadow;
-			width:40vw;
 			clear:both;
 		}
 		header{
@@ -225,7 +222,7 @@ ui-view{
 			display:flex;
 			align-items:center;
 			justify-content:space-around;
-			width:40vw;
+
 			height:5vh;
 			background:$highlight;
 			border:solid $lowLight 2px;
@@ -234,9 +231,7 @@ ui-view{
 			color:white;
 		}
 		section{
-			width:40vw;
 			form{
-
 				section{
 					text-ailgn:left;
 					display:flex;
@@ -248,7 +243,6 @@ ui-view{
 						padding-left:2vw;
 					}
 					input{
-						width:30vw;
 						border:solid black 1px;
 						height:3vh;
 						background-color:white;
@@ -263,8 +257,6 @@ ui-view{
 						border-bottom-right-radius:0.4vw;
 						border:solid black 1px;
 						height:14vh;
-						width:30vw;
-						margin:0 auto;
 					}
 				}
 				input{
