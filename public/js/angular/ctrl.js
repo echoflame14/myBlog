@@ -1,4 +1,4 @@
-angular.module("app").controller("ctrl",function($scope,srvc){
+angular.module("app").controller("ctrl",function($scope,srvc,){
 	$scope.test = srvc.test;
 	$scope.getPosts = srvc.posts().then(function(resp){
 		$scope.posts = resp;
@@ -7,5 +7,4 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 	$scope.makePost = function(){
 		alert("hey");
 	};
-
 });

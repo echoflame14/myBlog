@@ -1,0 +1,30 @@
+//animations and transitions
+
+#home{ // about me button scaling on hover
+	#aboutMe{
+		header{
+			transition: all 0.2s ease-in-out;
+		}
+		header:hover{
+			transform: scale(1.01);
+		}
+	}
+}
+
+#home{
+	#aboutMe{
+		article{
+			.content{
+				a{
+					p{
+						transition: all, 0.1s, ease-in;
+					}
+					p:hover{
+						
+						transform: scale(1.05);
+					}
+				}
+			}
+		}
+	}
+}

@@ -5,6 +5,7 @@ html(lang='en', ng-app="app")
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel='stylesheet', href='./css/master.css')
+		link(href="https://fonts.googleapis.com/css?family=Bungee+Outline", rel="stylesheet")
 
 	body(ng-controller="ctrl")
 		header#mainHeader
@@ -12,13 +13,13 @@ html(lang='en', ng-app="app")
 				span(ng-click="makePost()") n
 			nav#mainNav
 				ul
-					li
+					li#home.active
 						a(ui-sref='/home', title="home") Home
-					li
+					li#about
 						a(ui-sref="/about", title="about") About
-					li
+					li#proj
 						a(ui-sref="/projects", title="projects") Projects
-					li
+					li#contact
 						a(ui-sref="/contact", title="contact") Contact
 
 

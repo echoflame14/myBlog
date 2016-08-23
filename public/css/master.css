@@ -111,19 +111,37 @@
           font-size: 1em;
           text-align: center;
           margin-bottom: 1vh; } }
+#home #aboutMe header {
+  transition: all 0.2s ease-in-out; }
+#home #aboutMe header:hover {
+  transform: scale(1.01); }
+
+#home #aboutMe article .content a p {
+  transition: all, 0.1s, ease-in; }
+#home #aboutMe article .content a p:hover {
+  transform: scale(1.05); }
+
 * {
   box-sizing: border-box; }
+
+a, a:hover, a:visited {
+  color: black;
+  text-decoration: none; }
+
+body {
+  background-color: #CDCDCD; }
 
 header#mainHeader {
   width: 100vw;
   height: 30vh;
-  background: white;
+  background: #999999;
   margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
   header#mainHeader h1 {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Patrick Hand SC', cursive;
+    color: #3B3A3A;
     height: 25vh;
     line-height: 25vh;
     font-size: 2.5em;
@@ -134,7 +152,7 @@ header#mainHeader {
     width: 100vw;
     height: 5vh;
     padding-bottom: 1vh;
-    border-bottom: 2px solid #7DD6C2; }
+    border-bottom: 2px solid #3B3A3A; }
     header#mainHeader nav#mainNav ul {
       margin: 0 auto;
       height: 5vh;
@@ -142,14 +160,19 @@ header#mainHeader {
       display: flex;
       justify-content: space-around; }
       header#mainHeader nav#mainNav ul li {
+        text-align: center;
+        width: 10vw;
         font-size: .9em;
         line-height: 5vh;
         transition: all 140ms ease-in-out; }
         header#mainHeader nav#mainNav ul li a, header#mainHeader nav#mainNav ul li a:visited {
-          color: black;
+          color: white;
           text-decoration: none; }
-        header#mainHeader nav#mainNav ul li a:hover {
-          color: #c3ba6d; }
+      header#mainHeader nav#mainNav ul li.active {
+        background-color: #3B3A3A;
+        border: solid rgba(1, 1, 1, 0.28) 1px;
+        border-bottom: none;
+        border-top-right-radius: 1vw; }
 
 ui-view {
   width: 100vw; }
@@ -179,15 +202,22 @@ ui-view {
       ui-view #home .post article p {
         font-family: helvetica; }
     ui-view #home #aboutMe header {
+      cursor: pointer;
       margin-bottom: 3vh;
       padding: 2vh 0;
-      border: solid 3px #7DD6C2;
+      border: solid 3px #3B3A3A;
       font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home #aboutMe img {
       border-radius: 100%;
       margin-bottom: 3vh; }
-    ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
+    ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited {
+      corsor: pointer;
       color: black; }
+      ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p {
+        margin: 0 auto;
+        width: 10vw;
+        border: 1px #3B3A3A solid;
+        padding: 0.3vw; }
     ui-view #home #aboutMe article p {
       font-family: helvetica; }
 
@@ -202,10 +232,11 @@ ui-view {
       justify-content: space-around;
       width: 40vw;
       height: 5vh;
-      background: #7DD6C2;
+      background: #3B3A3A;
       border: solid rgba(1, 1, 1, 0.28) 2px;
       text-align: center;
-      margin-bottom: 3vh; }
+      margin-bottom: 3vh;
+      color: white; }
     #contactPage #deets section ul {
       width: 38vw;
       margin: 0 auto;
@@ -216,7 +247,7 @@ ui-view {
         margin-bottom: 3vh; }
         #contactPage #deets section ul li h1 {
           margin-bottom: 1vh;
-          color: #7DD6C2;
+          color: #3B3A3A;
           text-shadow: -2px 2px 1px #ededed; }
         #contactPage #deets section ul li h2 {
           padding-left: 0.5vw; }
@@ -228,10 +259,11 @@ ui-view {
       justify-content: space-around;
       width: 40vw;
       height: 5vh;
-      background: #7DD6C2;
+      background: #3B3A3A;
       border: solid rgba(1, 1, 1, 0.28) 2px;
       text-align: center;
-      margin-bottom: 3vh; }
+      margin-bottom: 3vh;
+      color: white; }
     #contactPage #message section {
       width: 40vw; }
       #contactPage #message section form section {
@@ -252,7 +284,7 @@ ui-view {
       #contactPage #message section form input {
         border: solid black 1px;
         float: right;
-        background-color: #7DD6C2;
-        color: black; }
+        background-color: #3B3A3A;
+        color: white; }
 
 /*# sourceMappingURL=master.css.map */

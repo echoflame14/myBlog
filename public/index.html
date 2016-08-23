@@ -5,16 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
   </head>
   <body ng-controller="ctrl">
     <header id="mainHeader">
       <h1>Climbing the Mountai<span ng-click="makePost()">n</span></h1>
       <nav id="mainNav">
         <ul>
-          <li><a ui-sref="/home" title="home">Home</a></li>
-          <li><a ui-sref="/about" title="about">About</a></li>
-          <li><a ui-sref="/projects" title="projects">Projects</a></li>
-          <li><a ui-sref="/contact" title="contact">Contact</a></li>
+          <li class="active" id="home"><a ui-sref="/home" title="home">Home</a></li>
+          <li id="about"><a ui-sref="/about" title="about">About</a></li>
+          <li id="proj"><a ui-sref="/projects" title="projects">Projects</a></li>
+          <li id="contact"><a ui-sref="/contact" title="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
