@@ -1,0 +1,77 @@
+ui-view{
+	width:100vw;
+	#home{
+		width:100vw;
+		.container{
+			display:flex;
+			flex-direction:column-reverse;
+		}
+		.post{
+
+			header{
+				margin-bottom:3vh;
+
+				text-align:center;
+
+				font-family: 'Open Sans Condensed', sans-serif;
+				h1{
+					margin-bottom:1vh;
+
+					font-family: 'Roboto Condensed', sans-serif;
+				}
+			}
+			img{
+				border:1px $lowLight solid;
+				border-bottom:none;
+				border-left:none;
+				border-radius:2vw;
+				border-bottom-left-radius: 0px;
+				box-shadow:-0.2vw 0.2vw 0.2vw $highlight-shadow;
+			}
+			article{
+				margin-bottom: 10vh;
+				padding:3vh 0;
+
+				border-bottom: 2px black solid;
+
+				p{
+					font-family: 'Sintony', sans-serif;
+				}
+			}
+		}
+		#aboutMe{
+			header{
+				margin-bottom:3vh;
+				padding:2vh 0;
+
+				cursor:pointer;
+
+				border: solid 3px $highlight;
+
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+			img{
+				margin-bottom:3vh;
+
+				border-radius:100%;
+			}
+			article{
+				a, a:visited{
+					color:black;
+
+					corsor:pointer;
+					p{
+						margin:0 auto;
+						padding:0.3vw;
+						//width assigned with queries
+
+						border:1px $highlight solid;
+					}
+				}
+				p{
+					font-family: helvetica;
+				}
+			}
+		}
+	}
+}

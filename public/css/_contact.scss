@@ -1,0 +1,147 @@
+
+#contactPage{
+	display:flex;
+
+	justify-content:space-around;
+	#deets{
+		position:relative;
+
+		border-top-left-radius:0.3vw;
+		border-top-right-radius:0.3vw;
+		border-bottom-right-radius:0.2vw;
+		background-color:$white;
+		box-shadow:0.2vw 0.2vw 0.25vw $highlight-shadow;
+		.bar{
+			position: absolute;
+			bottom:-5vh;
+
+			clear:both;
+
+			height:1vh;
+
+			background:$highlight-shadow;;
+		}
+		header{
+			display:flex;
+
+			height:5vh;
+			margin-bottom:3vh;
+
+			text-align:center;
+
+			color:white;
+			border:solid $lowLight 2px;
+			border-top-left-radius:0.3vw;
+			border-top-right-radius:0.3vw;
+			background:$highlight;
+
+			align-items:center;
+			justify-content:space-around;
+		}
+		section{
+			ul{
+				display:flex;
+				flex-direction:column;
+
+				margin:0 auto;
+
+				justify-content:space-around;
+				li{
+					margin-bottom:3vh;
+					h1{
+						margin-bottom:1vh;
+
+						color:$highlight;
+						text-shadow:-2px 2px 1px rgb(237, 237, 237);
+					}
+					h2{
+						padding-left:0.5vw;
+					}
+				}
+			}
+		}
+	}
+	#message{
+		position: relative;
+
+		border-top-left-radius:0.3vw;
+		border-top-right-radius:0.3vw;
+		background-color:$white;
+		box-shadow:0.2vw 0.2vw 0.25vw $highlight-shadow;
+		.bar{
+			position: absolute;
+			bottom:-5vh;
+
+			clear:both;
+
+			height:1vh;
+
+			background:$highlight-shadow;;
+		}
+		header{
+			display:flex;
+
+			height:5vh;
+			margin-bottom:3vh;
+
+			text-align:center;
+
+			color:white;
+			border:solid $lowLight 2px;
+			border-top-left-radius:0.3vw;
+			border-top-right-radius:0.3vw;
+			background:$highlight;
+
+			align-items:center;
+			justify-content:space-around;
+		}
+		section{
+			form{
+				section{
+					display:flex;
+
+					margin-bottom:3vh;
+
+					text-ailgn:left;
+					justify-content:space-around;
+					h3{
+						width:8vw;
+						padding-left:2vw;
+
+						text-align:left;
+					}
+					input{
+						height:3vh;
+
+						color:black;
+						border:solid black 1px;
+						border-top-left-radius:0.2vw;
+						border-top-right-radius:0.4vw;
+						border-bottom-right-radius:0.4vw;
+						background-color:white;
+
+						line-height:1em;
+					}
+					#bigBox{
+						height:14vh;
+
+						border:solid black 1px;
+						border-top-left-radius:0.2vw;
+						border-top-right-radius:0.4vw;
+						border-bottom-right-radius:0.4vw;
+					}
+				}
+				input{
+					float: right;
+
+					margin-right:1vw;
+
+					color:white;
+					border:solid black 1px;
+					border-radius:0.3vw;
+					background-color: $highlight;
+				}
+			}
+		}
+	}
+}

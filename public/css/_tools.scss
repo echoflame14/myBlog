@@ -1,0 +1,16 @@
+*{
+	box-sizing:border-box;
+}
+a, a:hover, a:visited{
+	text-decoration:none;
+
+	color:black;
+}
+html{
+	min-width:198px;
+}
+body{
+	min-width:198px;
+
+	background-color: $gray;
+}
