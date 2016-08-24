@@ -5,6 +5,63 @@
 	justify-content:space-between;
 	#aboutMe{
 		width:45vw;
+		header.mainHeader{
+			width:45vw;
+			margin:0 auto;
+			display:flex;
+			justify-content:space-around;
+			align-items:flex-start;
+			img{
+				width:15vw;
+				border-radius:100%;
+			}
+			h1{
+				line-height:5vh;
+				height:5vh;
+				width:25vw;
+				text-align:center;
+				border:solid 2px $black;
+			}
+		}
+		article{
+			margin-top:2vh;
+			float:right;
+			width:40vw;
+			header{
+				display:flex;
+				width:40vw;
+				margin:0 auto;
+				height:5vh;
+				border:2px solid $lowLight;
+				border-bottom:none;
+				section{
+					line-height:5vh;
+					width:20vw;
+					text-align:center;
+				}
+			}
+			article{
+				margin-top:-1px;
+				p{
+					width:40vw;
+					margin:0 auto;
+					padding:1vh 1vw;
+					border:2px solid $lowLight;
+					border-top:none;
+					border-left:none;
+					border-bottom-right-radius:1vw;
+				}
+				p.ls{
+
+				}
+				p.lss{
+
+				}
+				p.hidden{
+					display:none;
+				}
+			}
+		}
 	}
 	#skills{
 		width:45vw;
