@@ -31,20 +31,20 @@
       <h1>Send Me a Message</h1>
     </header>
     <section>
-      <form id="UsrMessage" method="post">
+      <form id="UsrMessage" method="get">
         <section>
           <h3>Name</h3>
-          <input type="text" name="name"/>
+          <input type="text" name="name" data-validation="email" id="name"/>
         </section>
         <section>
           <h3>Email</h3>
-          <input type="text" name="Email"/>
+          <input type="text" name="Email" id="email"/>
         </section>
         <section>
           <h3>Message</h3>
           <textarea name="Message" rows="8" cols="40" id="bigBox"></textarea>
         </section>
-        <input type="submit" name="submit" value="Submit"/>
+        <input type="submit" name="submit" value="Submit" id="valBtn"/>
       </form>
     </section>
     <div class="bar"></div>

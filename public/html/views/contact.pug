@@ -22,16 +22,16 @@
 		header
 			h1 Send Me a Message
 		section
-			form(id="UsrMessage", method="post")
+			form(id="UsrMessage", method="get")
 				section
 					h3 Name
-					input(type="text", name="name")
+					input(type="text", name="name", data-validation="email")#name
 				section
 					h3 Email
-					input(type="text", name="Email")
+					input(type="text", name="Email")#email
 				section
 					h3 Message
 					textarea(name="Message", rows="8", cols="40", id="bigBox")
 
-				input(type="submit", name="submit", value="Submit")
+				input(type="submit", name="submit", value="Submit", id="valBtn")
 		.bar
