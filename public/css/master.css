@@ -255,6 +255,10 @@ ui-view {
       border-bottom: 2px black solid; }
       ui-view #home .post article p {
         font-family: 'Sintony', sans-serif; }
+      ui-view #home .post article i {
+        font-size: 10vw;
+        color: red;
+        background: black; }
     ui-view #home #aboutMe header {
       margin-bottom: 3vh;
       padding: 2vh 0;
