@@ -171,6 +171,7 @@ body {
         line-height: 1.5em; }
     ui-view #home #aboutMe {
       width: 30vw;
+      padding-right: 5vw;
       float: right; }
       ui-view #home #aboutMe header {
         margin: 0 auto;
@@ -262,6 +263,8 @@ ui-view {
       font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home #aboutMe img {
       margin-bottom: 3vh;
+      border: 2px solid rgba(1, 1, 1, 0.28);
+      box-shadow: 1px 1px 5px rgba(26, 26, 26, 0.47);
       border-radius: 100%; }
     ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited {
       color: black;

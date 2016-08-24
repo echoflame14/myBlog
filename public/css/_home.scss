@@ -52,7 +52,8 @@ ui-view{
 			}
 			img{
 				margin-bottom:3vh;
-
+				border:2px solid $lowLight;
+				box-shadow: 1px 1px 5px $highlight-shadow;
 				border-radius:100%;
 			}
 			article{

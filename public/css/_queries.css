@@ -155,6 +155,7 @@
         line-height: 1.5em; }
     ui-view #home #aboutMe {
       width: 30vw;
+      padding-right: 5vw;
       float: right; }
       ui-view #home #aboutMe header {
         margin: 0 auto;
