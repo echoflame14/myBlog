@@ -30,7 +30,6 @@ header#mainHeader{
 	nav#mainNav{
 		width:100vw;
 		height:5vh;
-		padding-bottom:1vh;
 
 		border-bottom:2px solid $highlight;
 
@@ -44,16 +43,15 @@ header#mainHeader{
 
 			justify-content:space-around;
 			li{
-				transition: all 140ms ease-in-out;
+				transition: all 240ms ease-in;
 				text-align:center;
-
+				height:5vh;
 				font-size:.9em;
 				line-height:5vh;
 				a,a:visited{
-					padding:1.3vh 2vw;
-					padding-bottom:1.3vh;
-
-					transition:all 0.222s ease-in-out;
+					padding:1vh 2vw;
+					height:5vh;
+					transition:all 0.222s ease-in;
 					text-decoration:none;
 
 					color:white;

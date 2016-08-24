@@ -296,7 +296,6 @@ header#mainHeader {
   header#mainHeader nav#mainNav {
     width: 100vw;
     height: 5vh;
-    padding-bottom: 1vh;
     border-bottom: 2px solid #3B3A3A;
     font-family: 'Titillium Web', sans-serif; }
     header#mainHeader nav#mainNav ul {
@@ -306,14 +305,15 @@ header#mainHeader {
       margin: 0 auto;
       justify-content: space-around; }
       header#mainHeader nav#mainNav ul li {
-        transition: all 140ms ease-in-out;
+        transition: all 240ms ease-in;
         text-align: center;
+        height: 5vh;
         font-size: .9em;
         line-height: 5vh; }
         header#mainHeader nav#mainNav ul li a, header#mainHeader nav#mainNav ul li a:visited {
-          padding: 1.3vh 2vw;
-          padding-bottom: 1.3vh;
-          transition: all 0.222s ease-in-out;
+          padding: 1vh 2vw;
+          height: 5vh;
+          transition: all 0.222s ease-in;
           text-decoration: none;
           color: white; }
       header#mainHeader nav#mainNav ul a.active {
