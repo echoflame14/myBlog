@@ -448,7 +448,8 @@ header#mainHeader {
       width: 40vw;
       margin: 0 auto;
       font-size: 1.3em;
-      margin-bottom: 1vw; }
+      margin-bottom: 1vw;
+      font-family: 'Julius Sans One', sans-serif; }
     #about #skills .frontEnd {
       border-top-right-radius: 2vw;
       padding-top: 2vh;
@@ -469,9 +470,10 @@ header#mainHeader {
     #about #skills h4.bEnd {
       width: 40vw;
       margin: 0 auto;
-      font-size: 1.3em;
+      font-size: 1.8em;
       margin-bottom: 1vw;
-      margin-top: 3vh; }
+      margin-top: 3vh;
+      font-family: 'VT323', monospace; }
     #about #skills .backEnd {
       border-top-right-radius: 2vw;
       padding-top: 2vh;
