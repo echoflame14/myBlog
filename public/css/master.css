@@ -450,26 +450,45 @@ header#mainHeader {
       float: right;
       width: 40vw; }
       #about #aboutMe article header {
+        border-top-left-radius: 1vw;
         display: flex;
+        justify-content: space-between;
         width: 40vw;
         margin: 0 auto;
         height: 5vh;
-        border: 2px solid rgba(1, 1, 1, 0.28);
+        border: 2px solid white;
         border-bottom: none; }
         #about #aboutMe article header section {
-          line-height: 5vh;
-          width: 20vw;
-          text-align: center; }
+          color: white;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border: solid white 2px;
+          border-bottom: none;
+          border-top: none;
+          width: 19.5vw;
+          text-align: center;
+          background: #3B3A3A; }
+        #about #aboutMe article header section.left {
+          border-top-right-radius: 1vw;
+          border-left: none;
+          border-top-left-radius: 1vw; }
+        #about #aboutMe article header section.right {
+          border-top-left-radius: 1vw;
+          border-right: none; }
       #about #aboutMe article article {
         margin-top: -1px; }
         #about #aboutMe article article p {
           width: 40vw;
           margin: 0 auto;
           padding: 1vh 1vw;
-          border: 2px solid rgba(1, 1, 1, 0.28);
+          border: 2px solid white;
           border-top: none;
           border-left: none;
-          border-bottom-right-radius: 1vw; }
+          border-bottom-right-radius: 1vw;
+          line-height: 1.4em;
+          font-family: 'Titillium Web', sans-serif; }
         #about #aboutMe article article p.hidden {
           display: none; }
   #about #skills {
