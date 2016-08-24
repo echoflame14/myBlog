@@ -1,0 +1,80 @@
+#about{
+	width:95vw;
+	margin:0 auto;
+	display:flex;
+	justify-content:space-between;
+	#aboutMe{
+		width:45vw;
+	}
+	#skills{
+		width:45vw;
+		display:flex;
+		flex-direction:column;
+		header{
+			width:45vw;
+			margin:0 auto;
+			text-align:center;
+			height:5vh;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			border:2px black solid;
+			margin-bottom:2vh;
+		}
+		h4.fEnd{
+			width:40vw;
+			margin:0 auto;
+			font-size:1.3em;
+			margin-bottom:1vw;
+		}
+		.frontEnd{
+			border-top-right-radius:2vw;
+			padding-top:2vh;
+			border-top:1px solid $lowLight;
+			border-right:1px solid $lowLight;
+			margin: 0 auto;
+			width:40vw;
+			display:flex;
+			height:30vh;
+			justify-content:space-between;
+			img{
+				width:10vw;
+				border-radius:1vw;
+			}
+			ul{
+				width:25vw;
+				li{
+					margin-bottom:2vh;
+				}
+			}
+		}
+		h4.bEnd{
+			width:40vw;
+			margin:0 auto;
+			font-size:1.3em;
+			margin-bottom:1vw;
+			margin-top:3vh;
+		}
+		.backEnd{
+			border-top-right-radius:2vw;
+			padding-top:2vh;
+			border-top:1px solid $lowLight;
+			border-right:1px solid $lowLight;
+			margin: 0 auto;
+			width:40vw;
+			display:flex;
+			height:30vh;
+			justify-content:space-between;
+			img{
+				width:10vw;
+				border-radius:1vw;
+			}
+			ul{
+				width:25vw;
+				li{
+					margin-bottom:2vh;
+				}
+			}
+		}
+	}
+}
