@@ -15,14 +15,27 @@
 			img{
 				width:15vw;
 				border-radius:100%;
-				box-shadow:1px 1px 12px $black;
+				box-shadow:1px 1px 12px $trout;
 			}
 			h1{
+				font-family: 'Julius Sans One', sans-serif;
+								/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1eaaf1+0,1eaaf1+23,99d2ef+86,d7e7ef+100 */
+				background: rgb(30,170,241); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(30,170,241,1) 0%, rgba(30,170,241,1) 23%, rgba(153,210,239,1) 86%, rgba(215,231,239,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(30,170,241,1) 0%,rgba(30,170,241,1) 23%,rgba(153,210,239,1) 86%,rgba(215,231,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(30,170,241,1) 0%,rgba(30,170,241,1) 23%,rgba(153,210,239,1) 86%,rgba(215,231,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1eaaf1', endColorstr='#d7e7ef',GradientType=1 ); /* IE6-9 */
+				border-top-left-radius:0.3vw;
+				border-bottom-left-radius:0.3vw;
+				border:solid white 2px;
+				border-right:none;
 				line-height:5vh;
 				height:5vh;
 				width:25vw;
+				color:white;
+				text-shadow:0.04em 0.04em 0.1em  black;
 				text-align:center;
-				border:solid 2px $blue;
+				font-size:1.2em;
 			}
 		}
 		article{
@@ -91,6 +104,15 @@
 		display:flex;
 		flex-direction:column;
 		header{
+			border:solid white 2px;
+			border-left:none;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7e7ef+0,99d2ef+14,1eaaf1+77,1eaaf1+100 */
+			background: rgb(215,231,239); /* Old browsers */
+			background: -moz-linear-gradient(left,  rgba(215,231,239,1) 0%, rgba(153,210,239,1) 14%, rgba(30,170,241,1) 77%, rgba(30,170,241,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  rgba(215,231,239,1) 0%,rgba(153,210,239,1) 14%,rgba(30,170,241,1) 77%,rgba(30,170,241,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  rgba(215,231,239,1) 0%,rgba(153,210,239,1) 14%,rgba(30,170,241,1) 77%,rgba(30,170,241,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e7ef', endColorstr='#1eaaf1',GradientType=1 ); /* IE6-9 */
+
 			width:45vw;
 			margin:0 auto;
 			text-align:center;
@@ -98,8 +120,15 @@
 			display:flex;
 			justify-content:space-around;
 			align-items:center;
-			border:2px $blue solid;
+			color:white;
+			text-shadow:0.04em 0.04em 0.1em  black;
+			font-weight:bold;
+			font-size:1.3em;
+			border-top-right-radius:0.3vw;
+			border-bottom-right-radius:0.3vw;
+			font-family: 'Julius Sans One', sans-serif;
 			margin-bottom:2vh;
+
 		}
 		h4.fEnd{
 			width:40vw;
@@ -108,28 +137,46 @@
 			margin-bottom:1vw;
 			font-family: 'Julius Sans One', sans-serif;
 		}
+		.frontEnd:hover{
+			transform:scale(1.05);
+			box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
+		}
 		.frontEnd{
+			transition:all 0.2s ease-in-out;
+			box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+			background:white;
 			border-top-right-radius:2vw;
 			padding-top:2vh;
-			border-top:1px solid $black;
-			border-right:1px solid $black;
+			border-top:1px solid $blue;
+			border-right:1px solid $blue;
 			margin: 0 auto;
 			width:40vw;
 			display:flex;
 			height:30vh;
 			justify-content:space-between;
-			img{
-				width:10vw;
-				border-radius:1vw;
+			align-items:flex-start;
+			border-bottom-left-radius:0.25vw;
+			img.disp{
+				margin-left:2vw;
+				width:8vw;
+				border-bottom-right-radius:1vw;
+				padding-top:0;
 			}
 			ul{
-				width:25vw;
+				width:23vw;
+				margin-right:2vw;
+				display:flex;
+				align-items:flex-start;
+				flex-wrap:wrap;
+				justify-content:space-between;
 				li{
+					width:10vw;
 					display:flex;
 					justify-content:space-between;
 					align-items:center;
 					margin-bottom:2vh;
 					h4{
+
 						width:22vw;
 						text-align:left;
 						padding-left:1.5vw;
@@ -145,24 +192,35 @@
 		h4.bEnd{
 			width:40vw;
 			margin:0 auto;
-			font-size:1.8em;
+			font-size:1.3em;
 			margin-bottom:1vw;
 			margin-top:3vh;
-			font-family: 'VT323', monospace;
+			font-family: 'Julius Sans One', sans-serif;
+		}
+		.backEnd:hover{
+			transform:scale(1.05);
+			box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
 		}
 		.backEnd{
+			transition:all 0.2s ease-in-out;
+			box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+			background:white;
 			border-top-right-radius:2vw;
 			padding-top:2vh;
-			border-top:1px solid $black;
-			border-right:1px solid $black;
+			border-top:1px solid $blue;
+			border-right:1px solid $blue;
 			margin: 0 auto;
 			width:40vw;
 			display:flex;
 			height:30vh;
 			justify-content:space-between;
-			img{
-				width:10vw;
-				border-radius:1vw;
+			padding-bottom:2vh;
+			img.disp{
+				margin-left:2vw;
+				width:8vw;
+				border-bottom-right-radius:1vw;
+				padding-top:0;
+
 			}
 			ul{
 				width:25vw;

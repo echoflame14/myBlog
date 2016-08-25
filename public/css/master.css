@@ -12,7 +12,7 @@ html {
 
 body {
   min-width: 198px;
-  background-color: #CDCDCD; }
+  background-color: #f6f6f6; }
 
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   body header#mainHeader h1 {
@@ -263,7 +263,7 @@ ui-view {
       margin-bottom: 3vh;
       padding: 2vh 0;
       cursor: pointer;
-      border: solid 3px #5190cb;
+      border: solid 3px #1EAAF1;
       font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home #aboutMe img {
       margin-bottom: 3vh;
@@ -276,7 +276,7 @@ ui-view {
       ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p {
         margin: 0 auto;
         padding: 0.5vw;
-        border: 2px #5190cb solid; }
+        border: 2px #1EAAF1 solid; }
     ui-view #home #aboutMe article p {
       font-family: helvetica; }
 
@@ -284,23 +284,23 @@ header#mainHeader {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 30vh;
+  height: 20vh;
   margin-bottom: 5vh;
   background: rgba(3, 17, 27, 0.7);
   align-items: center; }
   header#mainHeader h1 {
     width: 100vw;
-    height: 25vh;
+    height: 15vh;
     text-align: center;
     color: white;
     text-shadow: -2px 2px 1px #03111b;
     font-family: 'Amatic SC', cursive;
     font-size: 2.5em;
-    line-height: 25vh; }
+    line-height: 15vh; }
   header#mainHeader nav#mainNav {
     width: 100vw;
     height: 5vh;
-    border-bottom: 2px solid #5190cb;
+    border-bottom: 2px solid #1EAAF1;
     font-family: 'Titillium Web', sans-serif;
     box-shadow: 0 1vh 50px #3E4950; }
     header#mainHeader nav#mainNav ul {
@@ -325,20 +325,23 @@ header#mainHeader {
         box-shadow: 1px -1px #03111b;
         border: solid rgba(3, 17, 27, 0.7) 1px;
         border-bottom: none;
-        border-top-right-radius: 1vw;
+        border-top-right-radius: 0.1vw;
         background-color: #03111b;
         color: black; }
 
 #contactPage {
   display: flex;
   justify-content: space-around; }
+  #contactPage #deets:hover {
+    transform: scale(1.007); }
   #contactPage #deets {
+    transition: all 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
     border-bottom-right-radius: 0.2vw;
-    background-color: #f6f6f6;
-    box-shadow: 0.2vw 0.2vw 0.25vw rgba(26, 26, 26, 0.47); }
+    background-color: white;
+    box-shadow: 0.2vw 0.2vw 3vw rgba(26, 26, 26, 0.47); }
     #contactPage #deets .bar {
       position: absolute;
       bottom: -5vh;
@@ -370,12 +373,15 @@ header#mainHeader {
           text-shadow: -2px 2px 1px #ededed; }
         #contactPage #deets section ul li h2 {
           padding-left: 0.5vw; }
+  #contactPage #message:hover {
+    transform: scale(1.007); }
   #contactPage #message {
+    transition: all 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
-    background-color: #f6f6f6;
-    box-shadow: 0.2vw 0.2vw 0.25vw rgba(26, 26, 26, 0.47); }
+    background-color: white;
+    box-shadow: 0.2vw 0.2vw 3vw rgba(26, 26, 26, 0.47); }
     #contactPage #message .bar {
       position: absolute;
       bottom: -5vh;
@@ -443,13 +449,31 @@ header#mainHeader {
       #aboutPage #aboutMe header.mainHeader img {
         width: 15vw;
         border-radius: 100%;
-        box-shadow: 1px 1px 12px #03111b; }
+        box-shadow: 1px 1px 12px #4B545B; }
       #aboutPage #aboutMe header.mainHeader h1 {
+        font-family: 'Julius Sans One', sans-serif;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1eaaf1+0,1eaaf1+23,99d2ef+86,d7e7ef+100 */
+        background: #1eaaf1;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #1eaaf1 0%, #1eaaf1 23%, #99d2ef 86%, #d7e7ef 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #1eaaf1 0%, #1eaaf1 23%, #99d2ef 86%, #d7e7ef 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #1eaaf1 0%, #1eaaf1 23%, #99d2ef 86%, #d7e7ef 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1eaaf1', endColorstr='#d7e7ef',GradientType=1 );
+        /* IE6-9 */
+        border-top-left-radius: 0.3vw;
+        border-bottom-left-radius: 0.3vw;
+        border: solid white 2px;
+        border-right: none;
         line-height: 5vh;
         height: 5vh;
         width: 25vw;
+        color: white;
+        text-shadow: 0.04em 0.04em 0.1em  black;
         text-align: center;
-        border: solid 2px #5190cb; }
+        font-size: 1.2em; }
     #aboutPage #aboutMe article {
       margin-top: 2vh;
       float: right;
@@ -501,6 +525,19 @@ header#mainHeader {
     display: flex;
     flex-direction: column; }
     #aboutPage #skills header {
+      border: solid white 2px;
+      border-left: none;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7e7ef+0,99d2ef+14,1eaaf1+77,1eaaf1+100 */
+      background: #d7e7ef;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #d7e7ef 0%, #99d2ef 14%, #1eaaf1 77%, #1eaaf1 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #d7e7ef 0%, #99d2ef 14%, #1eaaf1 77%, #1eaaf1 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #d7e7ef 0%, #99d2ef 14%, #1eaaf1 77%, #1eaaf1 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e7ef', endColorstr='#1eaaf1',GradientType=1 );
+      /* IE6-9 */
       width: 45vw;
       margin: 0 auto;
       text-align: center;
@@ -508,7 +545,13 @@ header#mainHeader {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      border: 2px #5190cb solid;
+      color: white;
+      text-shadow: 0.04em 0.04em 0.1em  black;
+      font-weight: bold;
+      font-size: 1.3em;
+      border-top-right-radius: 0.3vw;
+      border-bottom-right-radius: 0.3vw;
+      font-family: 'Julius Sans One', sans-serif;
       margin-bottom: 2vh; }
     #aboutPage #skills h4.fEnd {
       width: 40vw;
@@ -516,22 +559,38 @@ header#mainHeader {
       font-size: 1.3em;
       margin-bottom: 1vw;
       font-family: 'Julius Sans One', sans-serif; }
+    #aboutPage #skills .frontEnd:hover {
+      transform: scale(1.05);
+      box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
     #aboutPage #skills .frontEnd {
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+      background: white;
       border-top-right-radius: 2vw;
       padding-top: 2vh;
-      border-top: 1px solid #03111b;
-      border-right: 1px solid #03111b;
+      border-top: 1px solid #1EAAF1;
+      border-right: 1px solid #1EAAF1;
       margin: 0 auto;
       width: 40vw;
       display: flex;
       height: 30vh;
-      justify-content: space-between; }
-      #aboutPage #skills .frontEnd img {
-        width: 10vw;
-        border-radius: 1vw; }
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom-left-radius: 0.25vw; }
+      #aboutPage #skills .frontEnd img.disp {
+        margin-left: 2vw;
+        width: 8vw;
+        border-bottom-right-radius: 1vw;
+        padding-top: 0; }
       #aboutPage #skills .frontEnd ul {
-        width: 25vw; }
+        width: 23vw;
+        margin-right: 2vw;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between; }
         #aboutPage #skills .frontEnd ul li {
+          width: 10vw;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -547,23 +606,32 @@ header#mainHeader {
     #aboutPage #skills h4.bEnd {
       width: 40vw;
       margin: 0 auto;
-      font-size: 1.8em;
+      font-size: 1.3em;
       margin-bottom: 1vw;
       margin-top: 3vh;
-      font-family: 'VT323', monospace; }
+      font-family: 'Julius Sans One', sans-serif; }
+    #aboutPage #skills .backEnd:hover {
+      transform: scale(1.05);
+      box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
     #aboutPage #skills .backEnd {
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+      background: white;
       border-top-right-radius: 2vw;
       padding-top: 2vh;
-      border-top: 1px solid #03111b;
-      border-right: 1px solid #03111b;
+      border-top: 1px solid #1EAAF1;
+      border-right: 1px solid #1EAAF1;
       margin: 0 auto;
       width: 40vw;
       display: flex;
       height: 30vh;
-      justify-content: space-between; }
-      #aboutPage #skills .backEnd img {
-        width: 10vw;
-        border-radius: 1vw; }
+      justify-content: space-between;
+      padding-bottom: 2vh; }
+      #aboutPage #skills .backEnd img.disp {
+        margin-left: 2vw;
+        width: 8vw;
+        border-bottom-right-radius: 1vw;
+        padding-top: 0; }
       #aboutPage #skills .backEnd ul {
         width: 25vw; }
         #aboutPage #skills .backEnd ul li {

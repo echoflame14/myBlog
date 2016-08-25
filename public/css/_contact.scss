@@ -3,14 +3,18 @@
 	display:flex;
 
 	justify-content:space-around;
+	#deets:hover{
+		transform:scale(1.007);
+	}
 	#deets{
+		transition:all 0.3s ease-in-out;
 		position:relative;
 
 		border-top-left-radius:0.3vw;
 		border-top-right-radius:0.3vw;
 		border-bottom-right-radius:0.2vw;
-		background-color:$white;
-		box-shadow:0.2vw 0.2vw 0.25vw $highlight-shadow;
+		background-color:white;
+		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
 		.bar{
 			position: absolute;
 			bottom:-5vh;
@@ -61,13 +65,18 @@
 			}
 		}
 	}
+	#message:hover{
+		transform:scale(1.007);
+	}
+
 	#message{
+		transition:all 0.3s ease-in-out;
 		position: relative;
 
 		border-top-left-radius:0.3vw;
 		border-top-right-radius:0.3vw;
-		background-color:$white;
-		box-shadow:0.2vw 0.2vw 0.25vw $highlight-shadow;
+		background-color:white;
+		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
 		.bar{
 			position: absolute;
 			bottom:-5vh;
