@@ -1,45 +1,54 @@
 #projPage{
 	display:flex;
+
+	margin:0 auto;
+
 	flex-wrap:wrap;
 	justify-content:space-around;
 	align-items:flex-start;
-	margin:0 auto;
 	.card{
 		display:flex;
 		flex-direction:column;
 		section.body{
-			border-top:1px solid $op-blue;
-			border-bottom-right-radius:0.5vw;
-			border-bottom:1px solid $op-blue;
-			margin-top:2vh;
 			display:flex;
+
+			margin-top:2vh;
+
+			border-top:1px solid $op-blue;
+			border-bottom:1px solid $op-blue;
+			border-bottom-right-radius:0.5vw;
+
 			justify-content:space-between;
 			align-items:center;
 			img{
+				transition:all 0.24s ease-in-out;
 
 				border:3px solid white;
 				box-shadow:0.1vw 0.1vw 0.3vw $op-black;
-				transition:all 0.24s ease-in-out;
 			}
 			img:hover{
-				transform:scale(1.01);
 				cursor:pointer;
+				transform:scale(1.01);
+
 				box-shadow:0.3vw 0.3vw 0.5vw $sup-op-black;
 			}
 			article{
 				display:flex;
 				flex-direction:column;
+
 				justify-content:space-around;
 				align-items:flex-left;
 				h4{
 					padding-bottom:1.4vh;
+
 					text-shadow:-1px 1px $op-black;
-					font-size:1.2em;
+
 					font-family: 'Julius Sans One', sans-serif;
+					font-size:1.2em;
 				}
 				p{
-					padding-left:0.5vw;
 					padding-bottom:1.2vh;
+					padding-left:0.5vw;
 				}
 			}
 		}
@@ -47,64 +56,149 @@
 }
 @media only screen and (max-width: 425px) and (min-width:0px){
 	#projPage{
-		width:100vw;
 		display:flex;
-		justify-content:space-around;
 		flex-direction:column;
-		align-items:flex-start;
+
+		width:100vw;
 		margin:0 auto;
+
+		justify-content:space-around;
+		align-items:flex-start;
 		.card{
-			margin:0 auto;
-			margin-bottom:8vh;
-			width:80vw;
 			display:flex;
 			flex-direction:column;
+
+			width:80vw;
+			margin:0 auto;
+			margin-bottom:8vh;
+
 			justify-content:space-around;
 			section.body{
-				border-top:1px solid $op-blue;
-				border-bottom-right-radius:0.5vw;
-				border-bottom:1px solid $op-blue;
-				margin-top:2vh;
 				display:flex;
 				flex-direction:column;
+
+				margin-top:2vh;
+
+				border-top:1px solid $op-blue;
+				border-bottom:1px solid $op-blue;
+				border-bottom-right-radius:0.5vw;
+
 				justify-content:space-between;
 				align-items:center;
 				img{
-					margin:0 auto;
 					width:80vw;
+					margin:0 auto;
+
+					transition:all 0.24s ease-in-out;
+
 					border:3px solid white;
 					box-shadow:0.1vw 0.1vw 0.3vw $op-black;
-					transition:all 0.24s ease-in-out;
 				}
 				img:hover{
-					transform:scale(1.01);
 					cursor:pointer;
+					transform:scale(1.01);
+
 					box-shadow:0.3vw 0.3vw 0.5vw $sup-op-black;
 				}
 				article{
-					padding-top:3vh;
-					width:70vw;
 					display:flex;
 					flex-direction:column;
+
+					width:70vw;
+					padding-top:3vh;
+					padding-bottom:2vh;
+
 					justify-content:space-around;
 					align-items:flex-left;
-					padding-bottom:2vh;
 					h4{
 						padding-bottom:1.4vh;
+
 						text-shadow:-1px 1px $op-black;
-						font-size:1.2em;
+
 						font-family: 'Julius Sans One', sans-serif;
+						font-size:1.2em;
 					}
 					p{
-						padding-left:0.5vw;
 						padding-bottom:1.2vh;
+						padding-left:0.5vw;
 					}
 				}
 			}
 		}
 	}
 }
-@media only screen and (max-width: 768px) and (min-width: 426px){}
+@media only screen and (max-width: 768px) and (min-width: 426px){
+	#projPage{
+		display:flex;
+
+		width:100vw;
+		margin:0 auto;
+
+		justify-content:space-around;
+		align-items:flex-left;
+		.card{
+			display:flex;
+			flex-direction:column;
+
+			width:40vw;
+			margin:0 auto;
+			margin-bottom:8vh;
+
+			justify-content:space-around;
+			section.body{
+				display:flex;
+				flex-direction:column;
+
+				margin-top:2vh;
+
+				border-top:1px solid $op-blue;
+				border-bottom:1px solid $op-blue;
+				border-bottom-right-radius:0.5vw;
+
+				justify-content:space-between;
+				align-items:center;
+				img{
+					width:40vw;
+					margin:0 auto;
+
+					transition:all 0.24s ease-in-out;
+
+					border:3px solid white;
+					box-shadow:0.1vw 0.1vw 0.3vw $op-black;
+				}
+				img:hover{
+					cursor:pointer;
+					transform:scale(1.01);
+
+					box-shadow:0.3vw 0.3vw 0.5vw $sup-op-black;
+				}
+				article{
+					display:flex;
+					flex-direction:column;
+
+					width:35vw;
+					padding-top:3vh;
+					padding-bottom:2vh;
+
+					justify-content:space-around;
+					align-items:flex-left;
+					h4{
+						padding-bottom:1.4vh;
+
+						text-shadow:-1px 1px $op-black;
+
+						font-family: 'Julius Sans One', sans-serif;
+						font-size:1.2em;
+					}
+					p{
+						padding-bottom:1.2vh;
+						padding-left:0.5vw;
+					}
+				}
+			}
+		}
+	}
+}
 @media only screen and (min-width: 769px){
 
 }

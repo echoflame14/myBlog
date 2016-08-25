@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$op-blue".
-        on line 11 of _proj.scss
+        on line 17 of _proj.scss
 
-6: 	margin:0 auto;
-7: 	.card{
-8: 		display:flex;
-9: 		flex-direction:column;
-10: 		section.body{
-11: 			border-top:1px solid $op-blue;
-12: 			border-bottom-right-radius:0.5vw;
-13: 			border-bottom:1px solid $op-blue;
-14: 			margin-top:2vh;
-15: 			display:flex;
-16: 			justify-content:space-between;
+12: 		section.body{
+13: 			display:flex;
+14: 
+15: 			margin-top:2vh;
+16: 
+17: 			border-top:1px solid $op-blue;
+18: 			border-bottom:1px solid $op-blue;
+19: 			border-bottom-right-radius:0.5vw;
+20: 
+21: 			justify-content:space-between;
+22: 			align-items:center;
 
 Backtrace:
-_proj.scss:11
+_proj.scss:17
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -93,4 +93,4 @@ _proj.scss:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$op-blue\".\A         on line 11 of _proj.scss\A \A 6: 	margin:0 auto;\A 7: 	.card{\A 8: 		display:flex;\A 9: 		flex-direction:column;\A 10: 		section.body{\A 11: 			border-top:1px solid $op-blue;\A 12: 			border-bottom-right-radius:0.5vw;\A 13: 			border-bottom:1px solid $op-blue;\A 14: 			margin-top:2vh;\A 15: 			display:flex;\A 16: 			justify-content:space-between;"; }
+  content: "Error: Undefined variable: \"$op-blue\".\A         on line 17 of _proj.scss\A \A 12: 		section.body{\A 13: 			display:flex;\A 14: \A 15: 			margin-top:2vh;\A 16: \A 17: 			border-top:1px solid $op-blue;\A 18: 			border-bottom:1px solid $op-blue;\A 19: 			border-bottom-right-radius:0.5vw;\A 20: \A 21: 			justify-content:space-between;\A 22: 			align-items:center;"; }

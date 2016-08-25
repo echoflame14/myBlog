@@ -434,28 +434,28 @@ header#mainHeader {
 
 #projPage {
   display: flex;
+  margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-start;
-  margin: 0 auto; }
+  align-items: flex-start; }
   #projPage .card {
     display: flex;
     flex-direction: column; }
     #projPage .card section.body {
-      border-top: 1px solid rgba(30, 170, 241, 0.37);
-      border-bottom-right-radius: 0.5vw;
-      border-bottom: 1px solid rgba(30, 170, 241, 0.37);
-      margin-top: 2vh;
       display: flex;
+      margin-top: 2vh;
+      border-top: 1px solid rgba(30, 170, 241, 0.37);
+      border-bottom: 1px solid rgba(30, 170, 241, 0.37);
+      border-bottom-right-radius: 0.5vw;
       justify-content: space-between;
       align-items: center; }
       #projPage .card section.body img {
+        transition: all 0.24s ease-in-out;
         border: 3px solid white;
-        box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7);
-        transition: all 0.24s ease-in-out; }
+        box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
       #projPage .card section.body img:hover {
-        transform: scale(1.01);
         cursor: pointer;
+        transform: scale(1.01);
         box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
       #projPage .card section.body article {
         display: flex;
@@ -465,62 +465,111 @@ header#mainHeader {
         #projPage .card section.body article h4 {
           padding-bottom: 1.4vh;
           text-shadow: -1px 1px rgba(3, 17, 27, 0.7);
-          font-size: 1.2em;
-          font-family: 'Julius Sans One', sans-serif; }
+          font-family: 'Julius Sans One', sans-serif;
+          font-size: 1.2em; }
         #projPage .card section.body article p {
-          padding-left: 0.5vw;
-          padding-bottom: 1.2vh; }
+          padding-bottom: 1.2vh;
+          padding-left: 0.5vw; }
 
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   #projPage {
-    width: 100vw;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 0 auto; }
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: flex-start; }
     #projPage .card {
-      margin: 0 auto;
-      margin-bottom: 8vh;
-      width: 80vw;
       display: flex;
       flex-direction: column;
+      width: 80vw;
+      margin: 0 auto;
+      margin-bottom: 8vh;
       justify-content: space-around; }
       #projPage .card section.body {
-        border-top: 1px solid rgba(30, 170, 241, 0.37);
-        border-bottom-right-radius: 0.5vw;
-        border-bottom: 1px solid rgba(30, 170, 241, 0.37);
-        margin-top: 2vh;
         display: flex;
         flex-direction: column;
+        margin-top: 2vh;
+        border-top: 1px solid rgba(30, 170, 241, 0.37);
+        border-bottom: 1px solid rgba(30, 170, 241, 0.37);
+        border-bottom-right-radius: 0.5vw;
         justify-content: space-between;
         align-items: center; }
         #projPage .card section.body img {
-          margin: 0 auto;
           width: 80vw;
+          margin: 0 auto;
+          transition: all 0.24s ease-in-out;
           border: 3px solid white;
-          box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7);
-          transition: all 0.24s ease-in-out; }
+          box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
         #projPage .card section.body img:hover {
-          transform: scale(1.01);
           cursor: pointer;
+          transform: scale(1.01);
           box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
         #projPage .card section.body article {
-          padding-top: 3vh;
-          width: 70vw;
           display: flex;
           flex-direction: column;
+          width: 70vw;
+          padding-top: 3vh;
+          padding-bottom: 2vh;
           justify-content: space-around;
-          align-items: flex-left;
-          padding-bottom: 2vh; }
+          align-items: flex-left; }
           #projPage .card section.body article h4 {
             padding-bottom: 1.4vh;
             text-shadow: -1px 1px rgba(3, 17, 27, 0.7);
-            font-size: 1.2em;
-            font-family: 'Julius Sans One', sans-serif; }
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 1.2em; }
           #projPage .card section.body article p {
-            padding-left: 0.5vw;
-            padding-bottom: 1.2vh; } }
+            padding-bottom: 1.2vh;
+            padding-left: 0.5vw; } }
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  #projPage {
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: flex-left; }
+    #projPage .card {
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+      margin: 0 auto;
+      margin-bottom: 8vh;
+      justify-content: space-around; }
+      #projPage .card section.body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+        border-top: 1px solid rgba(30, 170, 241, 0.37);
+        border-bottom: 1px solid rgba(30, 170, 241, 0.37);
+        border-bottom-right-radius: 0.5vw;
+        justify-content: space-between;
+        align-items: center; }
+        #projPage .card section.body img {
+          width: 40vw;
+          margin: 0 auto;
+          transition: all 0.24s ease-in-out;
+          border: 3px solid white;
+          box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
+        #projPage .card section.body img:hover {
+          cursor: pointer;
+          transform: scale(1.01);
+          box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
+        #projPage .card section.body article {
+          display: flex;
+          flex-direction: column;
+          width: 35vw;
+          padding-top: 3vh;
+          padding-bottom: 2vh;
+          justify-content: space-around;
+          align-items: flex-left; }
+          #projPage .card section.body article h4 {
+            padding-bottom: 1.4vh;
+            text-shadow: -1px 1px rgba(3, 17, 27, 0.7);
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 1.2em; }
+          #projPage .card section.body article p {
+            padding-bottom: 1.2vh;
+            padding-left: 0.5vw; } }
 #aboutPage {
   width: 95vw;
   margin: 0 auto;
