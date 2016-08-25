@@ -200,5 +200,62 @@
 	}
 }
 @media only screen and (min-width: 769px){
+	#projPage{
+		display:flex;
+		width:75vw;
+		margin:0 auto;
+		justify-content:space-around;
+		align-items:flex-left;
+		.card{
+			width:30vw;
+			display:flex;
+			float:left;
+			margin-bottom:10vh;
+			section.body{
+				display:flex;
 
+				margin-top:2vh;
+
+				border-top:3px solid $op-blue;
+				border-bottom:3px solid $op-blue;
+				border-bottom-right-radius:0.5vw;
+				border-top-right-radius:0.5vw;
+				justify-content:space-between;
+				align-items:center;
+				img{
+					transition:all 0.24s ease-in-out;
+					width:10vw;
+					border:3px solid white;
+					box-shadow:0.1vw 0.1vw 0.3vw $op-black;
+				}
+				img:hover{
+					cursor:pointer;
+					transform:scale(1.01);
+
+					box-shadow:0.3vw 0.3vw 0.5vw $sup-op-black;
+				}
+				article{
+					padding:3vh 0;
+					display:flex;
+					width:15vw;
+					flex-direction:column;
+
+					justify-content:space-around;
+					align-items:flex-left;
+					h4{
+						padding-bottom:1.4vh;
+
+						text-shadow:-1px 1px $op-black;
+
+						font-family: 'Julius Sans One', sans-serif;
+						font-size:1.2em;
+					}
+					p{
+						padding-bottom:1.2vh;
+						padding-left:0.5vw;
+					}
+				}
+			}
+		}
+	}
 }

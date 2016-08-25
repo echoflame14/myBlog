@@ -570,6 +570,51 @@ header#mainHeader {
           #projPage .card section.body article p {
             padding-bottom: 1.2vh;
             padding-left: 0.5vw; } }
+@media only screen and (min-width: 769px) {
+  #projPage {
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: flex-left; }
+    #projPage .card {
+      width: 30vw;
+      display: flex;
+      float: left;
+      margin-bottom: 10vh; }
+      #projPage .card section.body {
+        display: flex;
+        margin-top: 2vh;
+        border-top: 3px solid rgba(30, 170, 241, 0.37);
+        border-bottom: 3px solid rgba(30, 170, 241, 0.37);
+        border-bottom-right-radius: 0.5vw;
+        border-top-right-radius: 0.5vw;
+        justify-content: space-between;
+        align-items: center; }
+        #projPage .card section.body img {
+          transition: all 0.24s ease-in-out;
+          width: 10vw;
+          border: 3px solid white;
+          box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
+        #projPage .card section.body img:hover {
+          cursor: pointer;
+          transform: scale(1.01);
+          box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
+        #projPage .card section.body article {
+          padding: 3vh 0;
+          display: flex;
+          width: 15vw;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-left; }
+          #projPage .card section.body article h4 {
+            padding-bottom: 1.4vh;
+            text-shadow: -1px 1px rgba(3, 17, 27, 0.7);
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 1.2em; }
+          #projPage .card section.body article p {
+            padding-bottom: 1.2vh;
+            padding-left: 0.5vw; } }
 #aboutPage {
   width: 95vw;
   margin: 0 auto;
