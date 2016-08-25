@@ -9,7 +9,7 @@ header#mainHeader{
 	height:30vh;
 	margin-bottom:5vh;
 
-	background:$darkGray;
+	background:$op-black;
 
 	align-items:center;
 	h1{
@@ -20,7 +20,7 @@ header#mainHeader{
 		text-align:center;
 
 		color:white;
-		text-shadow: -2px 2px 1px $lowLight;
+		text-shadow: -2px 2px 1px $black;
 
 		font-family: 'Amatic SC', cursive;
 		font-size:2.5em;
@@ -30,17 +30,15 @@ header#mainHeader{
 	nav#mainNav{
 		width:100vw;
 		height:5vh;
-
-		border-bottom:2px solid $highlight;
-
+		border-bottom:2px solid $blue;
 		font-family: 'Titillium Web', sans-serif;
+		box-shadow:0 1vh 50px #3E4950;	
 		ul{
 			display:flex;
 
 			width:90vw;
 			height:5vh;
 			margin:0 auto;
-
 			justify-content:space-around;
 			li{
 				transition: all 240ms ease-in;
@@ -53,15 +51,16 @@ header#mainHeader{
 					height:5vh;
 					transition:all 0.222s ease-in;
 					text-decoration:none;
-
 					color:white;
 				}
 			}
 			a.active{
-				border:solid $lowLight 1px;
+				box-shadow:1px -1px $black;
+				border:solid $op-black 1px;
 				border-bottom:none;
 				border-top-right-radius:1vw;
-				background-color:$highlight;
+				background-color:$black;
+				color:black;
 			}
 		}
 	}

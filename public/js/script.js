@@ -32,9 +32,9 @@ cont.click(function(){
 //end jquery logic to anaimate navbar state
 
 //form validation for the user message form
-var val = $("#valBtn");
-var name = $("#name");
-var email = $("#email");
-val.click(function(){
-	alert(name.value());
-});
+// var val = $("#valBtn");
+// var name = $("#name");
+// var email = $("#email");
+// val.click(function(){
+// 	alert(name.value());
+// });

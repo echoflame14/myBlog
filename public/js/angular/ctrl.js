@@ -7,4 +7,7 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 	$scope.makePost = function(){
 		alert("hey");
 	};
+	$scope.fu = function(){
+		alert("fu");
+	};
 });

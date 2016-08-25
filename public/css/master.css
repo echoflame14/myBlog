@@ -243,16 +243,16 @@ ui-view {
         margin-bottom: 1vh;
         font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home .post img {
-      border: 1px rgba(1, 1, 1, 0.28) solid;
+      border: 1px rgba(3, 17, 27, 0.7) solid;
       border-bottom: none;
       border-left: none;
       border-radius: 2vw;
       border-bottom-left-radius: 0px;
-      box-shadow: -0.2vw 0.2vw 0.2vw rgba(26, 26, 26, 0.47); }
+      box-shadow: -0.2vw 0.2vw 0.4vw #03111b; }
     ui-view #home .post article {
       margin-bottom: 10vh;
       padding: 3vh 0;
-      border-bottom: 2px black solid; }
+      border-bottom: 2px #f6f6f6 solid; }
       ui-view #home .post article p {
         font-family: 'Sintony', sans-serif; }
       ui-view #home .post article i {
@@ -263,20 +263,20 @@ ui-view {
       margin-bottom: 3vh;
       padding: 2vh 0;
       cursor: pointer;
-      border: solid 3px #3B3A3A;
+      border: solid 3px #5190cb;
       font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home #aboutMe img {
       margin-bottom: 3vh;
-      border: 2px solid rgba(1, 1, 1, 0.28);
-      box-shadow: 1px 1px 5px rgba(26, 26, 26, 0.47);
+      border: 2px solid rgba(3, 17, 27, 0.7);
+      box-shadow: 1px 1px 5px #03111b;
       border-radius: 100%; }
     ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited {
       color: black;
       corsor: pointer; }
       ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p {
         margin: 0 auto;
-        padding: 0.3vw;
-        border: 1px #3B3A3A solid; }
+        padding: 0.5vw;
+        border: 2px #5190cb solid; }
     ui-view #home #aboutMe article p {
       font-family: helvetica; }
 
@@ -286,22 +286,23 @@ header#mainHeader {
   width: 100vw;
   height: 30vh;
   margin-bottom: 5vh;
-  background: #999999;
+  background: rgba(3, 17, 27, 0.7);
   align-items: center; }
   header#mainHeader h1 {
     width: 100vw;
     height: 25vh;
     text-align: center;
     color: white;
-    text-shadow: -2px 2px 1px rgba(1, 1, 1, 0.28);
+    text-shadow: -2px 2px 1px #03111b;
     font-family: 'Amatic SC', cursive;
     font-size: 2.5em;
     line-height: 25vh; }
   header#mainHeader nav#mainNav {
     width: 100vw;
     height: 5vh;
-    border-bottom: 2px solid #3B3A3A;
-    font-family: 'Titillium Web', sans-serif; }
+    border-bottom: 2px solid #5190cb;
+    font-family: 'Titillium Web', sans-serif;
+    box-shadow: 0 1vh 50px #3E4950; }
     header#mainHeader nav#mainNav ul {
       display: flex;
       width: 90vw;
@@ -321,10 +322,12 @@ header#mainHeader {
           text-decoration: none;
           color: white; }
       header#mainHeader nav#mainNav ul a.active {
-        border: solid rgba(1, 1, 1, 0.28) 1px;
+        box-shadow: 1px -1px #03111b;
+        border: solid rgba(3, 17, 27, 0.7) 1px;
         border-bottom: none;
         border-top-right-radius: 1vw;
-        background-color: #3B3A3A; }
+        background-color: #03111b;
+        color: black; }
 
 #contactPage {
   display: flex;
@@ -334,7 +337,7 @@ header#mainHeader {
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
     border-bottom-right-radius: 0.2vw;
-    background-color: #dfdbdb;
+    background-color: #f6f6f6;
     box-shadow: 0.2vw 0.2vw 0.25vw rgba(26, 26, 26, 0.47); }
     #contactPage #deets .bar {
       position: absolute;
@@ -371,7 +374,7 @@ header#mainHeader {
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
-    background-color: #dfdbdb;
+    background-color: #f6f6f6;
     box-shadow: 0.2vw 0.2vw 0.25vw rgba(26, 26, 26, 0.47); }
     #contactPage #message .bar {
       position: absolute;
@@ -423,79 +426,81 @@ header#mainHeader {
       border-radius: 0.3vw;
       background-color: #3B3A3A; }
 
-#about {
+#aboutPage {
   width: 95vw;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; }
-  #about #aboutMe {
+  justify-content: space-between;
+  margin-bottom: 5vh; }
+  #aboutPage #aboutMe {
     width: 45vw; }
-    #about #aboutMe header.mainHeader {
+    #aboutPage #aboutMe header.mainHeader {
       width: 45vw;
       margin: 0 auto;
       display: flex;
       justify-content: space-around;
       align-items: flex-start; }
-      #about #aboutMe header.mainHeader img {
+      #aboutPage #aboutMe header.mainHeader img {
         width: 15vw;
-        border-radius: 100%; }
-      #about #aboutMe header.mainHeader h1 {
+        border-radius: 100%;
+        box-shadow: 1px 1px 12px #03111b; }
+      #aboutPage #aboutMe header.mainHeader h1 {
         line-height: 5vh;
         height: 5vh;
         width: 25vw;
         text-align: center;
-        border: solid 2px #3B3A3A; }
-    #about #aboutMe article {
+        border: solid 2px #5190cb; }
+    #aboutPage #aboutMe article {
       margin-top: 2vh;
       float: right;
       width: 40vw; }
-      #about #aboutMe article header {
+      #aboutPage #aboutMe article header {
         border-top-left-radius: 1vw;
         display: flex;
         justify-content: space-between;
         width: 40vw;
         margin: 0 auto;
         height: 5vh;
-        border: 2px solid white;
+        border: 2px solid #03111b;
         border-bottom: none; }
-        #about #aboutMe article header section {
+        #aboutPage #aboutMe article header section {
           color: white;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: space-around;
-          border: solid white 2px;
+          border: solid #03111b 2px;
           border-bottom: none;
           border-top: none;
           width: 19.5vw;
           text-align: center;
-          background: #3B3A3A; }
-        #about #aboutMe article header section.left {
+          background: rgba(3, 17, 27, 0.7); }
+        #aboutPage #aboutMe article header section.left {
           border-top-right-radius: 1vw;
           border-left: none;
           border-top-left-radius: 1vw; }
-        #about #aboutMe article header section.right {
+        #aboutPage #aboutMe article header section.right {
           border-top-left-radius: 1vw;
           border-right: none; }
-      #about #aboutMe article article {
+      #aboutPage #aboutMe article article {
         margin-top: -1px; }
-        #about #aboutMe article article p {
+        #aboutPage #aboutMe article article p {
           width: 40vw;
           margin: 0 auto;
           padding: 1vh 1vw;
-          border: 2px solid white;
+          border: 2px solid #03111b;
           border-top: none;
           border-left: none;
           border-bottom-right-radius: 1vw;
           line-height: 1.4em;
           font-family: 'Titillium Web', sans-serif; }
-        #about #aboutMe article article p.hidden {
+        #aboutPage #aboutMe article article p.hidden {
           display: none; }
-  #about #skills {
+  #aboutPage #skills {
     width: 45vw;
     display: flex;
     flex-direction: column; }
-    #about #skills header {
+    #aboutPage #skills header {
       width: 45vw;
       margin: 0 auto;
       text-align: center;
@@ -503,54 +508,76 @@ header#mainHeader {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      border: 2px black solid;
+      border: 2px #5190cb solid;
       margin-bottom: 2vh; }
-    #about #skills h4.fEnd {
+    #aboutPage #skills h4.fEnd {
       width: 40vw;
       margin: 0 auto;
       font-size: 1.3em;
       margin-bottom: 1vw;
       font-family: 'Julius Sans One', sans-serif; }
-    #about #skills .frontEnd {
+    #aboutPage #skills .frontEnd {
       border-top-right-radius: 2vw;
       padding-top: 2vh;
-      border-top: 1px solid rgba(1, 1, 1, 0.28);
-      border-right: 1px solid rgba(1, 1, 1, 0.28);
+      border-top: 1px solid #03111b;
+      border-right: 1px solid #03111b;
       margin: 0 auto;
       width: 40vw;
       display: flex;
       height: 30vh;
       justify-content: space-between; }
-      #about #skills .frontEnd img {
+      #aboutPage #skills .frontEnd img {
         width: 10vw;
         border-radius: 1vw; }
-      #about #skills .frontEnd ul {
+      #aboutPage #skills .frontEnd ul {
         width: 25vw; }
-        #about #skills .frontEnd ul li {
+        #aboutPage #skills .frontEnd ul li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           margin-bottom: 2vh; }
-    #about #skills h4.bEnd {
+          #aboutPage #skills .frontEnd ul li h4 {
+            width: 22vw;
+            text-align: left;
+            padding-left: 1.5vw;
+            font-family: 'Julius Sans One', sans-serif; }
+          #aboutPage #skills .frontEnd ul li img {
+            width: 1.5vw;
+            border-radius: none; }
+    #aboutPage #skills h4.bEnd {
       width: 40vw;
       margin: 0 auto;
       font-size: 1.8em;
       margin-bottom: 1vw;
       margin-top: 3vh;
       font-family: 'VT323', monospace; }
-    #about #skills .backEnd {
+    #aboutPage #skills .backEnd {
       border-top-right-radius: 2vw;
       padding-top: 2vh;
-      border-top: 1px solid rgba(1, 1, 1, 0.28);
-      border-right: 1px solid rgba(1, 1, 1, 0.28);
+      border-top: 1px solid #03111b;
+      border-right: 1px solid #03111b;
       margin: 0 auto;
       width: 40vw;
       display: flex;
       height: 30vh;
       justify-content: space-between; }
-      #about #skills .backEnd img {
+      #aboutPage #skills .backEnd img {
         width: 10vw;
         border-radius: 1vw; }
-      #about #skills .backEnd ul {
+      #aboutPage #skills .backEnd ul {
         width: 25vw; }
-        #about #skills .backEnd ul li {
+        #aboutPage #skills .backEnd ul li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           margin-bottom: 2vh; }
+          #aboutPage #skills .backEnd ul li h4 {
+            width: 22vw;
+            text-align: left;
+            padding-left: 1.5vw;
+            font-family: 'Julius Sans One', sans-serif; }
+          #aboutPage #skills .backEnd ul li img {
+            width: 1.5vw;
+            border-radius: none; }
 
 /*# sourceMappingURL=master.css.map */

@@ -21,18 +21,18 @@ ui-view{
 				}
 			}
 			img{
-				border:1px $lowLight solid;
+				border:1px $op-black solid;
 				border-bottom:none;
 				border-left:none;
 				border-radius:2vw;
 				border-bottom-left-radius: 0px;
-				box-shadow:-0.2vw 0.2vw 0.2vw $highlight-shadow;
+				box-shadow:-0.2vw 0.2vw 0.4vw $black;
 			}
 			article{
 				margin-bottom: 10vh;
 				padding:3vh 0;
 
-				border-bottom: 2px black solid;
+				border-bottom: 2px $white solid;
 
 				p{
 					font-family: 'Sintony', sans-serif;
@@ -48,17 +48,16 @@ ui-view{
 			header{
 				margin-bottom:3vh;
 				padding:2vh 0;
-
 				cursor:pointer;
 
-				border: solid 3px $highlight;
+				border: solid 3px $blue;
 
 				font-family: 'Roboto Condensed', sans-serif;
 			}
 			img{
 				margin-bottom:3vh;
-				border:2px solid $lowLight;
-				box-shadow: 1px 1px 5px $highlight-shadow;
+				border:2px solid $op-black;
+				box-shadow: 1px 1px 5px $black;
 				border-radius:100%;
 			}
 			article{
@@ -68,10 +67,10 @@ ui-view{
 					corsor:pointer;
 					p{
 						margin:0 auto;
-						padding:0.3vw;
+						padding:0.5vw;
 						//width assigned with queries
 
-						border:1px $highlight solid;
+						border:2px $blue solid;
 					}
 				}
 				p{

@@ -1,8 +1,9 @@
-#about{
+#aboutPage{
 	width:95vw;
 	margin:0 auto;
 	display:flex;
 	justify-content:space-between;
+	margin-bottom:5vh;
 	#aboutMe{
 		width:45vw;
 		header.mainHeader{
@@ -14,13 +15,14 @@
 			img{
 				width:15vw;
 				border-radius:100%;
+				box-shadow:1px 1px 12px $black;
 			}
 			h1{
 				line-height:5vh;
 				height:5vh;
 				width:25vw;
 				text-align:center;
-				border:solid 2px $black;
+				border:solid 2px $blue;
 			}
 		}
 		article{
@@ -34,7 +36,7 @@
 				width:40vw;
 				margin:0 auto;
 				height:5vh;
-				border:2px solid white;
+				border:2px solid $black;
 				border-bottom:none;
 				section{
 					color:white;
@@ -42,12 +44,12 @@
 					display:flex;
 					align-items:center;
 					justify-content:space-around;
-					border:solid white 2px;
+					border:solid $black 2px;
 					border-bottom:none;
 					border-top:none;
 					width:19.5vw;
 					text-align:center;
-					background:$highlight;
+					background:$op-black;
 				}
 				section.left{
 					border-top-right-radius:1vw;
@@ -65,7 +67,7 @@
 					width:40vw;
 					margin:0 auto;
 					padding:1vh 1vw;
-					border:2px solid white;
+					border:2px solid $black;
 					border-top:none;
 					border-left:none;
 					border-bottom-right-radius:1vw;
@@ -96,7 +98,7 @@
 			display:flex;
 			justify-content:space-around;
 			align-items:center;
-			border:2px black solid;
+			border:2px $blue solid;
 			margin-bottom:2vh;
 		}
 		h4.fEnd{
@@ -109,8 +111,8 @@
 		.frontEnd{
 			border-top-right-radius:2vw;
 			padding-top:2vh;
-			border-top:1px solid $lowLight;
-			border-right:1px solid $lowLight;
+			border-top:1px solid $black;
+			border-right:1px solid $black;
 			margin: 0 auto;
 			width:40vw;
 			display:flex;
@@ -123,7 +125,20 @@
 			ul{
 				width:25vw;
 				li{
+					display:flex;
+					justify-content:space-between;
+					align-items:center;
 					margin-bottom:2vh;
+					h4{
+						width:22vw;
+						text-align:left;
+						padding-left:1.5vw;
+						font-family:'Julius Sans One', sans-serif;
+					}
+					img{
+						width:1.5vw;
+						border-radius:none;
+					}
 				}
 			}
 		}
@@ -138,8 +153,8 @@
 		.backEnd{
 			border-top-right-radius:2vw;
 			padding-top:2vh;
-			border-top:1px solid $lowLight;
-			border-right:1px solid $lowLight;
+			border-top:1px solid $black;
+			border-right:1px solid $black;
 			margin: 0 auto;
 			width:40vw;
 			display:flex;
@@ -152,7 +167,20 @@
 			ul{
 				width:25vw;
 				li{
+					display:flex;
+					justify-content:space-between;
+					align-items:center;
 					margin-bottom:2vh;
+					h4{
+						width:22vw;
+						text-align:left;
+						padding-left:1.5vw;
+						font-family:'Julius Sans One', sans-serif;
+					}
+					img{
+						width:1.5vw;
+						border-radius:none;
+					}
 				}
 			}
 		}
