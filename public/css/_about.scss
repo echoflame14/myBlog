@@ -1,220 +1,666 @@
-#aboutPage{
-	width:95vw;
-	margin:0 auto;
-	display:flex;
-	justify-content:space-between;
-	margin-bottom:5vh;
-	#aboutMe{
-		width:45vw;
-		header.mainHeader{
-			width:45vw;
-			margin:0 auto;
-			display:flex;
-			justify-content:space-around;
-			align-items:flex-start;
 
-			img{
-				width:15vw;
-				border-radius:100%;
-				box-shadow:1px 1px 12px $trout;
-				border:2px white solid;
-			}
-			h1{
-				font-family: 'Julius Sans One', sans-serif;
-				background:$op-blue;
-				border-top-left-radius:0.3vw;
-				border-bottom-left-radius:0.3vw;
-				border:solid white 2px;
-				border-right:none;
-				line-height:5vh;
-				height:5vh;
-				width:25vw;
-				color:white;
-				text-shadow:0.04em 0.04em 0.1em  black;
-				text-align:center;
-				font-size:1.2em;
-			}
-			section{
-				article{
-					margin:0 auto;
-					width:23vw;
-					display:flex;
-					flex-direction:column;
-					align-items:center;
-					justify-content:space-around;
-					h2{
-						border-bottom:0.05em solid $op-blue;
-						margin-top:5vh;
-						margin-bottom: 2vh;
-						font-size:2em;
-
-					}
-					h4{
-						padding-bottom:0.6vh;
-					}
-				}
-			}
-		}
-		section.body{
-			width:25vw;
-			float:right;
-			display:flex;
-			margin-right:1vw;
-			article{
-				ul{
-					width:25vw;
-					display:flex;
-					justify-content:space-around;
-					align-items:center;
-					li{
-						border:1px solid $op-black;
-						border-radius:0.2vw;
-						color:white;
-						padding:0.7vw;
-						background-color:$sup-op-black;
-						width:6vw;
-						text-align:center;
-						cursor:pointer;
-						transition:all 0.15s ease-in-out;
-					}
-					li:hover{
-						transform:scale(1.02);
-					}
-				}
-			}
-		}
-
-	}
-	#skills{
-		margin-top:5vh;
-		width:45vw;
+@media only screen and (max-width: 425px) and (min-width:0px){
+	#aboutPage{
+		width:100vw;
 		display:flex;
 		flex-direction:column;
-		header{
-			border:solid $op-blue 2px;
-			border-left:none;
-			width:45vw;
-			margin:0 auto;
-			text-align:center;
-			height:5vh;
-			display:flex;
-			justify-content:space-around;
-			align-items:center;
-			font-size:2em;
-			border-top-right-radius:0.3vw;
-			border-bottom-right-radius:0.3vw;
-			font-family: Times;
-			margin-bottom:2vh;
 
-		}
-		h4.fEnd{
-			width:40vw;
+		justify-content:space-between;
+		margin-bottom:5vh;
+		#aboutMe{
+			width:95vw;
 			margin:0 auto;
-			font-size:1.3em;
-			margin-bottom:1vw;
-			font-family: 'Julius Sans One', sans-serif;
-		}
-		.frontEnd:hover{
-			transform:scale(1.05);
-			box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
-		}
-		.frontEnd{
-			transition:all 0.2s ease-in-out;
-			box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
-			background:white;
-			border-top-right-radius:2vw;
-			padding-top:2vh;
-			border-top:1px solid $blue;
-			border-right:1px solid $blue;
-			margin: 0 auto;
-			width:40vw;
-			display:flex;
-			height:30vh;
-			justify-content:space-between;
-			align-items:flex-start;
-			border-bottom-left-radius:0.25vw;
-			img.disp{
-				margin-left:2vw;
-				width:8vw;
-				border-bottom-right-radius:1vw;
-				padding-top:0;
-			}
-			ul{
-				width:23vw;
-				margin-right:2vw;
+			header.mainHeader{
+				width:90vw;
+				margin:0 auto;
 				display:flex;
+				justify-content:space-around;
 				align-items:flex-start;
-				flex-wrap:wrap;
-				justify-content:space-between;
-				li{
-					width:10vw;
-					display:flex;
-					justify-content:space-between;
-					align-items:center;
-					margin-bottom:2vh;
-					h4{
+				img{
+					width:40vw;
+					border-radius:100%;
+					box-shadow:1px 1px 12px $trout;
+					border:2px white solid;
+				}
+				section{
+					article{
+						margin:0 auto;
+						width:40vw;
+						display:flex;
+						flex-direction:column;
+						align-items:center;
+						justify-content:space-around;
+						h2{
+							border-bottom:0.05em solid $op-blue;
+							margin-top:5vh;
+							margin-bottom: 2vh;
+							font-size:1.3em;
 
-						width:22vw;
-						text-align:left;
-						padding-left:1.5vw;
-						font-family:'Julius Sans One', sans-serif;
+						}
+						h4{
+							font-size:0.9em;
+
+							padding-bottom:0.6vh;
+						}
 					}
-					img{
-						width:1.5vw;
-						border-radius:none;
+				}
+			}
+			section.body{
+				width:95vw;
+				float:right;
+				display:flex;
+				margin-right:1vw;
+				article{
+					ul{
+						width:90vw;
+						display:flex;
+						justify-content:space-around;
+						align-items:center;
+						li{
+							border:1px solid $op-black;
+							border-radius:0.2vw;
+							color:white;
+							padding:0.7vw;
+							background-color:$sup-op-black;
+							width:25vw;
+							text-align:center;
+							cursor:pointer;
+							transition:all 0.15s ease-in-out;
+							margin-top:3vh;
+						}
+						li:hover{
+							transform:scale(1.02);
+						}
+					}
+				}
+			}
+
+		}
+		#skills{
+			width:95vw;
+			display:flex;
+			flex-direction:column;
+			margin:0 auto;
+			margin-top:7vh;
+			header{
+				border:solid $op-blue 2px;
+				width:90vw;
+				margin:0 auto;
+				text-align:center;
+				height:5vh;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				font-size:2em;
+				border-top-right-radius:0.3vw;
+				border-bottom-right-radius:0.3vw;
+				font-family: Times;
+				margin-bottom:2vh;
+
+			}
+			h4.fEnd{
+				width:40vw;
+				text-align:center;
+				margin:0 auto;
+				margin-top:2vh;
+				font-size:1.3em;
+				margin-bottom:1vw;
+				font-family: 'Julius Sans One', sans-serif;
+			}
+			.frontEnd:hover{
+				transform:scale(1.05);
+				box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
+			}
+			.frontEnd{
+				transition:all 0.2s ease-in-out;
+				box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+				background:white;
+				border-top-right-radius:2vw;
+				padding-top:2vh;
+				border-top:1px solid $blue;
+				border-right:1px solid $blue;
+				margin: 0 auto;
+				width:90vw;
+				display:flex;
+				justify-content:space-between;
+				align-items:flex-start;
+				border-bottom-left-radius:0.25vw;
+				img.disp{
+					margin-left:2vw;
+					width:20vw;
+					border-bottom-right-radius:1vw;
+					padding-top:0;
+				}
+				ul{
+					width:60vw;
+					display:flex;
+					align-items:flex-start;
+					flex-wrap:wrap;
+					justify-content:space-between;
+					li{
+						width:50vw;
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						margin-bottom:2vh;
+						h4{
+
+							width:40vw;
+							text-align:left;
+							padding-left:1.5vw;
+							font-family:'Julius Sans One', sans-serif;
+						}
+						img{
+							width:5vw;
+							border-radius:none;
+						}
+					}
+				}
+			}
+			h4.bEnd{
+				width:90vw;
+				text-align:center;
+				margin:0 auto;
+				font-size:1.3em;
+				margin-bottom:1vw;
+				margin-top:3vh;
+				font-family: 'Julius Sans One', sans-serif;
+			}
+			.backEnd:hover{
+				transform:scale(1.05);
+				box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
+			}
+			.backEnd{
+				transition:all 0.2s ease-in-out;
+				box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+				background:white;
+				border-top-right-radius:2vw;
+				padding-top:2vh;
+				border-top:1px solid $blue;
+				border-right:1px solid $blue;
+				margin: 0 auto;
+				width:90vw;
+				display:flex;
+				justify-content:space-between;
+				align-items:flex-start;
+				padding-bottom:2vh;
+				img.disp{
+					margin-left:2vw;
+					width:20vw;
+					border-bottom-right-radius:1vw;
+					padding-top:0;
+				}
+				ul{
+					width:60vw;
+					li{
+						width:50vw;
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						margin-bottom:2vh;
+						h4{
+
+							width:40vw;
+							text-align:left;
+							padding-left:1.5vw;
+							font-family:'Julius Sans One', sans-serif;
+						}
+						img{
+							width:5vw;
+							border-radius:none;
+						}
 					}
 				}
 			}
 		}
-		h4.bEnd{
-			width:40vw;
+	}
+}
+@media only screen and (max-width: 768px) and (min-width: 426px){
+	#aboutPage{
+		width:100vw;
+		display:flex;
+		flex-direction:column;
+
+		justify-content:space-between;
+		margin-bottom:5vh;
+		#aboutMe{
+			width:95vw;
 			margin:0 auto;
-			font-size:1.3em;
-			margin-bottom:1vw;
-			margin-top:3vh;
-			font-family: 'Julius Sans One', sans-serif;
+			header.mainHeader{
+				width:90vw;
+				margin:0 auto;
+				display:flex;
+				justify-content:space-around;
+				align-items:flex-start;
+				img{
+					width:40vw;
+					border-radius:100%;
+					box-shadow:1px 1px 12px $trout;
+					border:2px white solid;
+				}
+				section{
+
+					article{
+
+
+						margin:0 auto;
+						width:40vw;
+						display:flex;
+						flex-direction:column;
+						align-items:center;
+						justify-content:space-around;
+						margin-top:5vh;
+						h2{
+							border-bottom:0.05em solid $op-blue;
+							margin-bottom: 2vh;
+							font-size:1.3em;
+
+						}
+						h4{
+							font-size:0.9em;
+
+							padding-bottom:0.6vh;
+						}
+					}
+				}
+			}
+			section.body{
+				width:95vw;
+				margin:0 auto;
+				display:flex;
+				align-items:center;
+				justify-content:space-around;
+				margin-right:1vw;
+				article{
+					ul{
+
+						margin:0 auto;
+						width:90vw;
+						display:flex;
+						justify-content:space-around;
+						align-items:center;
+						li{
+							border:1px solid $op-black;
+							border-radius:0.2vw;
+							color:white;
+							padding:0.7vw;
+							background-color:$sup-op-black;
+							width:25vw;
+							text-align:center;
+							cursor:pointer;
+							transition:all 0.15s ease-in-out;
+							margin-top:3vh;
+						}
+						li:hover{
+							transform:scale(1.02);
+						}
+					}
+				}
+			}
+
 		}
-		.backEnd:hover{
-			transform:scale(1.05);
-			box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
-		}
-		.backEnd{
-			transition:all 0.2s ease-in-out;
-			box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
-			background:white;
-			border-top-right-radius:2vw;
-			padding-top:2vh;
-			border-top:1px solid $blue;
-			border-right:1px solid $blue;
-			margin: 0 auto;
-			width:40vw;
+		#skills{
+			width:95vw;
 			display:flex;
-			height:30vh;
-			justify-content:space-between;
-			padding-bottom:2vh;
-			img.disp{
-				margin-left:2vw;
-				width:8vw;
-				border-bottom-right-radius:1vw;
-				padding-top:0;
+			flex-direction:column;
+			margin:0 auto;
+			margin-top:7vh;
+			header{
+				border:solid $op-blue 2px;
+				width:90vw;
+				margin:0 auto;
+				text-align:center;
+				height:5vh;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				font-size:2em;
+				border-top-right-radius:0.3vw;
+				border-bottom-right-radius:0.3vw;
+				font-family: Times;
+				margin-bottom:2vh;
 
 			}
-			ul{
-				width:25vw;
-				li{
+			h4.fEnd{
+				width:40vw;
+				text-align:center;
+				margin:0 auto;
+				margin-top:2vh;
+				font-size:1.3em;
+				margin-bottom:1vw;
+				font-family: 'Julius Sans One', sans-serif;
+			}
+			.frontEnd:hover{
+				transform:scale(1.05);
+				box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
+			}
+			.frontEnd{
+				transition:all 0.2s ease-in-out;
+				box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+				background:white;
+				border-top-right-radius:2vw;
+				padding-top:2vh;
+				border-top:1px solid $blue;
+				border-right:1px solid $blue;
+				margin: 0 auto;
+				width:90vw;
+				display:flex;
+				justify-content:space-between;
+				align-items:flex-start;
+				border-bottom-left-radius:0.25vw;
+				img.disp{
+					margin-left:2vw;
+					width:20vw;
+					border-bottom-right-radius:1vw;
+					padding-top:0;
+				}
+				ul{
+					width:60vw;
 					display:flex;
+					align-items:flex-start;
+					flex-wrap:wrap;
 					justify-content:space-between;
-					align-items:center;
-					margin-bottom:2vh;
-					h4{
-						width:22vw;
-						text-align:left;
-						padding-left:1.5vw;
-						font-family:'Julius Sans One', sans-serif;
+					li{
+						width:50vw;
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						margin-bottom:2vh;
+						h4{
+
+							width:40vw;
+							text-align:left;
+							padding-left:1.5vw;
+							font-family:'Julius Sans One', sans-serif;
+						}
+						img{
+							width:5vw;
+							border-radius:none;
+						}
 					}
-					img{
-						width:1.5vw;
-						border-radius:none;
+				}
+			}
+			h4.bEnd{
+				width:90vw;
+				text-align:center;
+				margin:0 auto;
+				font-size:1.3em;
+				margin-bottom:1vw;
+				margin-top:3vh;
+				font-family: 'Julius Sans One', sans-serif;
+			}
+			.backEnd:hover{
+				transform:scale(1.05);
+				box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
+			}
+			.backEnd{
+				transition:all 0.2s ease-in-out;
+				box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+				background:white;
+				border-top-right-radius:2vw;
+				padding-top:2vh;
+				border-top:1px solid $blue;
+				border-right:1px solid $blue;
+				margin: 0 auto;
+				width:90vw;
+				display:flex;
+				justify-content:space-between;
+				align-items:flex-start;
+				padding-bottom:2vh;
+				img.disp{
+					margin-left:2vw;
+					width:20vw;
+					border-bottom-right-radius:1vw;
+					padding-top:0;
+				}
+				ul{
+					width:60vw;
+					li{
+						width:50vw;
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						margin-bottom:2vh;
+						h4{
+
+							width:40vw;
+							text-align:left;
+							padding-left:1.5vw;
+							font-family:'Julius Sans One', sans-serif;
+						}
+						img{
+							width:5vw;
+							border-radius:none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 769px){
+	#aboutPage{
+		width:95vw;
+		margin:0 auto;
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:5vh;
+		#aboutMe{
+			width:45vw;
+			header.mainHeader{
+				width:45vw;
+				margin:0 auto;
+				display:flex;
+				justify-content:space-around;
+				align-items:flex-start;
+
+				img{
+					width:15vw;
+					border-radius:100%;
+					box-shadow:1px 1px 12px $trout;
+					border:2px white solid;
+				}
+				h1{
+					font-family: 'Julius Sans One', sans-serif;
+					background:$op-blue;
+					border-top-left-radius:0.3vw;
+					border-bottom-left-radius:0.3vw;
+					border:solid white 2px;
+					border-right:none;
+					line-height:5vh;
+					height:5vh;
+					width:25vw;
+					color:white;
+					text-shadow:0.04em 0.04em 0.1em  black;
+					text-align:center;
+					font-size:1.2em;
+				}
+				section{
+					article{
+						margin:0 auto;
+						width:23vw;
+						display:flex;
+						flex-direction:column;
+						align-items:center;
+						justify-content:space-around;
+						h2{
+							border-bottom:0.05em solid $op-blue;
+							margin-top:5vh;
+							margin-bottom: 2vh;
+							font-size:2em;
+
+						}
+						h4{
+							padding-bottom:0.6vh;
+						}
+					}
+				}
+			}
+			section.body{
+				width:25vw;
+				float:right;
+				display:flex;
+				margin-right:1vw;
+				article{
+					ul{
+						width:25vw;
+						display:flex;
+						justify-content:space-around;
+						align-items:center;
+						li{
+							display:flex;
+							align-items:center;
+							justify-content:space-around;
+							border:1px solid $op-black;
+							border-radius:0.2vw;
+							color:white;
+							padding:0.7vw;
+							background-color:$sup-op-black;
+							width:8vw;
+							text-align:center;
+							cursor:pointer;
+							transition:all 0.15s ease-in-out;
+							font-size:0.82em;
+						}
+						li:hover{
+							transform:scale(1.02);
+						}
+					}
+				}
+			}
+
+		}
+		#skills{
+			margin-top:5vh;
+			width:45vw;
+			display:flex;
+			flex-direction:column;
+			header{
+				border:solid $op-blue 2px;
+
+				width:45vw;
+				margin:0 auto;
+				text-align:center;
+				height:5vh;
+				display:flex;
+				justify-content:space-around;
+				align-items:center;
+				font-size:2em;
+				border-top-right-radius:0.3vw;
+				border-bottom-right-radius:0.3vw;
+				font-family: Times;
+				margin-bottom:2vh;
+
+			}
+			h4.fEnd{
+				width:40vw;
+				margin:0 auto;
+				font-size:1.3em;
+				margin-bottom:1vw;
+				font-family: 'Julius Sans One', sans-serif;
+			}
+			.frontEnd:hover{
+				transform:scale(1.05);
+				box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
+			}
+			.frontEnd{
+				transition:all 0.2s ease-in-out;
+				box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+				background:white;
+				border-top-right-radius:2vw;
+				padding-top:2vh;
+				border-top:1px solid $blue;
+				border-right:1px solid $blue;
+				margin: 0 auto;
+				width:40vw;
+				display:flex;
+				justify-content:space-between;
+				align-items:flex-start;
+				border-bottom-left-radius:0.25vw;
+				img.disp{
+					margin-left:2vw;
+					width:8vw;
+					border-bottom-right-radius:1vw;
+					padding-top:0;
+				}
+				ul{
+					width:23vw;
+					margin-right:2vw;
+					display:flex;
+					flex-direction:column;
+					align-items:flex-start;
+					justify-content:space-between;
+					li{
+						width:23vw;
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						margin-bottom:2vh;
+						h4{
+
+							width:22vw;
+							text-align:left;
+							padding-left:1.5vw;
+							font-family:'Julius Sans One', sans-serif;
+						}
+						img{
+							width:1.5vw;
+							border-radius:none;
+						}
+					}
+				}
+			}
+			h4.bEnd{
+				width:40vw;
+				margin:0 auto;
+				font-size:1.3em;
+				margin-bottom:1vw;
+				margin-top:3vh;
+				font-family: 'Julius Sans One', sans-serif;
+			}
+			.backEnd:hover{
+				transform:scale(1.05);
+				box-shadow:0.5vw 0.5vw 1vw $sup-op-black;
+			}
+			.backEnd{
+				transition:all 0.2s ease-in-out;
+				box-shadow:0.1vw 0.1vw 0.2vw $sup-op-black;
+				background:white;
+				border-top-right-radius:2vw;
+				padding-top:2vh;
+				border-top:1px solid $blue;
+				border-right:1px solid $blue;
+				margin: 0 auto;
+				width:40vw;
+				display:flex;
+				justify-content:space-between;
+				align-items:flex-start;
+				border-bottom-left-radius:0.25vw;
+				padding-bottom:3vh;
+				img.disp{
+					margin-left:2vw;
+					width:8vw;
+					border-bottom-right-radius:1vw;
+
+				}
+				ul{
+					width:23vw;
+					li{
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						margin-bottom:2vh;
+						h4{
+
+							width:22vw;
+							text-align:left;
+							padding-left:1.5vw;
+							font-family:'Julius Sans One', sans-serif;
+						}
+						img{
+							width:1.5vw;
+							border-radius:none;
+						}
 					}
 				}
 			}

@@ -622,188 +622,544 @@ header#mainHeader {
           #projPage .card section.body article p {
             padding-bottom: 1.2vh;
             padding-left: 0.5vw; } }
-#aboutPage {
-  width: 95vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5vh; }
-  #aboutPage #aboutMe {
-    width: 45vw; }
-    #aboutPage #aboutMe header.mainHeader {
-      width: 45vw;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start; }
-      #aboutPage #aboutMe header.mainHeader img {
-        width: 15vw;
-        border-radius: 100%;
-        box-shadow: 1px 1px 12px #4B545B;
-        border: 2px white solid; }
-      #aboutPage #aboutMe header.mainHeader h1 {
-        font-family: 'Julius Sans One', sans-serif;
-        background: rgba(30, 170, 241, 0.37);
-        border-top-left-radius: 0.3vw;
-        border-bottom-left-radius: 0.3vw;
-        border: solid white 2px;
-        border-right: none;
-        line-height: 5vh;
-        height: 5vh;
-        width: 25vw;
-        color: white;
-        text-shadow: 0.04em 0.04em 0.1em  black;
-        text-align: center;
-        font-size: 1.2em; }
-      #aboutPage #aboutMe header.mainHeader section article {
+@media only screen and (max-width: 425px) and (min-width: 0px) {
+  #aboutPage {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5vh; }
+    #aboutPage #aboutMe {
+      width: 95vw;
+      margin: 0 auto; }
+      #aboutPage #aboutMe header.mainHeader {
+        width: 90vw;
         margin: 0 auto;
-        width: 23vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around; }
-        #aboutPage #aboutMe header.mainHeader section article h2 {
-          border-bottom: 0.05em solid rgba(30, 170, 241, 0.37);
-          margin-top: 5vh;
-          margin-bottom: 2vh;
-          font-size: 2em; }
-        #aboutPage #aboutMe header.mainHeader section article h4 {
-          padding-bottom: 0.6vh; }
-    #aboutPage #aboutMe section.body {
-      width: 25vw;
-      float: right;
-      display: flex;
-      margin-right: 1vw; }
-      #aboutPage #aboutMe section.body article ul {
-        width: 25vw;
         display: flex;
         justify-content: space-around;
-        align-items: center; }
-        #aboutPage #aboutMe section.body article ul li {
-          border: 1px solid rgba(3, 17, 27, 0.7);
-          border-radius: 0.2vw;
-          color: white;
-          padding: 0.7vw;
-          background-color: rgba(3, 17, 27, 0.4);
-          width: 6vw;
-          text-align: center;
-          cursor: pointer;
-          transition: all 0.15s ease-in-out; }
-        #aboutPage #aboutMe section.body article ul li:hover {
-          transform: scale(1.02); }
-  #aboutPage #skills {
-    margin-top: 5vh;
-    width: 45vw;
-    display: flex;
-    flex-direction: column; }
-    #aboutPage #skills header {
-      border: solid rgba(30, 170, 241, 0.37) 2px;
-      border-left: none;
-      width: 45vw;
-      margin: 0 auto;
-      text-align: center;
-      height: 5vh;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      font-size: 2em;
-      border-top-right-radius: 0.3vw;
-      border-bottom-right-radius: 0.3vw;
-      font-family: Times;
-      margin-bottom: 2vh; }
-    #aboutPage #skills h4.fEnd {
-      width: 40vw;
-      margin: 0 auto;
-      font-size: 1.3em;
-      margin-bottom: 1vw;
-      font-family: 'Julius Sans One', sans-serif; }
-    #aboutPage #skills .frontEnd:hover {
-      transform: scale(1.05);
-      box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
-    #aboutPage #skills .frontEnd {
-      transition: all 0.2s ease-in-out;
-      box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
-      background: white;
-      border-top-right-radius: 2vw;
-      padding-top: 2vh;
-      border-top: 1px solid #1EAAF1;
-      border-right: 1px solid #1EAAF1;
-      margin: 0 auto;
-      width: 40vw;
-      display: flex;
-      height: 30vh;
-      justify-content: space-between;
-      align-items: flex-start;
-      border-bottom-left-radius: 0.25vw; }
-      #aboutPage #skills .frontEnd img.disp {
-        margin-left: 2vw;
-        width: 8vw;
-        border-bottom-right-radius: 1vw;
-        padding-top: 0; }
-      #aboutPage #skills .frontEnd ul {
-        width: 23vw;
-        margin-right: 2vw;
+        align-items: flex-start; }
+        #aboutPage #aboutMe header.mainHeader img {
+          width: 40vw;
+          border-radius: 100%;
+          box-shadow: 1px 1px 12px #4B545B;
+          border: 2px white solid; }
+        #aboutPage #aboutMe header.mainHeader section article {
+          margin: 0 auto;
+          width: 40vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around; }
+          #aboutPage #aboutMe header.mainHeader section article h2 {
+            border-bottom: 0.05em solid rgba(30, 170, 241, 0.37);
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            font-size: 1.3em; }
+          #aboutPage #aboutMe header.mainHeader section article h4 {
+            font-size: 0.9em;
+            padding-bottom: 0.6vh; }
+      #aboutPage #aboutMe section.body {
+        width: 95vw;
+        float: right;
         display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        #aboutPage #skills .frontEnd ul li {
-          width: 10vw;
+        margin-right: 1vw; }
+        #aboutPage #aboutMe section.body article ul {
+          width: 90vw;
           display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 2vh; }
-          #aboutPage #skills .frontEnd ul li h4 {
-            width: 22vw;
-            text-align: left;
-            padding-left: 1.5vw;
-            font-family: 'Julius Sans One', sans-serif; }
-          #aboutPage #skills .frontEnd ul li img {
-            width: 1.5vw;
-            border-radius: none; }
-    #aboutPage #skills h4.bEnd {
-      width: 40vw;
-      margin: 0 auto;
-      font-size: 1.3em;
-      margin-bottom: 1vw;
-      margin-top: 3vh;
-      font-family: 'Julius Sans One', sans-serif; }
-    #aboutPage #skills .backEnd:hover {
-      transform: scale(1.05);
-      box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
-    #aboutPage #skills .backEnd {
-      transition: all 0.2s ease-in-out;
-      box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
-      background: white;
-      border-top-right-radius: 2vw;
-      padding-top: 2vh;
-      border-top: 1px solid #1EAAF1;
-      border-right: 1px solid #1EAAF1;
-      margin: 0 auto;
-      width: 40vw;
+          justify-content: space-around;
+          align-items: center; }
+          #aboutPage #aboutMe section.body article ul li {
+            border: 1px solid rgba(3, 17, 27, 0.7);
+            border-radius: 0.2vw;
+            color: white;
+            padding: 0.7vw;
+            background-color: rgba(3, 17, 27, 0.4);
+            width: 25vw;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            margin-top: 3vh; }
+          #aboutPage #aboutMe section.body article ul li:hover {
+            transform: scale(1.02); }
+    #aboutPage #skills {
+      width: 95vw;
       display: flex;
-      height: 30vh;
-      justify-content: space-between;
-      padding-bottom: 2vh; }
-      #aboutPage #skills .backEnd img.disp {
-        margin-left: 2vw;
-        width: 8vw;
-        border-bottom-right-radius: 1vw;
-        padding-top: 0; }
-      #aboutPage #skills .backEnd ul {
-        width: 25vw; }
-        #aboutPage #skills .backEnd ul li {
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 7vh; }
+      #aboutPage #skills header {
+        border: solid rgba(30, 170, 241, 0.37) 2px;
+        width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+        height: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2em;
+        border-top-right-radius: 0.3vw;
+        border-bottom-right-radius: 0.3vw;
+        font-family: Times;
+        margin-bottom: 2vh; }
+      #aboutPage #skills h4.fEnd {
+        width: 40vw;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2vh;
+        font-size: 1.3em;
+        margin-bottom: 1vw;
+        font-family: 'Julius Sans One', sans-serif; }
+      #aboutPage #skills .frontEnd:hover {
+        transform: scale(1.05);
+        box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
+      #aboutPage #skills .frontEnd {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+        background: white;
+        border-top-right-radius: 2vw;
+        padding-top: 2vh;
+        border-top: 1px solid #1EAAF1;
+        border-right: 1px solid #1EAAF1;
+        margin: 0 auto;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom-left-radius: 0.25vw; }
+        #aboutPage #skills .frontEnd img.disp {
+          margin-left: 2vw;
+          width: 20vw;
+          border-bottom-right-radius: 1vw;
+          padding-top: 0; }
+        #aboutPage #skills .frontEnd ul {
+          width: 60vw;
           display: flex;
-          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          justify-content: space-between; }
+          #aboutPage #skills .frontEnd ul li {
+            width: 50vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2vh; }
+            #aboutPage #skills .frontEnd ul li h4 {
+              width: 40vw;
+              text-align: left;
+              padding-left: 1.5vw;
+              font-family: 'Julius Sans One', sans-serif; }
+            #aboutPage #skills .frontEnd ul li img {
+              width: 5vw;
+              border-radius: none; }
+      #aboutPage #skills h4.bEnd {
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.3em;
+        margin-bottom: 1vw;
+        margin-top: 3vh;
+        font-family: 'Julius Sans One', sans-serif; }
+      #aboutPage #skills .backEnd:hover {
+        transform: scale(1.05);
+        box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
+      #aboutPage #skills .backEnd {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+        background: white;
+        border-top-right-radius: 2vw;
+        padding-top: 2vh;
+        border-top: 1px solid #1EAAF1;
+        border-right: 1px solid #1EAAF1;
+        margin: 0 auto;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 2vh; }
+        #aboutPage #skills .backEnd img.disp {
+          margin-left: 2vw;
+          width: 20vw;
+          border-bottom-right-radius: 1vw;
+          padding-top: 0; }
+        #aboutPage #skills .backEnd ul {
+          width: 60vw; }
+          #aboutPage #skills .backEnd ul li {
+            width: 50vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2vh; }
+            #aboutPage #skills .backEnd ul li h4 {
+              width: 40vw;
+              text-align: left;
+              padding-left: 1.5vw;
+              font-family: 'Julius Sans One', sans-serif; }
+            #aboutPage #skills .backEnd ul li img {
+              width: 5vw;
+              border-radius: none; } }
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  #aboutPage {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5vh; }
+    #aboutPage #aboutMe {
+      width: 95vw;
+      margin: 0 auto; }
+      #aboutPage #aboutMe header.mainHeader {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; }
+        #aboutPage #aboutMe header.mainHeader img {
+          width: 40vw;
+          border-radius: 100%;
+          box-shadow: 1px 1px 12px #4B545B;
+          border: 2px white solid; }
+        #aboutPage #aboutMe header.mainHeader section article {
+          margin: 0 auto;
+          width: 40vw;
+          display: flex;
+          flex-direction: column;
           align-items: center;
-          margin-bottom: 2vh; }
-          #aboutPage #skills .backEnd ul li h4 {
-            width: 22vw;
-            text-align: left;
-            padding-left: 1.5vw;
-            font-family: 'Julius Sans One', sans-serif; }
-          #aboutPage #skills .backEnd ul li img {
-            width: 1.5vw;
-            border-radius: none; }
+          justify-content: space-around;
+          margin-top: 5vh; }
+          #aboutPage #aboutMe header.mainHeader section article h2 {
+            border-bottom: 0.05em solid rgba(30, 170, 241, 0.37);
+            margin-bottom: 2vh;
+            font-size: 1.3em; }
+          #aboutPage #aboutMe header.mainHeader section article h4 {
+            font-size: 0.9em;
+            padding-bottom: 0.6vh; }
+      #aboutPage #aboutMe section.body {
+        width: 95vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 1vw; }
+        #aboutPage #aboutMe section.body article ul {
+          margin: 0 auto;
+          width: 90vw;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          #aboutPage #aboutMe section.body article ul li {
+            border: 1px solid rgba(3, 17, 27, 0.7);
+            border-radius: 0.2vw;
+            color: white;
+            padding: 0.7vw;
+            background-color: rgba(3, 17, 27, 0.4);
+            width: 25vw;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            margin-top: 3vh; }
+          #aboutPage #aboutMe section.body article ul li:hover {
+            transform: scale(1.02); }
+    #aboutPage #skills {
+      width: 95vw;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 7vh; }
+      #aboutPage #skills header {
+        border: solid rgba(30, 170, 241, 0.37) 2px;
+        width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+        height: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2em;
+        border-top-right-radius: 0.3vw;
+        border-bottom-right-radius: 0.3vw;
+        font-family: Times;
+        margin-bottom: 2vh; }
+      #aboutPage #skills h4.fEnd {
+        width: 40vw;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2vh;
+        font-size: 1.3em;
+        margin-bottom: 1vw;
+        font-family: 'Julius Sans One', sans-serif; }
+      #aboutPage #skills .frontEnd:hover {
+        transform: scale(1.05);
+        box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
+      #aboutPage #skills .frontEnd {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+        background: white;
+        border-top-right-radius: 2vw;
+        padding-top: 2vh;
+        border-top: 1px solid #1EAAF1;
+        border-right: 1px solid #1EAAF1;
+        margin: 0 auto;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom-left-radius: 0.25vw; }
+        #aboutPage #skills .frontEnd img.disp {
+          margin-left: 2vw;
+          width: 20vw;
+          border-bottom-right-radius: 1vw;
+          padding-top: 0; }
+        #aboutPage #skills .frontEnd ul {
+          width: 60vw;
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          justify-content: space-between; }
+          #aboutPage #skills .frontEnd ul li {
+            width: 50vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2vh; }
+            #aboutPage #skills .frontEnd ul li h4 {
+              width: 40vw;
+              text-align: left;
+              padding-left: 1.5vw;
+              font-family: 'Julius Sans One', sans-serif; }
+            #aboutPage #skills .frontEnd ul li img {
+              width: 5vw;
+              border-radius: none; }
+      #aboutPage #skills h4.bEnd {
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.3em;
+        margin-bottom: 1vw;
+        margin-top: 3vh;
+        font-family: 'Julius Sans One', sans-serif; }
+      #aboutPage #skills .backEnd:hover {
+        transform: scale(1.05);
+        box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
+      #aboutPage #skills .backEnd {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+        background: white;
+        border-top-right-radius: 2vw;
+        padding-top: 2vh;
+        border-top: 1px solid #1EAAF1;
+        border-right: 1px solid #1EAAF1;
+        margin: 0 auto;
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 2vh; }
+        #aboutPage #skills .backEnd img.disp {
+          margin-left: 2vw;
+          width: 20vw;
+          border-bottom-right-radius: 1vw;
+          padding-top: 0; }
+        #aboutPage #skills .backEnd ul {
+          width: 60vw; }
+          #aboutPage #skills .backEnd ul li {
+            width: 50vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2vh; }
+            #aboutPage #skills .backEnd ul li h4 {
+              width: 40vw;
+              text-align: left;
+              padding-left: 1.5vw;
+              font-family: 'Julius Sans One', sans-serif; }
+            #aboutPage #skills .backEnd ul li img {
+              width: 5vw;
+              border-radius: none; } }
+@media only screen and (min-width: 769px) {
+  #aboutPage {
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh; }
+    #aboutPage #aboutMe {
+      width: 45vw; }
+      #aboutPage #aboutMe header.mainHeader {
+        width: 45vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; }
+        #aboutPage #aboutMe header.mainHeader img {
+          width: 15vw;
+          border-radius: 100%;
+          box-shadow: 1px 1px 12px #4B545B;
+          border: 2px white solid; }
+        #aboutPage #aboutMe header.mainHeader h1 {
+          font-family: 'Julius Sans One', sans-serif;
+          background: rgba(30, 170, 241, 0.37);
+          border-top-left-radius: 0.3vw;
+          border-bottom-left-radius: 0.3vw;
+          border: solid white 2px;
+          border-right: none;
+          line-height: 5vh;
+          height: 5vh;
+          width: 25vw;
+          color: white;
+          text-shadow: 0.04em 0.04em 0.1em  black;
+          text-align: center;
+          font-size: 1.2em; }
+        #aboutPage #aboutMe header.mainHeader section article {
+          margin: 0 auto;
+          width: 23vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around; }
+          #aboutPage #aboutMe header.mainHeader section article h2 {
+            border-bottom: 0.05em solid rgba(30, 170, 241, 0.37);
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            font-size: 2em; }
+          #aboutPage #aboutMe header.mainHeader section article h4 {
+            padding-bottom: 0.6vh; }
+      #aboutPage #aboutMe section.body {
+        width: 25vw;
+        float: right;
+        display: flex;
+        margin-right: 1vw; }
+        #aboutPage #aboutMe section.body article ul {
+          width: 25vw;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          #aboutPage #aboutMe section.body article ul li {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid rgba(3, 17, 27, 0.7);
+            border-radius: 0.2vw;
+            color: white;
+            padding: 0.7vw;
+            background-color: rgba(3, 17, 27, 0.4);
+            width: 8vw;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            font-size: 0.82em; }
+          #aboutPage #aboutMe section.body article ul li:hover {
+            transform: scale(1.02); }
+    #aboutPage #skills {
+      margin-top: 5vh;
+      width: 45vw;
+      display: flex;
+      flex-direction: column; }
+      #aboutPage #skills header {
+        border: solid rgba(30, 170, 241, 0.37) 2px;
+        width: 45vw;
+        margin: 0 auto;
+        text-align: center;
+        height: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2em;
+        border-top-right-radius: 0.3vw;
+        border-bottom-right-radius: 0.3vw;
+        font-family: Times;
+        margin-bottom: 2vh; }
+      #aboutPage #skills h4.fEnd {
+        width: 40vw;
+        margin: 0 auto;
+        font-size: 1.3em;
+        margin-bottom: 1vw;
+        font-family: 'Julius Sans One', sans-serif; }
+      #aboutPage #skills .frontEnd:hover {
+        transform: scale(1.05);
+        box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
+      #aboutPage #skills .frontEnd {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+        background: white;
+        border-top-right-radius: 2vw;
+        padding-top: 2vh;
+        border-top: 1px solid #1EAAF1;
+        border-right: 1px solid #1EAAF1;
+        margin: 0 auto;
+        width: 40vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom-left-radius: 0.25vw; }
+        #aboutPage #skills .frontEnd img.disp {
+          margin-left: 2vw;
+          width: 8vw;
+          border-bottom-right-radius: 1vw;
+          padding-top: 0; }
+        #aboutPage #skills .frontEnd ul {
+          width: 23vw;
+          margin-right: 2vw;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between; }
+          #aboutPage #skills .frontEnd ul li {
+            width: 23vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2vh; }
+            #aboutPage #skills .frontEnd ul li h4 {
+              width: 22vw;
+              text-align: left;
+              padding-left: 1.5vw;
+              font-family: 'Julius Sans One', sans-serif; }
+            #aboutPage #skills .frontEnd ul li img {
+              width: 1.5vw;
+              border-radius: none; }
+      #aboutPage #skills h4.bEnd {
+        width: 40vw;
+        margin: 0 auto;
+        font-size: 1.3em;
+        margin-bottom: 1vw;
+        margin-top: 3vh;
+        font-family: 'Julius Sans One', sans-serif; }
+      #aboutPage #skills .backEnd:hover {
+        transform: scale(1.05);
+        box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
+      #aboutPage #skills .backEnd {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
+        background: white;
+        border-top-right-radius: 2vw;
+        padding-top: 2vh;
+        border-top: 1px solid #1EAAF1;
+        border-right: 1px solid #1EAAF1;
+        margin: 0 auto;
+        width: 40vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom-left-radius: 0.25vw;
+        padding-bottom: 3vh; }
+        #aboutPage #skills .backEnd img.disp {
+          margin-left: 2vw;
+          width: 8vw;
+          border-bottom-right-radius: 1vw; }
+        #aboutPage #skills .backEnd ul {
+          width: 23vw; }
+          #aboutPage #skills .backEnd ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2vh; }
+            #aboutPage #skills .backEnd ul li h4 {
+              width: 22vw;
+              text-align: left;
+              padding-left: 1.5vw;
+              font-family: 'Julius Sans One', sans-serif; }
+            #aboutPage #skills .backEnd ul li img {
+              width: 1.5vw;
+              border-radius: none; } }
 
 /*# sourceMappingURL=master.css.map */
