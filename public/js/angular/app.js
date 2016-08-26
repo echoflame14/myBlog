@@ -9,16 +9,18 @@ angular.module("app", ["ui.router"])
 		})
 		.state("/about", {
 			url:"/about",
-			templateUrl:"html/views/about.html"
+			templateUrl:"html/views/about.html",
+			controller: "ctrl"
 		})
 		.state("/projects", {
 			url:"/proj",
-			templateUrl: "html/views/proj.html"
+			templateUrl: "html/views/proj.html",
+			controller: "ctrl"
 
 		})
 		.state("/contact", {
 			url:"/contact",
 			templateUrl:"html/views/contact.html",
-			
+			controller: "ctrl"
 		});
 });
