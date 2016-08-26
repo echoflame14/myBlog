@@ -12,19 +12,16 @@
 			display:flex;
 			justify-content:space-around;
 			align-items:flex-start;
+
 			img{
 				width:15vw;
 				border-radius:100%;
 				box-shadow:1px 1px 12px $trout;
+				border:2px white solid;
 			}
 			h1{
 				font-family: 'Julius Sans One', sans-serif;
-								/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1eaaf1+0,1eaaf1+23,99d2ef+86,d7e7ef+100 */
-				background: rgb(30,170,241); /* Old browsers */
-				background: -moz-linear-gradient(left,  rgba(30,170,241,1) 0%, rgba(30,170,241,1) 23%, rgba(153,210,239,1) 86%, rgba(215,231,239,1) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(left,  rgba(30,170,241,1) 0%,rgba(30,170,241,1) 23%,rgba(153,210,239,1) 86%,rgba(215,231,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to right,  rgba(30,170,241,1) 0%,rgba(30,170,241,1) 23%,rgba(153,210,239,1) 86%,rgba(215,231,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1eaaf1', endColorstr='#d7e7ef',GradientType=1 ); /* IE6-9 */
+				background:$op-blue;
 				border-top-left-radius:0.3vw;
 				border-bottom-left-radius:0.3vw;
 				border:solid white 2px;
@@ -37,82 +34,65 @@
 				text-align:center;
 				font-size:1.2em;
 			}
-		}
-		article{
-			margin-top:2vh;
-			float:right;
-			width:40vw;
-			header{
-				border-top-left-radius:1vw;
-				display:flex;
-				justify-content:space-between;
-				width:40vw;
-				margin:0 auto;
-				height:5vh;
-				border:2px solid $black;
-				border-bottom:none;
-				section{
-					color:white;
-					cursor:pointer;
+			section{
+				article{
+					margin:0 auto;
+					width:23vw;
 					display:flex;
+					flex-direction:column;
 					align-items:center;
 					justify-content:space-around;
-					border:solid $black 2px;
-					border-bottom:none;
-					border-top:none;
-					width:19.5vw;
-					text-align:center;
-					background:$op-black;
-				}
-				section.left{
-					border-top-right-radius:1vw;
-					border-left:none;
-					border-top-left-radius:1vw;
-				}
-				section.right{
-					border-top-left-radius:1vw;
-					border-right:none;
-				}
-			}
-			article{
-				margin-top:-1px;
-				p{
-					width:40vw;
-					margin:0 auto;
-					padding:1vh 1vw;
-					border:2px solid $black;
-					border-top:none;
-					border-left:none;
-					border-bottom-right-radius:1vw;
-					line-height:1.4em;
-					font-family: 'Titillium Web', sans-serif;
-				}
-				p.ls{
+					h2{
+						border-bottom:0.05em solid $op-blue;
+						margin-top:5vh;
+						margin-bottom: 2vh;
+						font-size:2em;
 
-				}
-				p.lss{
-
-				}
-				p.hidden{
-					display:none;
+					}
+					h4{
+						padding-bottom:0.6vh;
+					}
 				}
 			}
 		}
+		section.body{
+			width:25vw;
+			float:right;
+			display:flex;
+			margin-right:1vw;
+			article{
+				ul{
+					width:25vw;
+					display:flex;
+					justify-content:space-around;
+					align-items:center;
+					li{
+						border:1px solid $op-black;
+						border-radius:0.2vw;
+						color:white;
+						padding:0.7vw;
+						background-color:$sup-op-black;
+						width:6vw;
+						text-align:center;
+						cursor:pointer;
+						transition:all 0.15s ease-in-out;
+					}
+					li:hover{
+						transform:scale(1.02);
+					}
+				}
+			}
+		}
+
 	}
 	#skills{
+		margin-top:5vh;
 		width:45vw;
 		display:flex;
 		flex-direction:column;
 		header{
-			border:solid white 2px;
+			border:solid $op-blue 2px;
 			border-left:none;
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7e7ef+0,99d2ef+14,1eaaf1+77,1eaaf1+100 */
-			background: rgb(215,231,239); /* Old browsers */
-			background: -moz-linear-gradient(left,  rgba(215,231,239,1) 0%, rgba(153,210,239,1) 14%, rgba(30,170,241,1) 77%, rgba(30,170,241,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(left,  rgba(215,231,239,1) 0%,rgba(153,210,239,1) 14%,rgba(30,170,241,1) 77%,rgba(30,170,241,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to right,  rgba(215,231,239,1) 0%,rgba(153,210,239,1) 14%,rgba(30,170,241,1) 77%,rgba(30,170,241,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e7ef', endColorstr='#1eaaf1',GradientType=1 ); /* IE6-9 */
-
 			width:45vw;
 			margin:0 auto;
 			text-align:center;
@@ -120,13 +100,10 @@
 			display:flex;
 			justify-content:space-around;
 			align-items:center;
-			color:white;
-			text-shadow:0.04em 0.04em 0.1em  black;
-			font-weight:bold;
-			font-size:1.3em;
+			font-size:2em;
 			border-top-right-radius:0.3vw;
 			border-bottom-right-radius:0.3vw;
-			font-family: 'Julius Sans One', sans-serif;
+			font-family: Times;
 			margin-bottom:2vh;
 
 		}

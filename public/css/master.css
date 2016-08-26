@@ -632,20 +632,11 @@ header#mainHeader {
       #aboutPage #aboutMe header.mainHeader img {
         width: 15vw;
         border-radius: 100%;
-        box-shadow: 1px 1px 12px #4B545B; }
+        box-shadow: 1px 1px 12px #4B545B;
+        border: 2px white solid; }
       #aboutPage #aboutMe header.mainHeader h1 {
         font-family: 'Julius Sans One', sans-serif;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1eaaf1+0,1eaaf1+23,99d2ef+86,d7e7ef+100 */
-        background: #1eaaf1;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, #1eaaf1 0%, #1eaaf1 23%, #99d2ef 86%, #d7e7ef 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #1eaaf1 0%, #1eaaf1 23%, #99d2ef 86%, #d7e7ef 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #1eaaf1 0%, #1eaaf1 23%, #99d2ef 86%, #d7e7ef 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1eaaf1', endColorstr='#d7e7ef',GradientType=1 );
-        /* IE6-9 */
+        background: rgba(30, 170, 241, 0.37);
         border-top-left-radius: 0.3vw;
         border-bottom-left-radius: 0.3vw;
         border: solid white 2px;
@@ -657,70 +648,50 @@ header#mainHeader {
         text-shadow: 0.04em 0.04em 0.1em  black;
         text-align: center;
         font-size: 1.2em; }
-    #aboutPage #aboutMe article {
-      margin-top: 2vh;
-      float: right;
-      width: 40vw; }
-      #aboutPage #aboutMe article header {
-        border-top-left-radius: 1vw;
-        display: flex;
-        justify-content: space-between;
-        width: 40vw;
+      #aboutPage #aboutMe header.mainHeader section article {
         margin: 0 auto;
-        height: 5vh;
-        border: 2px solid #03111b;
-        border-bottom: none; }
-        #aboutPage #aboutMe article header section {
+        width: 23vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; }
+        #aboutPage #aboutMe header.mainHeader section article h2 {
+          border-bottom: 0.05em solid rgba(30, 170, 241, 0.37);
+          margin-top: 5vh;
+          margin-bottom: 2vh;
+          font-size: 2em; }
+        #aboutPage #aboutMe header.mainHeader section article h4 {
+          padding-bottom: 0.6vh; }
+    #aboutPage #aboutMe section.body {
+      width: 25vw;
+      float: right;
+      display: flex;
+      margin-right: 1vw; }
+      #aboutPage #aboutMe section.body article ul {
+        width: 25vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        #aboutPage #aboutMe section.body article ul li {
+          border: 1px solid rgba(3, 17, 27, 0.7);
+          border-radius: 0.2vw;
           color: white;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          border: solid #03111b 2px;
-          border-bottom: none;
-          border-top: none;
-          width: 19.5vw;
+          padding: 0.7vw;
+          background-color: rgba(3, 17, 27, 0.4);
+          width: 6vw;
           text-align: center;
-          background: rgba(3, 17, 27, 0.7); }
-        #aboutPage #aboutMe article header section.left {
-          border-top-right-radius: 1vw;
-          border-left: none;
-          border-top-left-radius: 1vw; }
-        #aboutPage #aboutMe article header section.right {
-          border-top-left-radius: 1vw;
-          border-right: none; }
-      #aboutPage #aboutMe article article {
-        margin-top: -1px; }
-        #aboutPage #aboutMe article article p {
-          width: 40vw;
-          margin: 0 auto;
-          padding: 1vh 1vw;
-          border: 2px solid #03111b;
-          border-top: none;
-          border-left: none;
-          border-bottom-right-radius: 1vw;
-          line-height: 1.4em;
-          font-family: 'Titillium Web', sans-serif; }
-        #aboutPage #aboutMe article article p.hidden {
-          display: none; }
+          cursor: pointer;
+          transition: all 0.15s ease-in-out; }
+        #aboutPage #aboutMe section.body article ul li:hover {
+          transform: scale(1.02); }
   #aboutPage #skills {
+    margin-top: 5vh;
     width: 45vw;
     display: flex;
     flex-direction: column; }
     #aboutPage #skills header {
-      border: solid white 2px;
+      border: solid rgba(30, 170, 241, 0.37) 2px;
       border-left: none;
-      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d7e7ef+0,99d2ef+14,1eaaf1+77,1eaaf1+100 */
-      background: #d7e7ef;
-      /* Old browsers */
-      background: -moz-linear-gradient(left, #d7e7ef 0%, #99d2ef 14%, #1eaaf1 77%, #1eaaf1 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, #d7e7ef 0%, #99d2ef 14%, #1eaaf1 77%, #1eaaf1 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, #d7e7ef 0%, #99d2ef 14%, #1eaaf1 77%, #1eaaf1 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e7ef', endColorstr='#1eaaf1',GradientType=1 );
-      /* IE6-9 */
       width: 45vw;
       margin: 0 auto;
       text-align: center;
@@ -728,13 +699,10 @@ header#mainHeader {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      color: white;
-      text-shadow: 0.04em 0.04em 0.1em  black;
-      font-weight: bold;
-      font-size: 1.3em;
+      font-size: 2em;
       border-top-right-radius: 0.3vw;
       border-bottom-right-radius: 0.3vw;
-      font-family: 'Julius Sans One', sans-serif;
+      font-family: Times;
       margin-bottom: 2vh; }
     #aboutPage #skills h4.fEnd {
       width: 40vw;
