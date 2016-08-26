@@ -30,15 +30,15 @@
 
 			height:5vh;
 			margin-bottom:3vh;
-
+			font-size:1.3em;
 			text-align:center;
 
 			color:white;
 			border:solid $lowLight 2px;
 			border-top-left-radius:0.3vw;
 			border-top-right-radius:0.3vw;
-			background:$highlight;
-
+			background:$blue;
+			font-family: 'Julius Sans One', sans-serif;
 			align-items:center;
 			justify-content:space-around;
 		}
@@ -99,8 +99,9 @@
 			border:solid $lowLight 2px;
 			border-top-left-radius:0.3vw;
 			border-top-right-radius:0.3vw;
-			background:$highlight;
-
+			background:$blue ;
+			font-size:1.3em;
+			font-family: 'Julius Sans One', sans-serif;
 			align-items:center;
 			justify-content:space-around;
 		}

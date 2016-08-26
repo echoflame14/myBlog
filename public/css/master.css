@@ -352,12 +352,14 @@ header#mainHeader {
       display: flex;
       height: 5vh;
       margin-bottom: 3vh;
+      font-size: 1.3em;
       text-align: center;
       color: white;
       border: solid rgba(1, 1, 1, 0.28) 2px;
       border-top-left-radius: 0.3vw;
       border-top-right-radius: 0.3vw;
-      background: #3B3A3A;
+      background: #1EAAF1;
+      font-family: 'Julius Sans One', sans-serif;
       align-items: center;
       justify-content: space-around; }
     #contactPage #deets section ul {
@@ -397,7 +399,9 @@ header#mainHeader {
       border: solid rgba(1, 1, 1, 0.28) 2px;
       border-top-left-radius: 0.3vw;
       border-top-right-radius: 0.3vw;
-      background: #3B3A3A;
+      background: #1EAAF1;
+      font-size: 1.3em;
+      font-family: 'Julius Sans One', sans-serif;
       align-items: center;
       justify-content: space-around; }
     #contactPage #message section form section {
