@@ -9,9 +9,20 @@ angular.module("app").service("srvc", function($http){
 		console.log("make a post bruh");
 	};
 
-	this.postMessage = function(name, email, message){
-		return $http.post("/message", name, email, message).then(function(){
-			console.log("done in the service sent post");
+	this.postMessage = function(name,email,message){
+		console.log(message);
+		
+		var bulba = {
+			messname:name,
+			messemail: email,
+			messmess: message
+		};
+		console.log("ran this.postMessage");
+		return $http({
+			method: "post",
+			url: "/message",
+			data: bulba
+
 		});
 	};
 });

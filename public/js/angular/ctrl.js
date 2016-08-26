@@ -6,8 +6,14 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 
 
 
-	$scope.hey = function(){
-
-		srvc.postMessage($scope.name,$scope.email,$scope.message);
+	$scope.postMessage = function(name,email,message){
+		console.log(name,email,message);
+		console.log("got 2 running $scope.postMessage");
+		srvc.postMessage(name,email,message).then(function(){
+			$scope.name = "";
+			$scope.email = "";
+			$scope.message ="";
+			alert("Sent");
+		});
 	};
 });
