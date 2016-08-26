@@ -4,7 +4,8 @@ angular.module("app", ["ui.router"])
 	$stateProvider
 		.state("/home", {
 			url:"/",
-			templateUrl:"html/views/home.html"
+			templateUrl:"html/views/home.html",
+			controller: "ctrl"
 		})
 		.state("/about", {
 			url:"/about",
@@ -13,9 +14,11 @@ angular.module("app", ["ui.router"])
 		.state("/projects", {
 			url:"/proj",
 			templateUrl: "html/views/proj.html"
+
 		})
 		.state("/contact", {
 			url:"/contact",
-			templateUrl:"html/views/contact.html"
+			templateUrl:"html/views/contact.html",
+			
 		});
 });

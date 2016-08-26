@@ -1,5 +1,5 @@
 
-<div id="contactPage">
+<div id="contactPage" ng-controller="ctrl">
   <div id="deets">
     <header>
       <h1>Contact Details</h1>
@@ -34,17 +34,17 @@
       <form id="UsrMessage" method="get">
         <section>
           <h3>Name</h3>
-          <input type="text" name="name" data-validation="email" id="name"/>
+          <input type="text" name="name" ng-model="name" id="name"/>
         </section>
         <section>
           <h3>Email</h3>
-          <input type="text" name="Email" id="email"/>
+          <input type="text" name="Email" ng-model="email" id="email"/>
         </section>
         <section>
           <h3>Message</h3>
-          <textarea name="Message" rows="8" cols="40" id="bigBox"></textarea>
+          <textarea name="Message" rows="8" cols="40" id="bigBox" ng-model="message"></textarea>
         </section>
-        <input type="submit" name="submit" value="Submit" id="valBtn"/>
+        <input type="submit" name="submit" value="Submit" ng-click="hey()"/>
       </form>
     </section>
     <div class="bar"></div>

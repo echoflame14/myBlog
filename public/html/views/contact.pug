@@ -1,4 +1,4 @@
-#contactPage
+#contactPage(ng-controller="ctrl")
 	#deets
 		header
 			h1 Contact Details
@@ -25,13 +25,13 @@
 			form(id="UsrMessage", method="get")
 				section
 					h3 Name
-					input(type="text", name="name", data-validation="email")#name
+					input(type="text", name="name", ng-model="name")#name
 				section
 					h3 Email
-					input(type="text", name="Email")#email
+					input(type="text", name="Email", ng-model="email")#email
 				section
 					h3 Message
-					textarea(name="Message", rows="8", cols="40", id="bigBox")
+					textarea(name="Message", rows="8", cols="40", id="bigBox",ng-model="message")
 
-				input(type="submit", name="submit", value="Submit", id="valBtn")
+				input(type="submit", name="submit", value="Submit", ng-click="hey()")
 		.bar
