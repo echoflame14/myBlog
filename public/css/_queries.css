@@ -140,41 +140,44 @@
         width: 65vw; } }
 @media only screen and (min-width: 769px) {
   ui-view #home {
-    width: 100vw; }
+    width: 80vw; }
     ui-view #home .post {
       float: left;
       display: flex;
       flex-direction: column;
-      width: 60vw;
+      width: 40vw;
       margin: 0 5vw 2vh 5vw; }
       ui-view #home .post img {
         margin: 0 auto;
-        width: 60vw; }
+        width: 40vw; }
       ui-view #home .post article p {
         font-size: .9em;
         line-height: 1.5em; }
     ui-view #home #aboutMe {
-      width: 30vw;
-      padding-right: 5vw;
+      width: 20vw;
+      padding-right: 0;
       float: right; }
       ui-view #home #aboutMe header {
         margin: 0 auto;
-        width: 25vw;
-        text-align: center; }
+        width: 20vw;
+        text-align: center;
+        background: white; }
       ui-view #home #aboutMe article {
-        width: 25vw;
+        width: 20vw;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: space-around; }
         ui-view #home #aboutMe article img {
-          width: 25vw; }
+          width: 5vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
+          ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
+            width: 12vw;
+            background: white; }
         ui-view #home #aboutMe article p {
           padding: 2vh 0;
-          font-size: 1em;
+          font-size: .8em;
           text-align: center;
           margin-bottom: 1vh; }
 
