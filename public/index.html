@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Sintony:400,700|Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|VT323" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="./css/tingle.css">
   </head>
-  <body>
+  <body ng-controller="ctrl">
     <header id="mainHeader">
-      <h1>Climbing the Mountai<span ng-click="makePost()">n</span></h1>
+      <h1>Climbing the Mountain</h1>
       <nav id="mainNav">
         <ul>
           <li><a class="active" ui-sref="/home" title="home" id="home">Home</a></li>
@@ -23,6 +24,8 @@
       </nav>
     </header>
     <ui-view></ui-view>
+    <!--tingle-->
+    <script type="text/javascript" src="./js/tingle.js"></script>
     <!-- Angular Cdn-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <!-- Ui-router Cdn-->
