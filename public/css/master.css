@@ -68,18 +68,35 @@ body {
       margin-bottom: 3vh; }
       #contactPage #deets header {
         margin: 0 auto;
-        width: 95vw; }
+        width: 95vw;
+        font-size: 0.6em; }
       #contactPage #deets section ul {
         width: 90vw;
         margin: 0 auto; }
-        #contactPage #deets section ul li h2 {
-          width: 70vw;
-          margin-left: 3vw; }
+        #contactPage #deets section ul li {
+          width: 90vw; }
+          #contactPage #deets section ul li h1 {
+            width: 20vw;
+            font-size: 0.8em; }
+          #contactPage #deets section ul li h2 {
+            width: 70vw;
+            font-size: 0.8em;
+            margin-left: 3vw; }
+          #contactPage #deets section ul li a {
+            width: 70vw;
+            padding-left: 3vw; }
+            #contactPage #deets section ul li a h2 {
+              width: 70vw;
+              font-size: 0.8em;
+              margin: 0;
+              padding: 0; }
     #contactPage #message {
       margin: 0 auto;
       margin-bottom: 10vw;
       padding-bottom: 2vh;
       width: 95vw; }
+      #contactPage #message header {
+        font-size: 0.7em; }
       #contactPage #message form section h3 {
         width: 20vw;
         margin-right: 8vw; }
@@ -139,9 +156,14 @@ body {
       #contactPage #deets section ul {
         width: 90vw;
         margin: 0 auto; }
-        #contactPage #deets section ul li h2 {
-          width: 70vw;
-          margin-left: 3vw; }
+        #contactPage #deets section ul li {
+          width: 90vw;
+          margin: 0 auto; }
+          #contactPage #deets section ul li h1 {
+            width: 17vw; }
+          #contactPage #deets section ul li h2 {
+            width: 70vw;
+            margin-left: 3vw; }
     #contactPage #message {
       margin: 0 auto;
       margin-bottom: 10vw;
@@ -204,11 +226,15 @@ body {
       margin: 0 auto;
       width: 40vw; }
     #contactPage #deets section ul {
-      width: 38vw;
+      width: 35vw;
       margin: 0 auto; }
-      #contactPage #deets section ul li h2 {
-        width: 30vw;
-        margin-left: 1vw; }
+      #contactPage #deets section ul li {
+        width: 35vw; }
+        #contactPage #deets section ul li h1 {
+          width: 10vw; }
+        #contactPage #deets section ul li h2 {
+          width: 22vw;
+          padding-left: 2vw; }
   #contactPage #message {
     margin-bottom: 10vw;
     padding-bottom: 2vh;
@@ -338,30 +364,23 @@ header#mainHeader {
   #contactPage #deets:hover {
     transform: scale(1.007); }
   #contactPage #deets {
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
     border-bottom-right-radius: 0.2vw;
     background-color: white;
     box-shadow: 0.2vw 0.2vw 3vw rgba(26, 26, 26, 0.47); }
-    #contactPage #deets .bar {
-      position: absolute;
-      bottom: -5vh;
-      clear: both;
-      height: 1vh;
-      background: rgba(26, 26, 26, 0.47); }
     #contactPage #deets header {
       display: flex;
       height: 5vh;
       margin-bottom: 3vh;
-      font-size: 1.3em;
       text-align: center;
       color: white;
       border: solid rgba(1, 1, 1, 0.28) 2px;
       border-top-left-radius: 0.3vw;
       border-top-right-radius: 0.3vw;
-      background: #1EAAF1;
+      background: #4B545B;
       font-family: 'Julius Sans One', sans-serif;
       align-items: center;
       justify-content: space-around; }
@@ -371,28 +390,26 @@ header#mainHeader {
       margin: 0 auto;
       justify-content: space-around; }
       #contactPage #deets section ul li {
-        margin-bottom: 3vh; }
+        border-bottom: 0.17em solid #1EAAF1;
+        text-align: left;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 3vh;
+        align-items: center; }
         #contactPage #deets section ul li h1 {
-          margin-bottom: 1vh;
-          color: #3B3A3A;
-          text-shadow: -2px 2px 1px #ededed; }
-        #contactPage #deets section ul li h2 {
-          padding-left: 0.5vw; }
+          padding: 0.5em;
+          background: #1EAAF1;
+          color: white;
+          text-align: center; }
   #contactPage #message:hover {
     transform: scale(1.007); }
   #contactPage #message {
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
     background-color: white;
     box-shadow: 0.2vw 0.2vw 3vw rgba(26, 26, 26, 0.47); }
-    #contactPage #message .bar {
-      position: absolute;
-      bottom: -5vh;
-      clear: both;
-      height: 1vh;
-      background: rgba(26, 26, 26, 0.47); }
     #contactPage #message header {
       display: flex;
       height: 5vh;
@@ -402,8 +419,7 @@ header#mainHeader {
       border: solid rgba(1, 1, 1, 0.28) 2px;
       border-top-left-radius: 0.3vw;
       border-top-right-radius: 0.3vw;
-      background: #1EAAF1;
-      font-size: 1.3em;
+      background: #4B545B;
       font-family: 'Julius Sans One', sans-serif;
       align-items: center;
       justify-content: space-around; }
@@ -426,7 +442,6 @@ header#mainHeader {
         background-color: white;
         line-height: 1em; }
       #contactPage #message section form section #bigBox {
-        height: 14vh;
         border: solid black 1px;
         border-top-left-radius: 0.2vw;
         border-top-right-radius: 0.4vw;

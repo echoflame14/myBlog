@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$highlight-shadow".
-        on line 17 of _contact.scss
+        on line 18 of _contact.scss
 
-12: 
-13: 		border-top-left-radius:0.3vw;
-14: 		border-top-right-radius:0.3vw;
-15: 		border-bottom-right-radius:0.2vw;
-16: 		background-color:white;
-17: 		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
-18: 		.bar{
-19: 			position: absolute;
-20: 			bottom:-5vh;
-21: 
-22: 			clear:both;
+13: 
+14: 		border-top-left-radius:0.3vw;
+15: 		border-top-right-radius:0.3vw;
+16: 		border-bottom-right-radius:0.2vw;
+17: 		background-color:white;
+18: 		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
+19: 
+20: 		header{
+21: 			display:flex;
+22: 
+23: 			height:5vh;
 
 Backtrace:
-_contact.scss:17
+_contact.scss:18
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -82,4 +82,4 @@ _contact.scss:17
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$highlight-shadow\".\A         on line 17 of _contact.scss\A \A 12: \A 13: 		border-top-left-radius:0.3vw;\A 14: 		border-top-right-radius:0.3vw;\A 15: 		border-bottom-right-radius:0.2vw;\A 16: 		background-color:white;\A 17: 		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;\A 18: 		.bar{\A 19: 			position: absolute;\A 20: 			bottom:-5vh;\A 21: \A 22: 			clear:both;"; }
+  content: "Error: Undefined variable: \"$highlight-shadow\".\A         on line 18 of _contact.scss\A \A 13: \A 14: 		border-top-left-radius:0.3vw;\A 15: 		border-top-right-radius:0.3vw;\A 16: 		border-bottom-right-radius:0.2vw;\A 17: 		background-color:white;\A 18: 		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;\A 19: \A 20: 		header{\A 21: 			display:flex;\A 22: \A 23: 			height:5vh;"; }

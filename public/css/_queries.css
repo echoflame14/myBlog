@@ -52,18 +52,35 @@
       margin-bottom: 3vh; }
       #contactPage #deets header {
         margin: 0 auto;
-        width: 95vw; }
+        width: 95vw;
+        font-size: 0.6em; }
       #contactPage #deets section ul {
         width: 90vw;
         margin: 0 auto; }
-        #contactPage #deets section ul li h2 {
-          width: 70vw;
-          margin-left: 3vw; }
+        #contactPage #deets section ul li {
+          width: 90vw; }
+          #contactPage #deets section ul li h1 {
+            width: 20vw;
+            font-size: 0.8em; }
+          #contactPage #deets section ul li h2 {
+            width: 70vw;
+            font-size: 0.8em;
+            margin-left: 3vw; }
+          #contactPage #deets section ul li a {
+            width: 70vw;
+            padding-left: 3vw; }
+            #contactPage #deets section ul li a h2 {
+              width: 70vw;
+              font-size: 0.8em;
+              margin: 0;
+              padding: 0; }
     #contactPage #message {
       margin: 0 auto;
       margin-bottom: 10vw;
       padding-bottom: 2vh;
       width: 95vw; }
+      #contactPage #message header {
+        font-size: 0.7em; }
       #contactPage #message form section h3 {
         width: 20vw;
         margin-right: 8vw; }
@@ -123,9 +140,14 @@
       #contactPage #deets section ul {
         width: 90vw;
         margin: 0 auto; }
-        #contactPage #deets section ul li h2 {
-          width: 70vw;
-          margin-left: 3vw; }
+        #contactPage #deets section ul li {
+          width: 90vw;
+          margin: 0 auto; }
+          #contactPage #deets section ul li h1 {
+            width: 17vw; }
+          #contactPage #deets section ul li h2 {
+            width: 70vw;
+            margin-left: 3vw; }
     #contactPage #message {
       margin: 0 auto;
       margin-bottom: 10vw;
@@ -188,11 +210,15 @@
       margin: 0 auto;
       width: 40vw; }
     #contactPage #deets section ul {
-      width: 38vw;
+      width: 35vw;
       margin: 0 auto; }
-      #contactPage #deets section ul li h2 {
-        width: 30vw;
-        margin-left: 1vw; }
+      #contactPage #deets section ul li {
+        width: 35vw; }
+        #contactPage #deets section ul li h1 {
+          width: 10vw; }
+        #contactPage #deets section ul li h2 {
+          width: 22vw;
+          padding-left: 2vw; }
   #contactPage #message {
     margin-bottom: 10vw;
     padding-bottom: 2vh;

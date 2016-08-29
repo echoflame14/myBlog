@@ -1,6 +1,6 @@
 
 <div id="contactPage" ng-controller="ctrl">
-  <div id="deets">
+  <div class="wow fadeIn" id="deets" dada-wow-duration="0.2s">
     <header>
       <h1>Contact Details</h1>
     </header>
@@ -12,21 +12,20 @@
         </li>
         <li>
           <h1>Phone</h1>
-          <h2>385-445-0721</h2>
+          <h2 class="phone">(385) 445-0721</h2>
         </li>
         <li>
           <h1>Skype</h1>
           <h2>joshpeterson15</h2>
         </li>
-        <li>
-          <h1>linkedin</h1>
-          <h2><a href="www.linkedin.com/in/josh-peterson-b9093910b">www.linkedin.com/in/josh-peterson-b9093910b</a></h2>
+        <li class="linkedin">
+          <h1>linkedin</h1><a href="www.linkedin.com/in/josh-peterson-b9093910b">
+            <h2>linkedin</h2></a>
         </li>
       </ul>
     </section>
-    <div class="bar"></div>
   </div>
-  <div id="message">
+  <div class="wow fadeIn" id="message">
     <header>
       <h1>Send Me a Message</h1>
     </header>
@@ -47,6 +46,5 @@
         <input type="submit" name="submit" value="Submit" ng-click="postMessage(name,email,message)"/>
       </form>
     </section>
-    <div class="bar"></div>
   </div>
 </div>

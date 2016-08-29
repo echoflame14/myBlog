@@ -7,7 +7,8 @@
 		transform:scale(1.007);
 	}
 	#deets{
-		transition:all 0.3s ease-in-out;
+
+		transition:transform 0.3s ease-in-out;
 		position:relative;
 
 		border-top-left-radius:0.3vw;
@@ -15,34 +16,25 @@
 		border-bottom-right-radius:0.2vw;
 		background-color:white;
 		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
-		.bar{
-			position: absolute;
-			bottom:-5vh;
 
-			clear:both;
-
-			height:1vh;
-
-			background:$highlight-shadow;;
-		}
 		header{
 			display:flex;
 
 			height:5vh;
 			margin-bottom:3vh;
-			font-size:1.3em;
 			text-align:center;
 
 			color:white;
 			border:solid $lowLight 2px;
 			border-top-left-radius:0.3vw;
 			border-top-right-radius:0.3vw;
-			background:$blue;
+			background:$trout;
 			font-family: 'Julius Sans One', sans-serif;
 			align-items:center;
 			justify-content:space-around;
 		}
 		section{
+
 			ul{
 				display:flex;
 				flex-direction:column;
@@ -51,15 +43,23 @@
 
 				justify-content:space-around;
 				li{
+					border-bottom:0.17em solid $blue;
+					text-align:left;
+					display:flex;
+					margin:0 auto;
 					margin-bottom:3vh;
+					align-items:center;
 					h1{
-						margin-bottom:1vh;
+						padding:0.5em;
+						background:$blue;
 
-						color:$highlight;
-						text-shadow:-2px 2px 1px rgb(237, 237, 237);
+						color:white;
+						text-align:center;
 					}
+
 					h2{
-						padding-left:0.5vw;
+
+
 					}
 				}
 			}
@@ -70,23 +70,13 @@
 	}
 
 	#message{
-		transition:all 0.3s ease-in-out;
+		transition:transform 0.3s ease-in-out;
 		position: relative;
 
 		border-top-left-radius:0.3vw;
 		border-top-right-radius:0.3vw;
 		background-color:white;
 		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
-		.bar{
-			position: absolute;
-			bottom:-5vh;
-
-			clear:both;
-
-			height:1vh;
-
-			background:$highlight-shadow;;
-		}
 		header{
 			display:flex;
 
@@ -99,8 +89,8 @@
 			border:solid $lowLight 2px;
 			border-top-left-radius:0.3vw;
 			border-top-right-radius:0.3vw;
-			background:$blue ;
-			font-size:1.3em;
+			background:$trout ;
+
 			font-family: 'Julius Sans One', sans-serif;
 			align-items:center;
 			justify-content:space-around;
@@ -133,7 +123,7 @@
 						line-height:1em;
 					}
 					#bigBox{
-						height:14vh;
+
 
 						border:solid black 1px;
 						border-top-left-radius:0.2vw;

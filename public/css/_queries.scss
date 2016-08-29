@@ -72,18 +72,34 @@
 			header{
 				margin:0 auto;
 				width:95vw;
+				font-size:0.6em;
 			}
 			section{
 				ul{
 					width:90vw;
 					margin:0 auto;
+
 					li{
+						width:90vw;
 						h1{
+							width:20vw;
+							font-size:0.8em;
+
 						}
 						h2{
 							width:70vw;
-
+							font-size:0.8em;
 							margin-left:3vw;
+						}
+						a{
+							width:70vw;
+							padding-left:3vw;
+							h2{
+								width:70vw;
+								font-size:0.8em;
+								margin:0;
+								padding:0;
+							}
 						}
 					}
 				}
@@ -95,7 +111,7 @@
 			padding-bottom:2vh;
 			width:95vw;
 			header{
-
+				font-size:0.7em;
 			}
 			form{
 				section{
@@ -185,7 +201,10 @@
 					width:90vw;
 					margin:0 auto;
 					li{
+						width:90vw;
+						margin:0 auto;
 						h1{
+							width:17vw;
 						}
 						h2{
 							width:70vw;
@@ -291,15 +310,17 @@
 			}
 			section{
 				ul{
-					width:38vw;
+					width:35vw;
 					margin:0 auto;
 					li{
+						width:35vw;
 						h1{
+
+							width:10vw;
 						}
 						h2{
-							width:30vw;
-
-							margin-left:1vw;
+							width:22vw;
+							padding-left:2vw;
 						}
 					}
 				}

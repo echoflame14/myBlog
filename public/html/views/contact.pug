@@ -1,5 +1,5 @@
 #contactPage(ng-controller="ctrl")
-	#deets
+	#deets(dada-wow-duration="0.2s").wow.fadeIn
 		header
 			h1 Contact Details
 		section
@@ -9,16 +9,16 @@
 					h2 joshpeterson.dev@gmail.com
 				li
 					h1 Phone
-					h2 385-445-0721
+					h2.phone (385) 445-0721
 				li
 					h1 Skype
 					h2 joshpeterson15
-				li
+				li.linkedin
 					h1 linkedin
-					h2
-						a(href="www.linkedin.com/in/josh-peterson-b9093910b") www.linkedin.com/in/josh-peterson-b9093910b
-		.bar
-	#message
+					a(href="www.linkedin.com/in/josh-peterson-b9093910b")
+						h2 linkedin
+
+	#message.wow.fadeIn
 		header
 			h1 Send Me a Message
 		section
@@ -34,4 +34,3 @@
 					textarea(name="Message", rows="8", cols="40", id="bigBox",ng-model="message")
 
 				input(type="submit", name="submit", value="Submit", ng-click="postMessage(name,email,message)")
-		.bar
