@@ -20,6 +20,17 @@
 			}
 		}
 	}
+	#skills{
+		header.wow{
+			background:$trout;
+			border:0.01em $blue solid;
+			h1{
+				font-size:.6em;
+				color:$white;
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 425px) and (min-width:0px){

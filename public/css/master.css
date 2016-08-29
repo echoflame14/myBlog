@@ -753,12 +753,12 @@ header#mainHeader {
   #projPage {
     display: flex;
     flex-direction: column;
-    width: 75vw;
+    width: 100vw;
     margin: 0 auto;
     justify-content: space-around;
-    align-items: flex-left; }
+    align-items: center; }
     #projPage .card {
-      width: 60vw;
+      width: 61.803vw;
       display: flex;
       margin: 0 auto;
       margin-bottom: 10vh; }
@@ -770,8 +770,8 @@ header#mainHeader {
         margin-top: 2vh;
         border-top: 0.4vh solid #1EAAF1;
         border-bottom: 0.4vh solid #1EAAF1;
-        border-bottom-right-radius: 0.5vw;
-        border-top-right-radius: 0.5vw;
+        border-bottom-right-radius: 0.6em;
+        border-top-right-radius: 0.6em;
         justify-content: space-between;
         align-items: center; }
         #projPage .card section.body img.hor {
@@ -809,6 +809,13 @@ header#mainHeader {
 #aboutPage #aboutMe section.body article ul a li:hover {
   transform: scale(1.04);
   box-shadow: 0.1em 0.1em 0.3em rgba(3, 17, 27, 0.4); }
+#aboutPage #skills header.wow {
+  background: #4B545B;
+  border: 0.01em #1EAAF1 solid; }
+  #aboutPage #skills header.wow h1 {
+    font-size: .6em;
+    color: #f6f6f6;
+    font-family: 'Roboto Condensed', sans-serif; }
 
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   #aboutPage {

@@ -212,15 +212,16 @@
 	#projPage{
 		display:flex;
 		flex-direction:column;
-		width:75vw;
+		width:100vw;
 		margin:0 auto;
 		justify-content:space-around;
-		align-items:flex-left;
+		align-items:center;
 		.card{
-			width:60vw;
+			width:61.803vw;
 			display:flex;
 			margin:0 auto;
 			margin-bottom:10vh;
+
 			section.body{
 				padding-top:2.5vh;
 				padding-bottom:2.5vh;
@@ -230,8 +231,8 @@
 
 				border-top:0.4vh solid $blue;
 				border-bottom:0.4vh solid $blue;
-				border-bottom-right-radius:0.5vw;
-				border-top-right-radius:0.5vw;
+				border-bottom-right-radius:0.6em;
+				border-top-right-radius:0.6em;
 				justify-content:space-between;
 				align-items:center;
 				img.hor{
