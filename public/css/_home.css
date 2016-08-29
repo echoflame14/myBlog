@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$op-black".
-        on line 24 of _home.scss
+Error: Undefined variable: "$white".
+        on line 39 of _home.scss
 
-19: 
-20: 					font-family: 'Roboto Condensed', sans-serif;
-21: 				}
-22: 			}
-23: 			img{
-24: 				border:1px $op-black solid;
-25: 				border-bottom:none;
-26: 				border-left:none;
-27: 				border-radius:2vw;
-28: 				border-bottom-left-radius: 0px;
-29: 				box-shadow:-0.2vw 0.2vw 0.4vw $black;
+34: 			}
+35: 			article{
+36: 
+37: 				padding:3vh 0;
+38: 
+39: 				border-bottom: 2px $white solid;
+40: 
+41: 				p{
+42: 					font-family: 'Sintony', sans-serif;
+43: 				}
+44: 				i{
 
 Backtrace:
-_home.scss:24
+_home.scss:39
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -104,4 +104,4 @@ _home.scss:24
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$op-black\".\A         on line 24 of _home.scss\A \A 19: \A 20: 					font-family: 'Roboto Condensed', sans-serif;\A 21: 				}\A 22: 			}\A 23: 			img{\A 24: 				border:1px $op-black solid;\A 25: 				border-bottom:none;\A 26: 				border-left:none;\A 27: 				border-radius:2vw;\A 28: 				border-bottom-left-radius: 0px;\A 29: 				box-shadow:-0.2vw 0.2vw 0.4vw $black;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 39 of _home.scss\A \A 34: 			}\A 35: 			article{\A 36: \A 37: 				padding:3vh 0;\A 38: \A 39: 				border-bottom: 2px $white solid;\A 40: \A 41: 				p{\A 42: 					font-family: 'Sintony', sans-serif;\A 43: 				}\A 44: 				i{"; }

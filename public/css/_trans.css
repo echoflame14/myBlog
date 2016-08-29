@@ -1,11 +1,18 @@
-#home #aboutMe header {
-  transition: all 0.2s ease-in-out; }
-#home #aboutMe header:hover {
-  transform: scale(1.01); }
+/*animations and transitions*/
+#home {
+  /* about me button scaling on hover*/ }
+  #home #aboutMe header {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  #home #aboutMe header:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01); }
 
 #home #aboutMe article .content a p {
+  -webkit-transition: all, 0.1s, ease-in;
   transition: all, 0.1s, ease-in; }
 #home #aboutMe article .content a p:hover {
+  -webkit-transform: scale(1.05);
   transform: scale(1.05); }
 
 /*# sourceMappingURL=_trans.css.map */

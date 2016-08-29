@@ -1,12 +1,14 @@
-//animations and transitions
+/*animations and transitions*/
 
-#home{ // about me button scaling on hover
+#home{ /* about me button scaling on hover*/
 	#aboutMe{
 		header{
+			-webkit-transition: all 0.2s ease-in-out;
 			transition: all 0.2s ease-in-out;
 		}
 		header:hover{
-			transform: scale(1.01);
+			-webkit-transform: scale(1.01);
+			        transform: scale(1.01);
 		}
 	}
 }
@@ -17,11 +19,14 @@
 			.content{
 				a{
 					p{
+						-webkit-transition: all, 0.1s, ease-in;
 						transition: all, 0.1s, ease-in;
 					}
 					p:hover{
-						
-						transform: scale(1.05);
+
+						-webkit-transform: scale(1.05);
+
+						        transform: scale(1.05);
 					}
 				}
 			}

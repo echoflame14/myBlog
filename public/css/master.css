@@ -17,10 +17,20 @@ body {
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   ui-view #home {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
     ui-view #home .post {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       margin: 0 auto;
       width: 95vw; }
@@ -31,9 +41,16 @@ body {
         font-size: .9em;
         line-height: 1.5em; }
     ui-view #home #aboutMe {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       width: 100vw;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center; }
       ui-view #home #aboutMe header {
         width: 80vw;
@@ -42,7 +59,12 @@ body {
       ui-view #home #aboutMe article {
         margin-bottom: 5vh;
         width: 100vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column; }
         ui-view #home #aboutMe article img {
           width: 80vw;
@@ -63,6 +85,9 @@ body {
           margin-bottom: 1vh; }
 
   #contactPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; }
     #contactPage #deets {
       margin: 0 auto;
@@ -100,11 +125,18 @@ body {
       #contactPage #message header {
         font-size: 0.7em; }
       #contactPage #message form section.bigBox {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        -ms-grid-row-align: flex-start;
         align-items: flex-start; }
       #contactPage #message form #submitBtn {
         margin-right: 4vw; }
       #contactPage #message form section {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         #contactPage #message form section h3 {
           width: 20vw;
@@ -116,10 +148,20 @@ body {
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   ui-view #home {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
     ui-view #home .post {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       margin: 0 auto;
       width: 95vw; }
@@ -141,8 +183,13 @@ body {
       ui-view #home #aboutMe article {
         width: 90vw;
         margin: 0 5vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         margin-bottom: 5vh; }
         ui-view #home #aboutMe article img {
@@ -162,6 +209,9 @@ body {
           margin-bottom: 1vh; }
 
   #contactPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; }
     #contactPage #deets {
       margin: 0 auto;
@@ -189,10 +239,16 @@ body {
       #contactPage #message form {
         width: 95vw; }
         #contactPage #message form section.bigBox {
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          -ms-grid-row-align: flex-start;
           align-items: flex-start; }
         #contactPage #message form #submitBtn {
           margin-right: 2vw; }
         #contactPage #message form section {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -ms-grid-row-align: center;
           align-items: center; }
           #contactPage #message form section h3 {
             width: 20vw;
@@ -204,49 +260,80 @@ body {
             width: 65vw; } }
 @media only screen and (min-width: 769px) {
   ui-view #home {
-    width: 100vw;
+    width: 61.803vw;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
     justify-content: space-around; }
     ui-view #home .post {
       float: left;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
-      width: 61.803vw; }
-      ui-view #home .post img {
-        margin: 0 auto;
-        width: 61.803vw; }
+      width: 38.195vw; }
+      ui-view #home .post .topSection {
+        display: flex;
+        align-items: center; }
+        ui-view #home .post .topSection header {
+          color: white;
+          background: #1EAAF1;
+          width: 14.586vw;
+          padding: 1em 0;
+          border-top-left-radius: 0.25em; }
+        ui-view #home .post .topSection img {
+          margin: 0 auto;
+          width: 23.603vw; }
       ui-view #home .post article {
-        width: 61.803vw; }
+        width: 38.195vw; }
         ui-view #home .post article p {
-          width: 61.803vw;
+          width: 38.195vw;
           font-size: .9em;
-          line-height: 1.5em; }
+          line-height: 1.9em; }
     ui-view #home #aboutMe {
-      width: 20vw;
+      width: 14.587vw;
       padding-right: 0;
       float: right; }
       ui-view #home #aboutMe header {
         margin: 0 auto;
-        width: 20vw;
+        width: 14.587vw;
         text-align: center;
         background: white;
         border: solid #1EAAF1 0.15em; }
       ui-view #home #aboutMe article {
-        width: 20vw;
+        width: 14.587vw;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-pack: distribute;
         justify-content: space-around; }
         ui-view #home #aboutMe article img {
-          width: 12.361vw; }
+          width: 9.011vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
           ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
+            width: 14.587vw;
             background: white;
             border: solid #1EAAF1 0.15em; }
         ui-view #home #aboutMe article p {
+          width: 14.587vw;
           margin-top: -3vh;
           padding: 2vh 0;
           font-size: 1em;
@@ -276,7 +363,11 @@ body {
     #contactPage #message form {
       width: 40vw; }
       #contactPage #message form section.bigBox {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start; }
         #contactPage #message form section.bigBox h3 {
           width: 10vw;
@@ -286,6 +377,9 @@ body {
       #contactPage #message form section {
         width: 35vw;
         margin: 0 auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
         align-items: center; }
         #contactPage #message form section h3 {
           width: 10vw;
@@ -294,14 +388,21 @@ body {
           width: 25vw; }
         #contactPage #message form section #bigBox {
           width: 25vw; } }
-#home #aboutMe header {
-  transition: all 0.2s ease-in-out; }
-#home #aboutMe header:hover {
-  transform: scale(1.01); }
+/*animations and transitions*/
+#home {
+  /* about me button scaling on hover*/ }
+  #home #aboutMe header {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  #home #aboutMe header:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01); }
 
 #home #aboutMe article .content a p {
+  -webkit-transition: all, 0.1s, ease-in;
   transition: all, 0.1s, ease-in; }
 #home #aboutMe article .content a p:hover {
+  -webkit-transform: scale(1.05);
   transform: scale(1.05); }
 
 ui-view {
@@ -311,30 +412,32 @@ ui-view {
     ui-view #home .container {
       display: flex;
       flex-direction: column-reverse; }
-    ui-view #home .post header {
-      margin-bottom: 3vh;
-      text-align: center;
-      font-family: 'Open Sans Condensed', sans-serif; }
-      ui-view #home .post header h1 {
-        margin-bottom: 1vh;
-        font-family: 'Roboto Condensed', sans-serif; }
-    ui-view #home .post img {
-      border: 1px rgba(3, 17, 27, 0.7) solid;
-      border-bottom: none;
-      border-left: none;
-      border-radius: 2vw;
-      border-bottom-left-radius: 0px;
-      box-shadow: -0.2vw 0.2vw 0.4vw #03111b; }
-    ui-view #home .post article {
-      margin-bottom: 10vh;
-      padding: 3vh 0;
-      border-bottom: 2px #f6f6f6 solid; }
-      ui-view #home .post article p {
-        font-family: 'Sintony', sans-serif; }
-      ui-view #home .post article i {
-        font-size: 10vw;
-        color: red;
-        background: black; }
+    ui-view #home .post {
+      margin: 2vh 2vh;
+      padding-bottom: 0;
+      margin-bottom: 10vh; }
+      ui-view #home .post header {
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-bottom: 3vh;
+        text-align: center; }
+        ui-view #home .post header h1 {
+          margin-bottom: 1vh;
+          font-family: 'Roboto Condensed', sans-serif; }
+      ui-view #home .post img {
+        border-top-right-radius: 0.5em;
+        border-top-left-radius: 0.25em;
+        border-bottom-left-radius: 0.25em;
+        border-bottom-right-radius: 0.25em;
+        box-shadow: 0 0 1em black; }
+      ui-view #home .post article {
+        padding: 3vh 0;
+        border-bottom: 2px #f6f6f6 solid; }
+        ui-view #home .post article p {
+          font-family: 'Sintony', sans-serif; }
+        ui-view #home .post article i {
+          font-size: 10vw;
+          color: red;
+          background: black; }
     ui-view #home #aboutMe header {
       margin-bottom: 3vh;
       padding: 2vh 0;
@@ -765,6 +868,8 @@ header#mainHeader {
       #projPage .card section.body {
         padding-top: 2.5vh;
         padding-bottom: 2.5vh;
+        padding-left: 1em;
+        padding-right: 1em;
         display: flex;
         background: white;
         margin-top: 2vh;

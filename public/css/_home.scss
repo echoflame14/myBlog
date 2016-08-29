@@ -7,13 +7,17 @@ ui-view{
 			flex-direction:column-reverse;
 		}
 		.post{
+			margin:2vh 2vh;
+			padding-bottom:0;
+			margin-bottom:10vh;
+
 
 			header{
+
+				font-family: 'Open Sans Condensed', sans-serif;
 				margin-bottom:3vh;
 
 				text-align:center;
-
-				font-family: 'Open Sans Condensed', sans-serif;
 				h1{
 					margin-bottom:1vh;
 
@@ -21,15 +25,15 @@ ui-view{
 				}
 			}
 			img{
-				border:1px $op-black solid;
-				border-bottom:none;
-				border-left:none;
-				border-radius:2vw;
-				border-bottom-left-radius: 0px;
-				box-shadow:-0.2vw 0.2vw 0.4vw $black;
+				border-top-right-radius:0.5em;
+				border-top-left-radius:0.25em;
+				border-bottom-left-radius:0.25em;
+				border-bottom-right-radius:0.25em;
+
+				box-shadow:0 0 1em black;
 			}
 			article{
-				margin-bottom: 10vh;
+
 				padding:3vh 0;
 
 				border-bottom: 2px $white solid;

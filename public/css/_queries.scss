@@ -3,11 +3,21 @@
 	ui-view{
 		#home{
 			width:100vw;
+			display:-webkit-box;
+			display:-ms-flexbox;
 			display:flex;
-			flex-direction: column-reverse;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: reverse;
+			    -ms-flex-direction: column-reverse;
+			        flex-direction: column-reverse;
 			.post{
+				display:-webkit-box;
+				display:-ms-flexbox;
 				display:flex;
-				flex-direction:column;
+				-webkit-box-orient:vertical;
+				-webkit-box-direction:normal;
+				    -ms-flex-direction:column;
+				        flex-direction:column;
 				margin:0 auto;
 				width:95vw;
 				img{
@@ -22,10 +32,17 @@
 				}
 			}
 			#aboutMe{
+				display:-webkit-box;
+				display:-ms-flexbox;
 				display:flex;
-				flex-direction: column;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
 				width:100vw;
-				align-items: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				header{
 					width:80vw;
 					text-align:center;
@@ -34,8 +51,13 @@
 				article{
 					margin-bottom:5vh;
 					width:100vw;
+					display:-webkit-box;
+					display:-ms-flexbox;
 					display:flex;
-					flex-direction:column;
+					-webkit-box-orient:vertical;
+					-webkit-box-direction:normal;
+					    -ms-flex-direction:column;
+					        flex-direction:column;
 					img{
 						width:80vw;
 						margin:0 auto;
@@ -64,7 +86,10 @@
 		}
 	}
 	#contactPage{
-		flex-direction:column;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		    -ms-flex-direction:column;
+		        flex-direction:column;
 		#deets{
 			margin:0 auto;
 			width:95vw;
@@ -115,14 +140,21 @@
 			}
 			form{
 				section.bigBox{
-					align-items:flex-start;
+					-webkit-box-align:start;
+					    -ms-flex-align:start;
+					            -ms-grid-row-align:flex-start;
+					        align-items:flex-start;
 				}
 				#submitBtn{
 					margin-right:4vw;
 				}
 				section{
+					display:-webkit-box;
+					display:-ms-flexbox;
 					display:flex;
-					align-items:center;
+					-webkit-box-align:center;
+					    -ms-flex-align:center;
+					        align-items:center;
 					h3{
 						width:20vw;
 						font-size:0.8em;
@@ -146,11 +178,21 @@
 	ui-view{
 		#home{
 			width:100vw;
+			display:-webkit-box;
+			display:-ms-flexbox;
 			display:flex;
-			flex-direction: column-reverse;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: reverse;
+			    -ms-flex-direction: column-reverse;
+			        flex-direction: column-reverse;
 			.post{
+				display:-webkit-box;
+				display:-ms-flexbox;
 				display:flex;
-				flex-direction:column;
+				-webkit-box-orient:vertical;
+				-webkit-box-direction:normal;
+				    -ms-flex-direction:column;
+				        flex-direction:column;
 				margin:0 auto;
 				width:95vw;
 				img{
@@ -177,9 +219,14 @@
 				article{
 					width:90vw;
 					margin:0 5vw;
+					display:-webkit-box;
+					display:-ms-flexbox;
 					display:flex;
-					align-items:center;
-					justify-content:space-around;
+					-webkit-box-align:center;
+					    -ms-flex-align:center;
+					        align-items:center;
+					-ms-flex-pack:distribute;
+					    justify-content:space-around;
 					margin-bottom:5vh;
 					img{
 						width:40vw;
@@ -205,7 +252,10 @@
 		}
 	}
 	#contactPage{
-		flex-direction:column;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		    -ms-flex-direction:column;
+		        flex-direction:column;
 		#deets{
 			margin:0 auto;
 			width:95vw;
@@ -243,14 +293,20 @@
 			}
 			form{
 				section.bigBox{
-					align-items:flex-start;
+					-webkit-box-align:start;
+					    -ms-flex-align:start;
+					            -ms-grid-row-align:flex-start;
+					        align-items:flex-start;
 				}
 				width:95vw;
 				#submitBtn{
 					margin-right:2vw;
 				}
 				section{
-					align-items:center;
+					-webkit-box-align:center;
+					    -ms-flex-align:center;
+					            -ms-grid-row-align:center;
+					        align-items:center;
 					h3{
 						width:20vw;
 						margin-right:4vw;
@@ -271,58 +327,93 @@
 @media only screen and (min-width: 769px){
 	ui-view{
 		#home{
-			width:100vw;
+			width:61.803vw;
+			margin:0 auto;
+			display:-webkit-box;
+			display:-ms-flexbox;
 			display:flex;
-			flex-direction:row-reverse;
-			justify-content:space-around;
+			-webkit-box-orient:horizontal;
+			-webkit-box-direction:reverse;
+			    -ms-flex-direction:row-reverse;
+			        flex-direction:row-reverse;
+			-ms-flex-pack:distribute;
+			    justify-content:space-around;
 			.post{
 				float:left;
+				display:-webkit-box;
+				display:-ms-flexbox;
 				display:flex;
-				flex-direction:column;
-				width:61.803vw;
-
-				img{
-					margin:0 auto;
-					width:61.803vw;
+				-webkit-box-orient:vertical;
+				-webkit-box-direction:normal;
+				    -ms-flex-direction:column;
+				        flex-direction:column;
+				width:38.195vw;
+				.topSection{
+					display:flex;
+					align-items:center;
+					header{
+						color:white;
+						background:$blue;
+						width:14.586vw;
+						padding:1em 0;
+						border-top-left-radius:0.25em;
+					}
+					img{
+						margin:0 auto;
+						width:23.603vw;
+					}
 				}
+
 				article{
-					width:61.803vw;
+					width:38.195vw;
+
 					p{
-						width:61.803vw;
+						width:38.195vw;
 						font-size: .9em;
-						line-height:1.5em;
+						line-height:1.9em;
+
 					}
 				}
 			}
 			#aboutMe{
-				width:20vw;
+				width:14.587vw;
 				padding-right:0;
 				float:right;
 				header{
 					margin:0 auto;
-					width:20vw;
+					width:14.587vw;
 					text-align:center;
 					background:white;
 					border:solid $blue 0.15em;
 				}
 				article{
-					width:20vw;
+					width:14.587vw;
 					margin:0 auto;
+					display:-webkit-box;
+					display:-ms-flexbox;
 					display:flex;
-					flex-direction:column;
-					align-items:center;
-					justify-content:space-around;
+					-webkit-box-orient:vertical;
+					-webkit-box-direction:normal;
+					    -ms-flex-direction:column;
+					        flex-direction:column;
+					-webkit-box-align:center;
+					    -ms-flex-align:center;
+					        align-items:center;
+					-ms-flex-pack:distribute;
+					    justify-content:space-around;
 					img{
-						width:12.361vw;
+						width:9.011vw;
 					}
 					a, a:visited, a:hover{
 						color:black;
 						p{
+							width:14.587vw;
 							background:white;
 							border:solid $blue 0.15em;
 						}
 					}
 					p{
+						width:14.587vw;
 						margin-top:-3vh;
 						padding:2vh 0;
 						font-size:1em;
@@ -365,8 +456,12 @@
 			width:40vw;
 			form{
 				section.bigBox{
+					display:-webkit-box;
+					display:-ms-flexbox;
 					display:flex;
-					align-items:flex-start;
+					-webkit-box-align:start;
+					    -ms-flex-align:start;
+					        align-items:flex-start;
 					h3{
 						width:10vw;
 						margin-right:2vw;
@@ -379,7 +474,10 @@
 				section{
 					width:35vw;
 					margin:0 auto;
-					align-items:center;
+					-webkit-box-align:center;
+					    -ms-flex-align:center;
+					            -ms-grid-row-align:center;
+					        align-items:center;
 					h3{
 						width:10vw;
 						margin-right:2vw;

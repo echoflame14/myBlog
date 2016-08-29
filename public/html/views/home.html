@@ -12,10 +12,12 @@
   </div>
   <div class="container">
     <div class="post wow fadeInLeft" ng-repeat="item in posts" data-wow-duration="1.2s">
-      <header>
-        <h1>{{item.posttitle}}</h1>
-        <h4>{{item.posttime}}</h4>
-      </header><img src="{{item.postimgsrc}}" alt="{{item.postimgalt}}"/>
+      <div class="topSection">
+        <header>
+          <h1>{{item.posttitle}}</h1>
+          <h4>{{item.posttime}}</h4>
+        </header><img src="{{item.postimgsrc}}" alt="{{item.postimgalt}}"/>
+      </div>
       <article>
         <p>{{item.posttext}}</p>
       </article>

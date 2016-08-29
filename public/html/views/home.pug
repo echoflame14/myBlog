@@ -11,9 +11,10 @@
 					p CONTACT ME
 	.container
 		div(ng-repeat="item in posts", data-wow-duration="1.2s").post.wow.fadeInLeft
-			header
-				h1 {{item.posttitle}}
-				h4 {{item.posttime}}
-			img(src="{{item.postimgsrc}}", alt="{{item.postimgalt}}")
+			.topSection
+				header
+					h1 {{item.posttitle}}
+					h4 {{item.posttime}}
+				img(src="{{item.postimgsrc}}", alt="{{item.postimgalt}}")
 			article
 				p {{item.posttext}}
