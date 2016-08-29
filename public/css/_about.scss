@@ -511,19 +511,20 @@
 							display:flex;
 							align-items:center;
 							justify-content:space-around;
-							border:1px solid $op-black;
-							border-radius:0.2vw;
+							border-radius:0.2em;
+							border-bottom-left-radius:0;
 							color:white;
 							padding:0.7vw;
-							background-color:$sup-op-black;
-							width:8vw;
+							background-color:$blue;
+							width:7vw;
 							text-align:center;
 							cursor:pointer;
-							transition:all 0.15s ease-in-out;
-							font-size:0.82em;
+							transition:all 0.2s ease-out;
+							font-size:1em;
 						}
 						li:hover{
-							transform:scale(1.02);
+							transform:scale(1.04);
+							box-shadow:0.1em 0.1em 0.3em $sup-op-black;
 						}
 					}
 				}

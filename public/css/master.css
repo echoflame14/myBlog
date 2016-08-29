@@ -1052,18 +1052,19 @@ header#mainHeader {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            border: 1px solid rgba(3, 17, 27, 0.7);
-            border-radius: 0.2vw;
+            border-radius: 0.2em;
+            border-bottom-left-radius: 0;
             color: white;
             padding: 0.7vw;
-            background-color: rgba(3, 17, 27, 0.4);
-            width: 8vw;
+            background-color: #1EAAF1;
+            width: 7vw;
             text-align: center;
             cursor: pointer;
-            transition: all 0.15s ease-in-out;
-            font-size: 0.82em; }
+            transition: all 0.2s ease-out;
+            font-size: 1em; }
           #aboutPage #aboutMe section.body article ul li:hover {
-            transform: scale(1.02); }
+            transform: scale(1.04);
+            box-shadow: 0.1em 0.1em 0.3em rgba(3, 17, 27, 0.4); }
     #aboutPage #skills {
       margin-top: 5vh;
       width: 45vw;
