@@ -637,6 +637,16 @@ header#mainHeader {
           #projPage .card section.body article p {
             padding-bottom: 1.2vh;
             padding-left: 0.5vw; } }
+#aboutPage #aboutMe section.body article ul a li {
+  border-radius: 0.2em;
+  border-bottom-left-radius: 0;
+  color: white;
+  padding: 0.7vw;
+  background-color: #1EAAF1; }
+#aboutPage #aboutMe section.body article ul a li:hover {
+  transform: scale(1.04);
+  box-shadow: 0.1em 0.1em 0.3em rgba(3, 17, 27, 0.4); }
+
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   #aboutPage {
     width: 100vw;
