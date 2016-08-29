@@ -34,11 +34,13 @@ module.exports = {
 		});
 	},
 	deletePost: function(req,res,next){
-		db.deletePost([req.params.postId], function(err,resp){
+		db.deletePost([req.params.postid], function(err,resp){
 			if(err){
+				console.log(err);
 				res.send(err);
 			}
 			else{
+				console.log("deleted with this as the param", req.params.postid);
 				res.send(resp);
 			}
 		});

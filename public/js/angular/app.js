@@ -22,5 +22,10 @@ angular.module("app", ["ui.router"])
 			url:"/contact",
 			templateUrl:"html/views/contact.html",
 			controller: "ctrl"
+		})
+		.state("/secret", {
+			url: "/secret",
+			templateUrl:"html/views/secret.html",
+			controller:"ctrl"
 		});
 });

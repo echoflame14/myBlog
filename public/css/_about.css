@@ -10,9 +10,9 @@ Error: Undefined variable: "$blue".
 12: 							background-color:$blue;
 13: 						}
 14: 						li:hover{
-15: 							transform:scale(1.04);
-16: 							box-shadow:0.1em 0.1em 0.3em $sup-op-black;
-17: 						}
+15: 							-webkit-transform:scale(1.04);
+16: 							        transform:scale(1.04);
+17: 							box-shadow:0.1em 0.1em 0.3em $sup-op-black;
 
 Backtrace:
 _about.scss:12
@@ -133,4 +133,4 @@ _about.scss:12
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 12 of _about.scss\A \A 7: 						li{\A 8: 							border-radius:0.2em;\A 9: 							border-bottom-left-radius:0;\A 10: 							color:white;\A 11: 							padding:0.7vw;\A 12: 							background-color:$blue;\A 13: 						}\A 14: 						li:hover{\A 15: 							transform:scale(1.04);\A 16: 							box-shadow:0.1em 0.1em 0.3em $sup-op-black;\A 17: 						}"; }
+  content: "Error: Undefined variable: \"$blue\".\A         on line 12 of _about.scss\A \A 7: 						li{\A 8: 							border-radius:0.2em;\A 9: 							border-bottom-left-radius:0;\A 10: 							color:white;\A 11: 							padding:0.7vw;\A 12: 							background-color:$blue;\A 13: 						}\A 14: 						li:hover{\A 15: 							-webkit-transform:scale(1.04);\A 16: 							        transform:scale(1.04);\A 17: 							box-shadow:0.1em 0.1em 0.3em $sup-op-black;"; }

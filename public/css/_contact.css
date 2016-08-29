@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$highlight-shadow".
-        on line 9 of _contact.scss
+        on line 15 of _contact.scss
 
-4: 
-5: 
-6: 	justify-content:space-around;
-7: 	#deets:hover{
-8: 		transform:scale(1.007);
-9: 		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;
-10: 	}
-11: 	#deets{
-12: 
-13: 		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-14: 		position:relative;
+10: 
+11: 	    justify-content:space-around;
+12: 	#deets:hover{
+13: 		-webkit-transform:scale(1.007);
+14: 		        transform:scale(1.007);
+15: 		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;
+16: 	}
+17: 	#deets{
+18: 
+19: 		-webkit-transition:box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+20: 
 
 Backtrace:
-_contact.scss:9
+_contact.scss:15
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -82,4 +82,4 @@ _contact.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$highlight-shadow\".\A         on line 9 of _contact.scss\A \A 4: \A 5: \A 6: 	justify-content:space-around;\A 7: 	#deets:hover{\A 8: 		transform:scale(1.007);\A 9: 		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;\A 10: 	}\A 11: 	#deets{\A 12: \A 13: 		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;\A 14: 		position:relative;"; }
+  content: "Error: Undefined variable: \"$highlight-shadow\".\A         on line 15 of _contact.scss\A \A 10: \A 11: 	    justify-content:space-around;\A 12: 	#deets:hover{\A 13: 		-webkit-transform:scale(1.007);\A 14: 		        transform:scale(1.007);\A 15: 		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;\A 16: 	}\A 17: 	#deets{\A 18: \A 19: 		-webkit-transition:box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;\A 20: "; }

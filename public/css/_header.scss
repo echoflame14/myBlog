@@ -17,18 +17,24 @@ header#mainHeader{
 
 		border-bottom:2px solid $blue;
 		font-family: 'Titillium Web', sans-serif;
-		// box-shadow:0 1vh 50px #3E4950;
+		/* box-shadow:0 1vh 50px #3E4950;*/
 		ul{
+			display:-webkit-box;
+			display:-ms-flexbox;
 			display:flex;
 			margin:0 auto;
-			justify-content:space-around;
+			-ms-flex-pack:distribute;
+			    justify-content:space-around;
 			li{
+
+				-webkit-transition:all 240ms ease-in;
 
 				transition: all 240ms ease-in;
 				text-align:center;
 				border-top-right-radius:1em;
 				a,a:visited{
 					border-top-right-radius:1em;
+					-webkit-transition:all 0.222s ease-in;
 					transition:all 0.222s ease-in;
 					text-decoration:none;
 					color:white;
@@ -50,12 +56,23 @@ header#mainHeader{
 @media only screen and (max-width: 425px) and (min-width:0px){
 body{
 	header#mainHeader{
+		display:-webkit-box;
+		display:-ms-flexbox;
 		display:flex;
-		flex-direction:column;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		    -ms-flex-direction:column;
+		        flex-direction:column;
 		margin-bottom:4vh;
 
-		align-items:center;
-		justify-content:space-between;
+		-webkit-box-align:center;
+
+		    -ms-flex-align:center;
+
+		        align-items:center;
+		-webkit-box-pack:justify;
+		    -ms-flex-pack:justify;
+		        justify-content:space-between;
 		height:20vh;
 		width:100vw;
 		h1{
@@ -71,14 +88,20 @@ body{
 				margin-bottom:1vh;
 				height:4vh;
 				width:75vw;
+				display:-webkit-box;
+				display:-ms-flexbox;
 				display:flex;
-				align-items:center;
-				justify-content:space-around;
+				-webkit-box-align:center;
+				    -ms-flex-align:center;
+				        align-items:center;
+				-ms-flex-pack:distribute;
+				    justify-content:space-around;
 				li{
 					font-size:.9em;
 					a,a:visited{
 
 						padding:1.1vh;
+						-webkit-transition:all 0.222s ease-in;
 						transition:all 0.222s ease-in;
 						text-decoration:none;
 						color:white;
@@ -102,12 +125,23 @@ body{
 @media only screen and (max-width: 768px) and (min-width: 426px){
 	body{
 		header#mainHeader{
+			display:-webkit-box;
+			display:-ms-flexbox;
 			display:flex;
-			flex-direction:column;
+			-webkit-box-orient:vertical;
+			-webkit-box-direction:normal;
+			    -ms-flex-direction:column;
+			        flex-direction:column;
 			margin-bottom:4vh;
 
-			align-items:center;
-			justify-content:space-between;
+			-webkit-box-align:center;
+
+			    -ms-flex-align:center;
+
+			        align-items:center;
+			-webkit-box-pack:justify;
+			    -ms-flex-pack:justify;
+			        justify-content:space-between;
 			height:20vh;
 			width:100vw;
 			h1{
@@ -123,14 +157,20 @@ body{
 					margin-bottom:1vh;
 					height:4vh;
 					width:75vw;
+					display:-webkit-box;
+					display:-ms-flexbox;
 					display:flex;
-					align-items:center;
-					justify-content:space-around;
+					-webkit-box-align:center;
+					    -ms-flex-align:center;
+					        align-items:center;
+					-ms-flex-pack:distribute;
+					    justify-content:space-around;
 					li{
 						font-size:.9em;
 						a,a:visited{
 
 							padding:1.1vh;
+							-webkit-transition:all 0.222s ease-in;
 							transition:all 0.222s ease-in;
 							text-decoration:none;
 							color:white;
@@ -144,8 +184,13 @@ body{
 }
 @media only screen and (min-width: 769px){
 	header#mainHeader{
+		display:-webkit-box;
+		display:-ms-flexbox;
 		display:flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 
 		width:100vw;
 		height:20vh;
@@ -153,10 +198,14 @@ body{
 
 		background:$op-black;
 
-		align-items:center;
+		-webkit-box-align:center;
+
+		    -ms-flex-align:center;
+
+		        align-items:center;
 		h1{
 			width:100vw;
-			// text-shadow:0px 0px 0 rgb(-27,-27,-27),-1px 1px 0 rgb(-31,-31,-31),-2px 2px 0 rgb(-34,-34,-34),-3px 3px 0 rgb(-38,-38,-38),-4px 4px 0 rgb(-41,-41,-41),-5px 5px 0 rgb(-44,-44,-44),-6px 6px 0 rgb(-48,-48,-48),-7px 7px 0 rgb(-51,-51,-51),-8px 8px 0 rgb(-55,-55,-55),-9px 9px 0 rgb(-58,-58,-58),-10px 10px 0 rgb(-61,-61,-61),-11px 11px 0 rgb(-65,-65,-65),-12px 12px 0 rgb(-68,-68,-68),-13px 13px 0 rgb(-72,-72,-72),-14px 14px 0 rgb(-75,-75,-75),-15px 15px 0 rgb(-78,-78,-78),-16px 16px 0 rgb(-82,-82,-82),-17px 17px 0 rgb(-85,-85,-85),-18px 18px 0 rgb(-89,-89,-89),-19px 19px 0 rgb(-92,-92,-92),-20px 20px 0 rgb(-95,-95,-95),-21px 21px 0 rgb(-99,-99,-99),-22px 22px 0 rgb(-102,-102,-102),-23px 23px 0 rgb(-106,-106,-106),-24px 24px 0 rgb(-109,-109,-109),-25px 25px 0 rgb(-112,-112,-112),-26px 26px 0 rgb(-116,-116,-116),-27px 27px 0 rgb(-119,-119,-119),-28px 28px 0 rgb(-123,-123,-123),-29px 29px 0 rgb(-126,-126,-126),-30px 30px 0 rgb(-129,-129,-129),-31px 31px 0 rgb(-133,-133,-133),-32px 32px 0 rgb(-136,-136,-136),-33px 33px 0 rgb(-140,-140,-140),-34px 34px 0 rgb(-143,-143,-143),-35px 35px 0 rgb(-146,-146,-146),-36px 36px 0 rgb(-150,-150,-150),-37px 37px 0 rgb(-153,-153,-153),-38px 38px 0 rgb(-157,-157,-157),-39px 39px 0 rgb(-160,-160,-160), -40px 40px 0 rgb(-163,-163,-163),-41px 41px 40px rgba(0,0,0,0.15),-41px 41px 1px rgba(0,0,0,0.5),0px 0px 40px rgba(0,0,0,.2);
+			/* text-shadow:0px 0px 0 rgb(-27,-27,-27),-1px 1px 0 rgb(-31,-31,-31),-2px 2px 0 rgb(-34,-34,-34),-3px 3px 0 rgb(-38,-38,-38),-4px 4px 0 rgb(-41,-41,-41),-5px 5px 0 rgb(-44,-44,-44),-6px 6px 0 rgb(-48,-48,-48),-7px 7px 0 rgb(-51,-51,-51),-8px 8px 0 rgb(-55,-55,-55),-9px 9px 0 rgb(-58,-58,-58),-10px 10px 0 rgb(-61,-61,-61),-11px 11px 0 rgb(-65,-65,-65),-12px 12px 0 rgb(-68,-68,-68),-13px 13px 0 rgb(-72,-72,-72),-14px 14px 0 rgb(-75,-75,-75),-15px 15px 0 rgb(-78,-78,-78),-16px 16px 0 rgb(-82,-82,-82),-17px 17px 0 rgb(-85,-85,-85),-18px 18px 0 rgb(-89,-89,-89),-19px 19px 0 rgb(-92,-92,-92),-20px 20px 0 rgb(-95,-95,-95),-21px 21px 0 rgb(-99,-99,-99),-22px 22px 0 rgb(-102,-102,-102),-23px 23px 0 rgb(-106,-106,-106),-24px 24px 0 rgb(-109,-109,-109),-25px 25px 0 rgb(-112,-112,-112),-26px 26px 0 rgb(-116,-116,-116),-27px 27px 0 rgb(-119,-119,-119),-28px 28px 0 rgb(-123,-123,-123),-29px 29px 0 rgb(-126,-126,-126),-30px 30px 0 rgb(-129,-129,-129),-31px 31px 0 rgb(-133,-133,-133),-32px 32px 0 rgb(-136,-136,-136),-33px 33px 0 rgb(-140,-140,-140),-34px 34px 0 rgb(-143,-143,-143),-35px 35px 0 rgb(-146,-146,-146),-36px 36px 0 rgb(-150,-150,-150),-37px 37px 0 rgb(-153,-153,-153),-38px 38px 0 rgb(-157,-157,-157),-39px 39px 0 rgb(-160,-160,-160), -40px 40px 0 rgb(-163,-163,-163),-41px 41px 40px rgba(0,0,0,0.15),-41px 41px 1px rgba(0,0,0,0.5),0px 0px 40px rgba(0,0,0,.2);*/
 			height:15vh;
 
 			text-align:center;
@@ -175,13 +224,17 @@ body{
 			font-family: 'Titillium Web', sans-serif;
 			box-shadow:0 1vh 50px #3E4950;
 			ul{
+				display:-webkit-box;
+				display:-ms-flexbox;
 				display:flex;
 
 				width:90vw;
 				height:5vh;
 				margin:0 auto;
-				justify-content:space-around;
+				-ms-flex-pack:distribute;
+				    justify-content:space-around;
 				li{
+					-webkit-transition:all 240ms ease-in;
 					transition: all 240ms ease-in;
 					text-align:center;
 					height:5vh;
@@ -190,6 +243,7 @@ body{
 					a,a:visited{
 						padding:1vh 2vw;
 						height:5vh;
+						-webkit-transition:all 0.222s ease-in;
 						transition:all 0.222s ease-in;
 						text-decoration:none;
 						color:white;

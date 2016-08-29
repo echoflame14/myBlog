@@ -3,8 +3,13 @@ ui-view{
 	#home{
 		margin:0 auto;
 		.container{
+			display:-webkit-box;
+			display:-ms-flexbox;
 			display:flex;
-			flex-direction:column-reverse;
+			-webkit-box-orient:vertical;
+			-webkit-box-direction:reverse;
+			    -ms-flex-direction:column-reverse;
+			        flex-direction:column-reverse;
 		}
 		.post{
 			margin:2vh 2vh;
@@ -36,7 +41,7 @@ ui-view{
 
 				padding:3vh 0;
 
-				border-bottom: 2px $white solid;
+				border-bottom: 2px $black solid;
 
 				p{
 					font-family: 'Sintony', sans-serif;
@@ -65,6 +70,7 @@ ui-view{
 				border-radius:100%;
 			}
 			article{
+
 				a, a:visited{
 					color:black;
 
@@ -72,7 +78,7 @@ ui-view{
 					p{
 
 
-						//width assigned with queries
+						/*width assigned with queries*/
 
 					font-family: 'Roboto Condensed', sans-serif;
 					}

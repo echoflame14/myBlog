@@ -19,8 +19,8 @@ var db = app.get("db"); // setting var db to app.get "db"
 //end db connection
 var mainCtrl = require("./mainCtrl.js");
 app.get("/posts", mainCtrl.getPosts);
-app.put("/post/:postid", mainCtrl.putPost);
-app.post("/post", mainCtrl.postPost);
-app.delete("/post/:postId", mainCtrl.deletePost);
+app.put("/secret/:postid", mainCtrl.putPost);
+app.post("/secret/post", mainCtrl.postPost);
+app.delete("/secret/:postid", mainCtrl.deletePost);
 
 app.post("/message", mainCtrl.postMess);

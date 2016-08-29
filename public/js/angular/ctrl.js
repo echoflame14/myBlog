@@ -56,4 +56,25 @@ angular.module("app").controller("ctrl",function($scope,srvc,$location){
 			alert("Sent");
 		});
 	};
+
+	$scope.postPost = function(text, title, time, imgSrc, imgAlt){
+		console.log(text, title, time, imgSrc, imgAlt);
+		srvc.postPost(text, title, time, imgSrc, imgAlt).then(function(){
+			$scope.text = "";
+			$scope.title = "";
+			$scope.time = "";
+			$scope.imgSrc = "";
+			$scope.imgAlt = "";
+			alert("posted");
+		});
+	};
+
+	$scope.delPost = function(del){
+		console.log(del);
+		srvc.delPost(del).then(function(){
+			$scope.del = "";
+
+			alert("deleted");
+		});
+	};
 });

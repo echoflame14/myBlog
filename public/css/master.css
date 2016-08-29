@@ -1,5 +1,7 @@
 @import url(reset.css);
+/*new Color scheme blue and white and black*/
 @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed";
+@import url(animate.css);
 * {
   box-sizing: border-box; }
 
@@ -282,7 +284,11 @@ body {
       flex-direction: column;
       width: 38.195vw; }
       ui-view #home .post .topSection {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         ui-view #home .post .topSection header {
           color: white;
@@ -410,7 +416,12 @@ ui-view {
   ui-view #home {
     margin: 0 auto; }
     ui-view #home .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse; }
     ui-view #home .post {
       margin: 2vh 2vh;
@@ -431,7 +442,7 @@ ui-view {
         box-shadow: 0 0 1em black; }
       ui-view #home .post article {
         padding: 3vh 0;
-        border-bottom: 2px #f6f6f6 solid; }
+        border-bottom: 2px #03111b solid; }
         ui-view #home .post article p {
           font-family: 'Sintony', sans-serif; }
         ui-view #home .post article i {
@@ -452,6 +463,7 @@ ui-view {
       color: black;
       corsor: pointer; }
       ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p {
+        /*width assigned with queries*/
         font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home #aboutMe article p {
       font-family: "Open Sans Condensed", sans-serif; }
@@ -465,17 +477,23 @@ header#mainHeader {
     font-family: 'Amatic SC', cursive; }
   header#mainHeader nav#mainNav {
     border-bottom: 2px solid #1EAAF1;
-    font-family: 'Titillium Web', sans-serif; }
+    font-family: 'Titillium Web', sans-serif;
+    /* box-shadow:0 1vh 50px #3E4950;*/ }
     header#mainHeader nav#mainNav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin: 0 auto;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
       header#mainHeader nav#mainNav ul li {
+        -webkit-transition: all 240ms ease-in;
         transition: all 240ms ease-in;
         text-align: center;
         border-top-right-radius: 1em; }
         header#mainHeader nav#mainNav ul li a, header#mainHeader nav#mainNav ul li a:visited {
           border-top-right-radius: 1em;
+          -webkit-transition: all 0.222s ease-in;
           transition: all 0.222s ease-in;
           text-decoration: none;
           color: white; }
@@ -487,10 +505,19 @@ header#mainHeader {
 
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   body header#mainHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 4vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 20vh;
     width: 100vw; }
@@ -506,13 +533,19 @@ header#mainHeader {
         margin-bottom: 1vh;
         height: 4vh;
         width: 75vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-pack: distribute;
         justify-content: space-around; }
         body header#mainHeader nav#mainNav ul li {
           font-size: .9em; }
           body header#mainHeader nav#mainNav ul li a, body header#mainHeader nav#mainNav ul li a:visited {
             padding: 1.1vh;
+            -webkit-transition: all 0.222s ease-in;
             transition: all 0.222s ease-in;
             text-decoration: none;
             color: white; }
@@ -523,10 +556,19 @@ header#mainHeader {
           color: black; } }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   body header#mainHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 4vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 20vh;
     width: 100vw; }
@@ -542,27 +584,41 @@ header#mainHeader {
         margin-bottom: 1vh;
         height: 4vh;
         width: 75vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-pack: distribute;
         justify-content: space-around; }
         body header#mainHeader nav#mainNav ul li {
           font-size: .9em; }
           body header#mainHeader nav#mainNav ul li a, body header#mainHeader nav#mainNav ul li a:visited {
             padding: 1.1vh;
+            -webkit-transition: all 0.222s ease-in;
             transition: all 0.222s ease-in;
             text-decoration: none;
             color: white; } }
 @media only screen and (min-width: 769px) {
   header#mainHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     height: 20vh;
     margin-bottom: 5vh;
     background: rgba(3, 17, 27, 0.7);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     header#mainHeader h1 {
       width: 100vw;
+      /* text-shadow:0px 0px 0 rgb(-27,-27,-27),-1px 1px 0 rgb(-31,-31,-31),-2px 2px 0 rgb(-34,-34,-34),-3px 3px 0 rgb(-38,-38,-38),-4px 4px 0 rgb(-41,-41,-41),-5px 5px 0 rgb(-44,-44,-44),-6px 6px 0 rgb(-48,-48,-48),-7px 7px 0 rgb(-51,-51,-51),-8px 8px 0 rgb(-55,-55,-55),-9px 9px 0 rgb(-58,-58,-58),-10px 10px 0 rgb(-61,-61,-61),-11px 11px 0 rgb(-65,-65,-65),-12px 12px 0 rgb(-68,-68,-68),-13px 13px 0 rgb(-72,-72,-72),-14px 14px 0 rgb(-75,-75,-75),-15px 15px 0 rgb(-78,-78,-78),-16px 16px 0 rgb(-82,-82,-82),-17px 17px 0 rgb(-85,-85,-85),-18px 18px 0 rgb(-89,-89,-89),-19px 19px 0 rgb(-92,-92,-92),-20px 20px 0 rgb(-95,-95,-95),-21px 21px 0 rgb(-99,-99,-99),-22px 22px 0 rgb(-102,-102,-102),-23px 23px 0 rgb(-106,-106,-106),-24px 24px 0 rgb(-109,-109,-109),-25px 25px 0 rgb(-112,-112,-112),-26px 26px 0 rgb(-116,-116,-116),-27px 27px 0 rgb(-119,-119,-119),-28px 28px 0 rgb(-123,-123,-123),-29px 29px 0 rgb(-126,-126,-126),-30px 30px 0 rgb(-129,-129,-129),-31px 31px 0 rgb(-133,-133,-133),-32px 32px 0 rgb(-136,-136,-136),-33px 33px 0 rgb(-140,-140,-140),-34px 34px 0 rgb(-143,-143,-143),-35px 35px 0 rgb(-146,-146,-146),-36px 36px 0 rgb(-150,-150,-150),-37px 37px 0 rgb(-153,-153,-153),-38px 38px 0 rgb(-157,-157,-157),-39px 39px 0 rgb(-160,-160,-160), -40px 40px 0 rgb(-163,-163,-163),-41px 41px 40px rgba(0,0,0,0.15),-41px 41px 1px rgba(0,0,0,0.5),0px 0px 40px rgba(0,0,0,.2);*/
       height: 15vh;
       text-align: center;
       color: white;
@@ -577,12 +633,16 @@ header#mainHeader {
       font-family: 'Titillium Web', sans-serif;
       box-shadow: 0 1vh 50px #3E4950; }
       header#mainHeader nav#mainNav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 90vw;
         height: 5vh;
         margin: 0 auto;
+        -ms-flex-pack: distribute;
         justify-content: space-around; }
         header#mainHeader nav#mainNav ul li {
+          -webkit-transition: all 240ms ease-in;
           transition: all 240ms ease-in;
           text-align: center;
           height: 5vh;
@@ -591,6 +651,7 @@ header#mainHeader {
           header#mainHeader nav#mainNav ul li a, header#mainHeader nav#mainNav ul li a:visited {
             padding: 1vh 2vw;
             height: 5vh;
+            -webkit-transition: all 0.222s ease-in;
             transition: all 0.222s ease-in;
             text-decoration: none;
             color: white; }
@@ -601,13 +662,20 @@ header#mainHeader {
           background-color: #03111b;
           color: black; } }
 #contactPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around; }
   #contactPage #deets:hover {
+    -webkit-transform: scale(1.007);
     transform: scale(1.007);
     box-shadow: 0.3vw 0.3vw 0.8vw rgba(26, 26, 26, 0.47); }
   #contactPage #deets {
+    -webkit-transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
@@ -615,6 +683,8 @@ header#mainHeader {
     background-color: white;
     box-shadow: 0.1vw 0.1vw 0.5vw rgba(26, 26, 26, 0.47); }
     #contactPage #deets header {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       height: 5vh;
       margin-bottom: 3vh;
@@ -624,19 +694,32 @@ header#mainHeader {
       border-top-right-radius: 0.2vw;
       background: #4B545B;
       font-family: 'Julius Sans One', sans-serif;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
     #contactPage #deets section ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       margin: 0 auto;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
       #contactPage #deets section ul li {
         border-bottom: 0.17em solid #1EAAF1;
         text-align: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
         margin-bottom: 3vh;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         #contactPage #deets section ul li h1 {
           padding: 0.5em;
@@ -647,16 +730,22 @@ header#mainHeader {
         #contactPage #deets section ul li h2 {
           font-family: "Roboto Condensed", sans-serif; }
   #contactPage #message:hover {
+    -webkit-transform: scale(1.007);
     transform: scale(1.007);
     box-shadow: 0.3vw 0.3vw 0.8vw rgba(26, 26, 26, 0.47); }
   #contactPage #message {
+    -webkit-transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
     background-color: white;
     box-shadow: 0.1vw 0.1vw 0.5vw rgba(26, 26, 26, 0.47); }
     #contactPage #message header {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       height: 5vh;
       margin-bottom: 3vh;
@@ -666,12 +755,18 @@ header#mainHeader {
       color: white;
       background: #4B545B;
       font-family: 'Julius Sans One', sans-serif;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
     #contactPage #message section form section {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-bottom: 3vh;
       text-ailgn: left;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
       #contactPage #message section form section h3 {
         text-align: left;
@@ -701,40 +796,72 @@ header#mainHeader {
       border-radius: 0.1em;
       background-color: #39B54A;
       padding: 0.5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
 
 #projPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   background: #f6f6f6;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start; }
   #projPage .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column; }
     #projPage .card section.body {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-top: 2vh;
       border-top: 1px solid rgba(30, 170, 241, 0.37);
       border-bottom: 1px solid rgba(30, 170, 241, 0.37);
       border-bottom-right-radius: 0.5vw;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center; }
       #projPage .card section.body img {
+        -webkit-transition: all 0.24s ease-in-out;
         transition: all 0.24s ease-in-out;
         border: 3px solid white;
         box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
       #projPage .card section.body img:hover {
         cursor: pointer;
+        -webkit-transform: scale(1.01);
         transform: scale(1.01);
         box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
       #projPage .card section.body article {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: flex-left;
+        -ms-flex-align: flex-left;
         align-items: flex-left; }
         #projPage .card section.body article h4 {
           padding-bottom: 1.4vh;
@@ -747,47 +874,80 @@ header#mainHeader {
 
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   #projPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     margin: 0 auto;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start; }
     #projPage .card {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       width: 80vw;
       margin: 0 auto;
       margin-bottom: 8vh;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
       #projPage .card section.body {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 2vh;
         border-top: 1px solid rgba(30, 170, 241, 0.37);
         border-bottom: 1px solid rgba(30, 170, 241, 0.37);
         border-bottom-right-radius: 0.5vw;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         #projPage .card section.body img.vert2, #projPage .card section.body img.hor1 {
           display: none; }
         #projPage .card section.body img {
           width: 80vw;
           margin: 0 auto;
+          -webkit-transition: all 0.24s ease-in-out;
           transition: all 0.24s ease-in-out;
           border: 3px solid white;
           box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
         #projPage .card section.body img:hover {
           cursor: pointer;
+          -webkit-transform: scale(1.01);
           transform: scale(1.01);
           box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
         #projPage .card section.body article {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
           width: 70vw;
           padding-top: 3vh;
           padding-bottom: 2vh;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
+          -webkit-box-align: flex-left;
+          -ms-flex-align: flex-left;
           align-items: flex-left; }
           #projPage .card section.body article h4 {
             padding-bottom: 1.4vh;
@@ -799,50 +959,83 @@ header#mainHeader {
             padding-left: 0.5vw; } }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   #projPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     margin: 0 auto;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: flex-left;
+    -ms-flex-align: flex-left;
     align-items: flex-left; }
     #projPage .card {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
       width: 90vw;
       margin: 0 auto;
       margin-bottom: 8vh;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
       #projPage .card section.body {
         padding-top: 4vh;
         padding-bottom: 4vh;
         width: 90vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         margin-top: 2vh;
         border-top: 1px solid rgba(30, 170, 241, 0.37);
         border-bottom: 1px solid rgba(30, 170, 241, 0.37);
         border-bottom-right-radius: 0.5vw;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         #projPage .card section.body img.vert2, #projPage .card section.body img.hor1 {
           display: none; }
         #projPage .card section.body img {
           width: 40vw;
           margin: 0 auto;
+          -webkit-transition: all 0.24s ease-in-out;
           transition: all 0.24s ease-in-out;
           border: 3px solid white;
           box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
         #projPage .card section.body img:hover {
           cursor: pointer;
+          -webkit-transform: scale(1.01);
           transform: scale(1.01);
           box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
         #projPage .card section.body article {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
           width: 35vw;
           padding-top: 3vh;
           padding-bottom: 2vh;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
+          -webkit-box-align: flex-left;
+          -ms-flex-align: flex-left;
           align-items: flex-left; }
           #projPage .card section.body article h4 {
             padding-bottom: 1.4vh;
@@ -854,22 +1047,35 @@ header#mainHeader {
             padding-left: 0.5vw; } }
 @media only screen and (min-width: 769px) {
   #projPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     margin: 0 auto;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     #projPage .card {
       width: 61.803vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin: 0 auto;
       margin-bottom: 10vh; }
       #projPage .card section.body {
+        height: 50vh;
         padding-top: 2.5vh;
         padding-bottom: 2.5vh;
         padding-left: 1em;
         padding-right: 1em;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background: white;
         margin-top: 2vh;
@@ -877,25 +1083,39 @@ header#mainHeader {
         border-bottom: 0.4vh solid #1EAAF1;
         border-bottom-right-radius: 0.6em;
         border-top-right-radius: 0.6em;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         #projPage .card section.body img.hor {
           width: 20vw; }
         #projPage .card section.body img.vert {
+          -webkit-transition: all 0.24s ease-in-out;
           transition: all 0.24s ease-in-out;
           width: 10vw;
           border: 3px solid white;
           box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
         #projPage .card section.body img:hover {
           cursor: pointer;
+          -webkit-transform: scale(1.04);
           transform: scale(1.04);
           box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
         #projPage .card section.body article {
           padding: 3vh 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           width: 15vw;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
+          -webkit-box-align: flex-left;
+          -ms-flex-align: flex-left;
           align-items: flex-left; }
           #projPage .card section.body article h4 {
             padding-bottom: 1.4vh;
@@ -912,6 +1132,7 @@ header#mainHeader {
   padding: 0.7vw;
   background-color: #1EAAF1; }
 #aboutPage #aboutMe section.body article ul a li:hover {
+  -webkit-transform: scale(1.04);
   transform: scale(1.04);
   box-shadow: 0.1em 0.1em 0.3em rgba(3, 17, 27, 0.4); }
 #aboutPage #skills header.wow {
@@ -925,8 +1146,15 @@ header#mainHeader {
 @media only screen and (max-width: 425px) and (min-width: 0px) {
   #aboutPage {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 5vh; }
     #aboutPage #aboutMe {
@@ -935,8 +1163,13 @@ header#mainHeader {
       #aboutPage #aboutMe header.mainHeader {
         width: 90vw;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start; }
         #aboutPage #aboutMe header.mainHeader img {
           width: 40vw;
@@ -946,9 +1179,17 @@ header#mainHeader {
         #aboutPage #aboutMe header.mainHeader section article {
           margin: 0 auto;
           width: 40vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -ms-flex-pack: distribute;
           justify-content: space-around; }
           #aboutPage #aboutMe header.mainHeader section article h2 {
             border-bottom: 0.05em solid rgba(30, 170, 241, 0.37);
@@ -961,12 +1202,19 @@ header#mainHeader {
       #aboutPage #aboutMe section.body {
         width: 95vw;
         float: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-right: 1vw; }
         #aboutPage #aboutMe section.body article ul {
           width: 90vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center; }
           #aboutPage #aboutMe section.body article ul li {
             border: 1px solid rgba(3, 17, 27, 0.7);
@@ -977,13 +1225,20 @@ header#mainHeader {
             width: 25vw;
             text-align: center;
             cursor: pointer;
+            -webkit-transition: all 0.15s ease-in-out;
             transition: all 0.15s ease-in-out;
             margin-top: 3vh; }
           #aboutPage #aboutMe section.body article ul li:hover {
+            -webkit-transform: scale(1.02);
             transform: scale(1.02); }
     #aboutPage #skills {
       width: 95vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       margin: 0 auto;
       margin-top: 7vh; }
@@ -993,8 +1248,13 @@ header#mainHeader {
         margin: 0 auto;
         text-align: center;
         height: 5vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         font-size: 2em;
         border-top-right-radius: 0.3vw;
@@ -1010,9 +1270,11 @@ header#mainHeader {
         margin-bottom: 1vw;
         font-family: 'Julius Sans One', sans-serif; }
       #aboutPage #skills .frontEnd:hover {
+        -webkit-transform: scale(1.05);
         transform: scale(1.05);
         box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
       #aboutPage #skills .frontEnd {
+        -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
         background: white;
@@ -1022,8 +1284,14 @@ header#mainHeader {
         border-right: 1px solid #1EAAF1;
         margin: 0 auto;
         width: 90vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         border-bottom-left-radius: 0.25vw; }
         #aboutPage #skills .frontEnd img.disp {
@@ -1033,14 +1301,27 @@ header#mainHeader {
           padding-top: 0; }
         #aboutPage #skills .frontEnd ul {
           width: 60vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
           align-items: flex-start;
+          -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between; }
           #aboutPage #skills .frontEnd ul li {
             width: 50vw;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             margin-bottom: 2vh; }
             #aboutPage #skills .frontEnd ul li h4 {
@@ -1060,9 +1341,11 @@ header#mainHeader {
         margin-top: 3vh;
         font-family: 'Julius Sans One', sans-serif; }
       #aboutPage #skills .backEnd:hover {
+        -webkit-transform: scale(1.05);
         transform: scale(1.05);
         box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
       #aboutPage #skills .backEnd {
+        -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
         background: white;
@@ -1072,8 +1355,14 @@ header#mainHeader {
         border-right: 1px solid #1EAAF1;
         margin: 0 auto;
         width: 90vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         padding-bottom: 2vh; }
         #aboutPage #skills .backEnd img.disp {
@@ -1085,8 +1374,14 @@ header#mainHeader {
           width: 60vw; }
           #aboutPage #skills .backEnd ul li {
             width: 50vw;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             margin-bottom: 2vh; }
             #aboutPage #skills .backEnd ul li h4 {
@@ -1100,8 +1395,15 @@ header#mainHeader {
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   #aboutPage {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 5vh; }
     #aboutPage #aboutMe {
@@ -1110,8 +1412,13 @@ header#mainHeader {
       #aboutPage #aboutMe header.mainHeader {
         width: 90vw;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start; }
         #aboutPage #aboutMe header.mainHeader img {
           width: 40vw;
@@ -1121,9 +1428,17 @@ header#mainHeader {
         #aboutPage #aboutMe header.mainHeader section article {
           margin: 0 auto;
           width: 40vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
           margin-top: 5vh; }
           #aboutPage #aboutMe header.mainHeader section article h2 {
@@ -1136,15 +1451,25 @@ header#mainHeader {
       #aboutPage #aboutMe section.body {
         width: 95vw;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         margin-right: 1vw; }
         #aboutPage #aboutMe section.body article ul {
           margin: 0 auto;
           width: 90vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center; }
           #aboutPage #aboutMe section.body article ul li {
             border: 1px solid rgba(3, 17, 27, 0.7);
@@ -1155,13 +1480,20 @@ header#mainHeader {
             width: 25vw;
             text-align: center;
             cursor: pointer;
+            -webkit-transition: all 0.15s ease-in-out;
             transition: all 0.15s ease-in-out;
             margin-top: 3vh; }
           #aboutPage #aboutMe section.body article ul li:hover {
+            -webkit-transform: scale(1.02);
             transform: scale(1.02); }
     #aboutPage #skills {
       width: 95vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       margin: 0 auto;
       margin-top: 7vh; }
@@ -1171,8 +1503,13 @@ header#mainHeader {
         margin: 0 auto;
         text-align: center;
         height: 5vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         font-size: 2em;
         border-top-right-radius: 0.3vw;
@@ -1188,9 +1525,11 @@ header#mainHeader {
         margin-bottom: 1vw;
         font-family: 'Julius Sans One', sans-serif; }
       #aboutPage #skills .frontEnd:hover {
+        -webkit-transform: scale(1.05);
         transform: scale(1.05);
         box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
       #aboutPage #skills .frontEnd {
+        -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
         background: white;
@@ -1200,8 +1539,14 @@ header#mainHeader {
         border-right: 1px solid #1EAAF1;
         margin: 0 auto;
         width: 90vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         border-bottom-left-radius: 0.25vw; }
         #aboutPage #skills .frontEnd img.disp {
@@ -1211,14 +1556,27 @@ header#mainHeader {
           padding-top: 0; }
         #aboutPage #skills .frontEnd ul {
           width: 60vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
           align-items: flex-start;
+          -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between; }
           #aboutPage #skills .frontEnd ul li {
             width: 50vw;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             margin-bottom: 2vh; }
             #aboutPage #skills .frontEnd ul li h4 {
@@ -1238,9 +1596,11 @@ header#mainHeader {
         margin-top: 3vh;
         font-family: 'Julius Sans One', sans-serif; }
       #aboutPage #skills .backEnd:hover {
+        -webkit-transform: scale(1.05);
         transform: scale(1.05);
         box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
       #aboutPage #skills .backEnd {
+        -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
         background: white;
@@ -1250,8 +1610,14 @@ header#mainHeader {
         border-right: 1px solid #1EAAF1;
         margin: 0 auto;
         width: 90vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         padding-bottom: 2vh; }
         #aboutPage #skills .backEnd img.disp {
@@ -1263,8 +1629,14 @@ header#mainHeader {
           width: 60vw; }
           #aboutPage #skills .backEnd ul li {
             width: 50vw;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             margin-bottom: 2vh; }
             #aboutPage #skills .backEnd ul li h4 {
@@ -1279,7 +1651,11 @@ header#mainHeader {
   #aboutPage {
     width: 95vw;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 5vh; }
     #aboutPage #aboutMe {
@@ -1287,8 +1663,13 @@ header#mainHeader {
       #aboutPage #aboutMe header.mainHeader {
         width: 45vw;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start; }
         #aboutPage #aboutMe header.mainHeader img {
           width: 15vw;
@@ -1312,9 +1693,17 @@ header#mainHeader {
         #aboutPage #aboutMe header.mainHeader section article {
           margin: 0 auto;
           width: 23vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
+          -ms-flex-pack: distribute;
           justify-content: space-around; }
           #aboutPage #aboutMe header.mainHeader section article h2 {
             border-bottom: 0.05em solid rgba(30, 170, 241, 0.37);
@@ -1326,16 +1715,28 @@ header#mainHeader {
       #aboutPage #aboutMe section.body {
         width: 25vw;
         float: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-right: 1vw; }
         #aboutPage #aboutMe section.body article ul {
           width: 25vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center; }
           #aboutPage #aboutMe section.body article ul li {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
             border-radius: 0.2em;
             border-bottom-left-radius: 0;
@@ -1345,15 +1746,22 @@ header#mainHeader {
             width: 7vw;
             text-align: center;
             cursor: pointer;
+            -webkit-transition: all 0.2s ease-out;
             transition: all 0.2s ease-out;
             font-size: 1em; }
           #aboutPage #aboutMe section.body article ul li:hover {
+            -webkit-transform: scale(1.04);
             transform: scale(1.04);
             box-shadow: 0.1em 0.1em 0.3em rgba(3, 17, 27, 0.4); }
     #aboutPage #skills {
       margin-top: 5vh;
       width: 45vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column; }
       #aboutPage #skills header {
         border: solid rgba(30, 170, 241, 0.37) 2px;
@@ -1361,8 +1769,13 @@ header#mainHeader {
         margin: 0 auto;
         text-align: center;
         height: 5vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         font-size: 2em;
         border-top-right-radius: 0.3vw;
@@ -1376,9 +1789,11 @@ header#mainHeader {
         margin-bottom: 1vw;
         font-family: 'Julius Sans One', sans-serif; }
       #aboutPage #skills .frontEnd:hover {
+        -webkit-transform: scale(1.05);
         transform: scale(1.05);
         box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
       #aboutPage #skills .frontEnd {
+        -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
         background: white;
@@ -1388,8 +1803,14 @@ header#mainHeader {
         border-right: 1px solid #1EAAF1;
         margin: 0 auto;
         width: 40vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         border-bottom-left-radius: 0.25vw; }
         #aboutPage #skills .frontEnd img.disp {
@@ -1400,14 +1821,29 @@ header#mainHeader {
         #aboutPage #skills .frontEnd ul {
           width: 23vw;
           margin-right: 2vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
+          -webkit-box-align: start;
+          -ms-flex-align: start;
           align-items: flex-start;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
           justify-content: space-between; }
           #aboutPage #skills .frontEnd ul li {
             width: 23vw;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             margin-bottom: 2vh; }
             #aboutPage #skills .frontEnd ul li h4 {
@@ -1426,9 +1862,11 @@ header#mainHeader {
         margin-top: 3vh;
         font-family: 'Julius Sans One', sans-serif; }
       #aboutPage #skills .backEnd:hover {
+        -webkit-transform: scale(1.05);
         transform: scale(1.05);
         box-shadow: 0.5vw 0.5vw 1vw rgba(3, 17, 27, 0.4); }
       #aboutPage #skills .backEnd {
+        -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         box-shadow: 0.1vw 0.1vw 0.2vw rgba(3, 17, 27, 0.4);
         background: white;
@@ -1438,8 +1876,14 @@ header#mainHeader {
         border-right: 1px solid #1EAAF1;
         margin: 0 auto;
         width: 40vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
         border-bottom-left-radius: 0.25vw;
         padding-bottom: 3vh; }
@@ -1450,8 +1894,14 @@ header#mainHeader {
         #aboutPage #skills .backEnd ul {
           width: 23vw; }
           #aboutPage #skills .backEnd ul li {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             margin-bottom: 2vh; }
             #aboutPage #skills .backEnd ul li h4 {

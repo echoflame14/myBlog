@@ -11,7 +11,7 @@ angular.module("app").service("srvc", function($http){
 
 	this.postMessage = function(name,email,message){
 		console.log(message);
-		
+
 		var bulba = {
 			messname:name,
 			messemail: email,
@@ -22,6 +22,34 @@ angular.module("app").service("srvc", function($http){
 			method: "post",
 			url: "/message",
 			data: bulba
+
+		});
+	};
+
+
+
+	this.postPost = function(text, title, time, imgSrc, imgAlt){
+
+		var arr = {
+			posttext: text,
+			posttitle: title,
+			posttime: time,
+			postimgsrc: imgSrc,
+			postimgalt: imgAlt
+		};
+
+		return $http({
+			method: "post",
+			url: "/secret/post",
+			data: arr
+		});
+	};
+
+
+	this.delPost = function(del){
+		return $http({
+			method: "delete",
+			url: "/secret/" + del,
 
 		});
 	};
