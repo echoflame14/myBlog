@@ -50,7 +50,7 @@ ui-view{
 				padding:2vh 0;
 				cursor:pointer;
 
-				border: solid 3px $blue;
+
 
 				font-family: 'Roboto Condensed', sans-serif;
 			}
@@ -66,15 +66,15 @@ ui-view{
 
 					corsor:pointer;
 					p{
-						margin:0 auto;
-						padding:0.5vw;
+
+
 						//width assigned with queries
 
-						border:2px $blue solid;
+					font-family: 'Roboto Condensed', sans-serif;
 					}
 				}
 				p{
-					font-family: helvetica;
+					font-family: 'Open Sans Condensed', sans-serif
 				}
 			}
 		}

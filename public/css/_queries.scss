@@ -29,8 +29,10 @@
 				header{
 					width:80vw;
 					text-align:center;
+					border:solid 0.3em $blue;
 				}
 				article{
+					margin-bottom:5vh;
 					width:100vw;
 					display:flex;
 					flex-direction:column;
@@ -41,16 +43,21 @@
 					a, a:visited, a:hover{
 						color:black;
 						p{
-							width:30vw;
+							border:solid 0.3em $blue;
+							padding-top:2vh;
+							padding-bottom:2vh;
+							width:70vw;
+
 						}
 					}
 					p{
-						width:90vw;
+						width:80vw;
 						margin:0 auto;
 						padding:2vh 0;
-						font-size:1em;
+						font-size:1.1em;
 						text-align:center;
 						margin-bottom:1vh;
+
 					}
 				}
 			}
@@ -163,21 +170,29 @@
 					margin:0 auto;
 					width:80vw;
 					text-align:center;
+					border:solid $blue 0.2em;
+					padding-top: .9em;
+					padding-bottom: .9em;
 				}
 				article{
-					width:80vw;
+					width:90vw;
 					margin:0 5vw;
 					display:flex;
 					align-items:center;
 					justify-content:space-around;
+					margin-bottom:5vh;
 					img{
 						width:40vw;
 						margin:0 5vw;
 					}
 					a, a:visited, a:hover{
 						color:black;
+						width:40vw;
 						p{
-							width: 20vw;
+							border:solid $blue 0.2em;
+							padding-top:0.3em;
+							padding-bottom:0.3em;
+							width: 40vw;
 						}
 					}
 					p{
@@ -256,20 +271,24 @@
 @media only screen and (min-width: 769px){
 	ui-view{
 		#home{
-			width:80vw;
-
+			width:100vw;
+			display:flex;
+			flex-direction:row-reverse;
+			justify-content:space-around;
 			.post{
 				float:left;
 				display:flex;
 				flex-direction:column;
-				width:40vw;
-				margin: 0 5vw 2vh 5vw;
+				width:61.803vw;
+
 				img{
 					margin:0 auto;
-					width:40vw;
+					width:61.803vw;
 				}
 				article{
+					width:61.803vw;
 					p{
+						width:61.803vw;
 						font-size: .9em;
 						line-height:1.5em;
 					}
@@ -284,29 +303,31 @@
 					width:20vw;
 					text-align:center;
 					background:white;
+					border:solid $blue 0.15em;
 				}
 				article{
 					width:20vw;
 					margin:0 auto;
 					display:flex;
-
+					flex-direction:column;
 					align-items:center;
 					justify-content:space-around;
 					img{
-						width:5vw;
+						width:12.361vw;
 					}
 					a, a:visited, a:hover{
 						color:black;
 						p{
-							width:12vw;
 							background:white;
+							border:solid $blue 0.15em;
 						}
 					}
 					p{
+						margin-top:-3vh;
 						padding:2vh 0;
-						font-size:.8em;
+						font-size:1em;
 						text-align:center;
-						margin-bottom:1vh;
+						margin-bottom:3vh;
 					}
 				}
 			}

@@ -37,8 +37,10 @@ body {
       align-items: center; }
       ui-view #home #aboutMe header {
         width: 80vw;
-        text-align: center; }
+        text-align: center;
+        border: solid 0.3em #1EAAF1; }
       ui-view #home #aboutMe article {
+        margin-bottom: 5vh;
         width: 100vw;
         display: flex;
         flex-direction: column; }
@@ -48,12 +50,15 @@ body {
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
           ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
-            width: 30vw; }
+            border: solid 0.3em #1EAAF1;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            width: 70vw; }
         ui-view #home #aboutMe article p {
-          width: 90vw;
+          width: 80vw;
           margin: 0 auto;
           padding: 2vh 0;
-          font-size: 1em;
+          font-size: 1.1em;
           text-align: center;
           margin-bottom: 1vh; }
 
@@ -129,20 +134,28 @@ body {
       ui-view #home #aboutMe header {
         margin: 0 auto;
         width: 80vw;
-        text-align: center; }
+        text-align: center;
+        border: solid #1EAAF1 0.2em;
+        padding-top: .9em;
+        padding-bottom: .9em; }
       ui-view #home #aboutMe article {
-        width: 80vw;
+        width: 90vw;
         margin: 0 5vw;
         display: flex;
         align-items: center;
-        justify-content: space-around; }
+        justify-content: space-around;
+        margin-bottom: 5vh; }
         ui-view #home #aboutMe article img {
           width: 40vw;
           margin: 0 5vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
-          color: black; }
+          color: black;
+          width: 40vw; }
           ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
-            width: 20vw; }
+            border: solid #1EAAF1 0.2em;
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            width: 40vw; }
         ui-view #home #aboutMe article p {
           font-size: 1em;
           text-align: center;
@@ -191,19 +204,24 @@ body {
             width: 65vw; } }
 @media only screen and (min-width: 769px) {
   ui-view #home {
-    width: 80vw; }
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around; }
     ui-view #home .post {
       float: left;
       display: flex;
       flex-direction: column;
-      width: 40vw;
-      margin: 0 5vw 2vh 5vw; }
+      width: 61.803vw; }
       ui-view #home .post img {
         margin: 0 auto;
-        width: 40vw; }
-      ui-view #home .post article p {
-        font-size: .9em;
-        line-height: 1.5em; }
+        width: 61.803vw; }
+      ui-view #home .post article {
+        width: 61.803vw; }
+        ui-view #home .post article p {
+          width: 61.803vw;
+          font-size: .9em;
+          line-height: 1.5em; }
     ui-view #home #aboutMe {
       width: 20vw;
       padding-right: 0;
@@ -212,25 +230,28 @@ body {
         margin: 0 auto;
         width: 20vw;
         text-align: center;
-        background: white; }
+        background: white;
+        border: solid #1EAAF1 0.15em; }
       ui-view #home #aboutMe article {
         width: 20vw;
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around; }
         ui-view #home #aboutMe article img {
-          width: 5vw; }
+          width: 12.361vw; }
         ui-view #home #aboutMe article a, ui-view #home #aboutMe article a:visited, ui-view #home #aboutMe article a:hover {
           color: black; }
           ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p, ui-view #home #aboutMe article a:hover p {
-            width: 12vw;
-            background: white; }
+            background: white;
+            border: solid #1EAAF1 0.15em; }
         ui-view #home #aboutMe article p {
+          margin-top: -3vh;
           padding: 2vh 0;
-          font-size: .8em;
+          font-size: 1em;
           text-align: center;
-          margin-bottom: 1vh; }
+          margin-bottom: 3vh; }
 
   #contactPage #deets {
     width: 40vw;
@@ -318,7 +339,6 @@ ui-view {
       margin-bottom: 3vh;
       padding: 2vh 0;
       cursor: pointer;
-      border: solid 3px #1EAAF1;
       font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home #aboutMe img {
       margin-bottom: 3vh;
@@ -329,11 +349,9 @@ ui-view {
       color: black;
       corsor: pointer; }
       ui-view #home #aboutMe article a p, ui-view #home #aboutMe article a:visited p {
-        margin: 0 auto;
-        padding: 0.5vw;
-        border: 2px #1EAAF1 solid; }
+        font-family: 'Roboto Condensed', sans-serif; }
     ui-view #home #aboutMe article p {
-      font-family: helvetica; }
+      font-family: "Open Sans Condensed", sans-serif; }
 
 header#mainHeader {
   background: rgba(3, 17, 27, 0.7); }
