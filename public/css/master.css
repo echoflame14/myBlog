@@ -97,13 +97,20 @@ body {
       width: 95vw; }
       #contactPage #message header {
         font-size: 0.7em; }
-      #contactPage #message form section h3 {
-        width: 20vw;
-        margin-right: 8vw; }
-      #contactPage #message form section input {
-        width: 65vw; }
-      #contactPage #message form section #bigBox {
-        width: 65vw; } }
+      #contactPage #message form section.bigBox {
+        align-items: flex-start; }
+      #contactPage #message form #submitBtn {
+        margin-right: 4vw; }
+      #contactPage #message form section {
+        display: flex;
+        align-items: center; }
+        #contactPage #message form section h3 {
+          width: 20vw;
+          font-size: 0.8em; }
+        #contactPage #message form section input {
+          width: 70vw; }
+        #contactPage #message form section #bigBox {
+          width: 70vw; } }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   ui-view #home {
     width: 100vw;
@@ -169,13 +176,22 @@ body {
       margin-bottom: 10vw;
       padding-bottom: 2vh;
       width: 95vw; }
-      #contactPage #message form section h3 {
-        width: 20vw;
-        margin-right: 8vw; }
-      #contactPage #message form section input {
-        width: 65vw; }
-      #contactPage #message form section #bigBox {
-        width: 65vw; } }
+      #contactPage #message form {
+        width: 95vw; }
+        #contactPage #message form section.bigBox {
+          align-items: flex-start; }
+        #contactPage #message form #submitBtn {
+          margin-right: 2vw; }
+        #contactPage #message form section {
+          align-items: center; }
+          #contactPage #message form section h3 {
+            width: 20vw;
+            margin-right: 4vw;
+            margin-left: 1vw; }
+          #contactPage #message form section input {
+            width: 65vw; }
+          #contactPage #message form section #bigBox {
+            width: 65vw; } }
 @media only screen and (min-width: 769px) {
   ui-view #home {
     width: 80vw; }
@@ -239,14 +255,27 @@ body {
     margin-bottom: 10vw;
     padding-bottom: 2vh;
     width: 40vw; }
-    #contactPage #message form section h3 {
-      width: 5vw;
-      margin-right: 2vw; }
-    #contactPage #message form section input {
-      width: 30vw; }
-    #contactPage #message form section #bigBox {
-      width: 30vw;
-      margin-right: 1vw; } }
+    #contactPage #message form {
+      width: 40vw; }
+      #contactPage #message form section.bigBox {
+        display: flex;
+        align-items: flex-start; }
+        #contactPage #message form section.bigBox h3 {
+          width: 10vw;
+          margin-right: 2vw; }
+      #contactPage #message form #submitBtn {
+        margin-right: 1vw; }
+      #contactPage #message form section {
+        width: 35vw;
+        margin: 0 auto;
+        align-items: center; }
+        #contactPage #message form section h3 {
+          width: 10vw;
+          margin-right: 2vw; }
+        #contactPage #message form section input {
+          width: 25vw; }
+        #contactPage #message form section #bigBox {
+          width: 25vw; } }
 #home #aboutMe header {
   transition: all 0.2s ease-in-out; }
 #home #aboutMe header:hover {
@@ -362,24 +391,24 @@ header#mainHeader {
   display: flex;
   justify-content: space-around; }
   #contactPage #deets:hover {
-    transform: scale(1.007); }
+    transform: scale(1.007);
+    box-shadow: 0.3vw 0.3vw 0.8vw rgba(26, 26, 26, 0.47); }
   #contactPage #deets {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
     border-bottom-right-radius: 0.2vw;
     background-color: white;
-    box-shadow: 0.2vw 0.2vw 3vw rgba(26, 26, 26, 0.47); }
+    box-shadow: 0.1vw 0.1vw 0.5vw rgba(26, 26, 26, 0.47); }
     #contactPage #deets header {
       display: flex;
       height: 5vh;
       margin-bottom: 3vh;
       text-align: center;
       color: white;
-      border: solid rgba(1, 1, 1, 0.28) 2px;
-      border-top-left-radius: 0.3vw;
-      border-top-right-radius: 0.3vw;
+      border-top-left-radius: 0.2vw;
+      border-top-right-radius: 0.2vw;
       background: #4B545B;
       font-family: 'Julius Sans One', sans-serif;
       align-items: center;
@@ -399,26 +428,29 @@ header#mainHeader {
         #contactPage #deets section ul li h1 {
           padding: 0.5em;
           background: #1EAAF1;
+          font-family: 'Roboto Condensed', sans-serif;
           color: white;
           text-align: center; }
+        #contactPage #deets section ul li h2 {
+          font-family: "Roboto Condensed", sans-serif; }
   #contactPage #message:hover {
-    transform: scale(1.007); }
+    transform: scale(1.007);
+    box-shadow: 0.3vw 0.3vw 0.8vw rgba(26, 26, 26, 0.47); }
   #contactPage #message {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
     border-top-left-radius: 0.3vw;
     border-top-right-radius: 0.3vw;
     background-color: white;
-    box-shadow: 0.2vw 0.2vw 3vw rgba(26, 26, 26, 0.47); }
+    box-shadow: 0.1vw 0.1vw 0.5vw rgba(26, 26, 26, 0.47); }
     #contactPage #message header {
       display: flex;
       height: 5vh;
       margin-bottom: 3vh;
       text-align: center;
+      border-top-left-radius: 0.2vw;
+      border-top-right-radius: 0.2vw;
       color: white;
-      border: solid rgba(1, 1, 1, 0.28) 2px;
-      border-top-left-radius: 0.3vw;
-      border-top-right-radius: 0.3vw;
       background: #4B545B;
       font-family: 'Julius Sans One', sans-serif;
       align-items: center;
@@ -429,30 +461,36 @@ header#mainHeader {
       text-ailgn: left;
       justify-content: space-around; }
       #contactPage #message section form section h3 {
-        width: 8vw;
-        padding-left: 2vw;
-        text-align: left; }
+        text-align: left;
+        padding: 0.5em;
+        background: #1EAAF1;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        text-align: center; }
       #contactPage #message section form section input {
         height: 3vh;
         color: black;
         border: solid black 1px;
-        border-top-left-radius: 0.2vw;
-        border-top-right-radius: 0.4vw;
-        border-bottom-right-radius: 0.4vw;
+        border-top-left-radius: 0.1em;
+        border-top-right-radius: 0.3em;
+        border-bottom-right-radius: 0.2em;
         background-color: white;
         line-height: 1em; }
       #contactPage #message section form section #bigBox {
         border: solid black 1px;
-        border-top-left-radius: 0.2vw;
-        border-top-right-radius: 0.4vw;
-        border-bottom-right-radius: 0.4vw; }
+        border-top-left-radius: 0.1em;
+        border-top-right-radius: 0.3em;
+        border-bottom-right-radius: 0.2em; }
     #contactPage #message section form input {
       float: right;
-      margin-right: 1vw;
       color: white;
-      border: solid black 1px;
-      border-radius: 0.3vw;
-      background-color: #3B3A3A; }
+      border: none;
+      border-radius: 0.1em;
+      background-color: #39B54A;
+      padding: 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
 
 #projPage {
   display: flex;

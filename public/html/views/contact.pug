@@ -5,18 +5,18 @@
 		section
 			ul
 				li
-					h1 Email
-					h2 joshpeterson.dev@gmail.com
+					h1 EMAIL
+					h2 JoshPeterson.dev@gmail.com
 				li
-					h1 Phone
+					h1 PHONE
 					h2.phone (385) 445-0721
 				li
-					h1 Skype
-					h2 joshpeterson15
+					h1 SKYPE
+					h2 JoshPeterson15
 				li.linkedin
-					h1 linkedin
+					h1 LINKEDIN
 					a(href="www.linkedin.com/in/josh-peterson-b9093910b")
-						h2 linkedin
+						h2 Linkedin
 
 	#message.wow.fadeIn
 		header
@@ -24,13 +24,13 @@
 		section
 			form(id="UsrMessage", method="get")
 				section
-					h3 Name
+					h3 NAME
 					input(type="text", name="name", ng-model="name")#name
 				section
-					h3 Email
+					h3 EMAIL
 					input(type="text", name="Email", ng-model="email")#email
-				section
-					h3 Message
+				section.bigBox
+					h3 MESSAGE
 					textarea(name="Message", rows="8", cols="40", id="bigBox",ng-model="message")
 
-				input(type="submit", name="submit", value="Submit", ng-click="postMessage(name,email,message)")
+				input(type="submit", name="submit", id="submitBtn", value="SUBMIT", ng-click="postMessage(name,email,message)")

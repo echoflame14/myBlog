@@ -114,18 +114,28 @@
 				font-size:0.7em;
 			}
 			form{
+				section.bigBox{
+					align-items:flex-start;
+				}
+				#submitBtn{
+					margin-right:4vw;
+				}
 				section{
+					display:flex;
+					align-items:center;
 					h3{
 						width:20vw;
-						margin-right:8vw;
+						font-size:0.8em;
 					}
 					input{
-						width:65vw;
+						width:70vw;
 					}
 					#bigBox{
-						width:65vw;
+
+						width:70vw;
 
 					}
+
 				}
 			}
 		}
@@ -224,10 +234,19 @@
 
 			}
 			form{
+				section.bigBox{
+					align-items:flex-start;
+				}
+				width:95vw;
+				#submitBtn{
+					margin-right:2vw;
+				}
 				section{
+					align-items:center;
 					h3{
 						width:20vw;
-						margin-right:8vw;
+						margin-right:4vw;
+						margin-left:1vw;
 					}
 					input{
 						width:65vw;
@@ -331,17 +350,33 @@
 			padding-bottom:2vh;
 			width:40vw;
 			form{
-				section{
+				section.bigBox{
+					display:flex;
+					align-items:flex-start;
 					h3{
-						width:5vw;
+						width:10vw;
+						margin-right:2vw;
+					}
+				}
+				width:40vw;
+				#submitBtn{
+					margin-right:1vw;
+				}
+				section{
+					width:35vw;
+					margin:0 auto;
+					align-items:center;
+					h3{
+						width:10vw;
 						margin-right:2vw;
 					}
 					input{
-						width:30vw;
+						width:25vw;
 					}
+
 					#bigBox{
-						width:30vw;
-						margin-right:1vw;
+						width:25vw;
+
 					}
 				}
 			}

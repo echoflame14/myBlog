@@ -2,20 +2,22 @@
 #contactPage{
 	display:flex;
 
+
 	justify-content:space-around;
 	#deets:hover{
 		transform:scale(1.007);
+		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;
 	}
 	#deets{
 
-		transition:transform 0.3s ease-in-out;
+		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 		position:relative;
 
 		border-top-left-radius:0.3vw;
 		border-top-right-radius:0.3vw;
 		border-bottom-right-radius:0.2vw;
 		background-color:white;
-		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
+		box-shadow:0.1vw 0.1vw 0.5vw $highlight-shadow;
 
 		header{
 			display:flex;
@@ -25,9 +27,9 @@
 			text-align:center;
 
 			color:white;
-			border:solid $lowLight 2px;
-			border-top-left-radius:0.3vw;
-			border-top-right-radius:0.3vw;
+
+			border-top-left-radius:0.2vw;
+			border-top-right-radius:0.2vw;
 			background:$trout;
 			font-family: 'Julius Sans One', sans-serif;
 			align-items:center;
@@ -52,13 +54,13 @@
 					h1{
 						padding:0.5em;
 						background:$blue;
-
+						font-family: 'Roboto Condensed', sans-serif;
 						color:white;
 						text-align:center;
 					}
 
 					h2{
-
+					font-family: 'Roboto Condensed', sans-serif
 
 					}
 				}
@@ -67,16 +69,17 @@
 	}
 	#message:hover{
 		transform:scale(1.007);
+		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;
 	}
 
 	#message{
-		transition:transform 0.3s ease-in-out;
+		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 		position: relative;
 
 		border-top-left-radius:0.3vw;
 		border-top-right-radius:0.3vw;
 		background-color:white;
-		box-shadow:0.2vw 0.2vw 3vw $highlight-shadow;
+		box-shadow:0.1vw 0.1vw 0.5vw $highlight-shadow;
 		header{
 			display:flex;
 
@@ -84,11 +87,10 @@
 			margin-bottom:3vh;
 
 			text-align:center;
-
+			border-top-left-radius:0.2vw;
+			border-top-right-radius:0.2vw;
 			color:white;
-			border:solid $lowLight 2px;
-			border-top-left-radius:0.3vw;
-			border-top-right-radius:0.3vw;
+
 			background:$trout ;
 
 			font-family: 'Julius Sans One', sans-serif;
@@ -105,41 +107,43 @@
 					text-ailgn:left;
 					justify-content:space-around;
 					h3{
-						width:8vw;
-						padding-left:2vw;
-
 						text-align:left;
+						padding:0.5em;
+						background:$blue;
+						font-family: 'Roboto Condensed', sans-serif;
+						color:white;
+						text-align:center;
+
 					}
 					input{
 						height:3vh;
 
 						color:black;
 						border:solid black 1px;
-						border-top-left-radius:0.2vw;
-						border-top-right-radius:0.4vw;
-						border-bottom-right-radius:0.4vw;
+						border-top-left-radius:0.1em;
+						border-top-right-radius:0.3em;
+						border-bottom-right-radius:0.2em;
 						background-color:white;
 
 						line-height:1em;
 					}
 					#bigBox{
-
-
 						border:solid black 1px;
-						border-top-left-radius:0.2vw;
-						border-top-right-radius:0.4vw;
-						border-bottom-right-radius:0.4vw;
+						border-top-left-radius:0.1em;
+						border-top-right-radius:0.3em;
+						border-bottom-right-radius:0.2em;
 					}
 				}
 				input{
 					float: right;
-
-					margin-right:1vw;
-
 					color:white;
-					border:solid black 1px;
-					border-radius:0.3vw;
-					background-color: $highlight;
+					border:none;
+					border-radius:0.1em;
+					background-color: $submitGreen;
+					padding:0.5em;
+					display:flex;
+					align-items:center;
+					justify-content:space-around;
 				}
 			}
 		}

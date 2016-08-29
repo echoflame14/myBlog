@@ -7,20 +7,20 @@
     <section>
       <ul>
         <li>
-          <h1>Email</h1>
-          <h2>joshpeterson.dev@gmail.com</h2>
+          <h1>EMAIL</h1>
+          <h2>JoshPeterson.dev@gmail.com</h2>
         </li>
         <li>
-          <h1>Phone</h1>
+          <h1>PHONE</h1>
           <h2 class="phone">(385) 445-0721</h2>
         </li>
         <li>
-          <h1>Skype</h1>
-          <h2>joshpeterson15</h2>
+          <h1>SKYPE</h1>
+          <h2>JoshPeterson15</h2>
         </li>
         <li class="linkedin">
-          <h1>linkedin</h1><a href="www.linkedin.com/in/josh-peterson-b9093910b">
-            <h2>linkedin</h2></a>
+          <h1>LINKEDIN</h1><a href="www.linkedin.com/in/josh-peterson-b9093910b">
+            <h2>Linkedin</h2></a>
         </li>
       </ul>
     </section>
@@ -32,18 +32,18 @@
     <section>
       <form id="UsrMessage" method="get">
         <section>
-          <h3>Name</h3>
+          <h3>NAME</h3>
           <input type="text" name="name" ng-model="name" id="name"/>
         </section>
         <section>
-          <h3>Email</h3>
+          <h3>EMAIL</h3>
           <input type="text" name="Email" ng-model="email" id="email"/>
         </section>
-        <section>
-          <h3>Message</h3>
+        <section class="bigBox">
+          <h3>MESSAGE</h3>
           <textarea name="Message" rows="8" cols="40" id="bigBox" ng-model="message"></textarea>
         </section>
-        <input type="submit" name="submit" value="Submit" ng-click="postMessage(name,email,message)"/>
+        <input type="submit" name="submit" id="submitBtn" value="SUBMIT" ng-click="postMessage(name,email,message)"/>
       </form>
     </section>
   </div>

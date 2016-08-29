@@ -81,13 +81,20 @@
       width: 95vw; }
       #contactPage #message header {
         font-size: 0.7em; }
-      #contactPage #message form section h3 {
-        width: 20vw;
-        margin-right: 8vw; }
-      #contactPage #message form section input {
-        width: 65vw; }
-      #contactPage #message form section #bigBox {
-        width: 65vw; } }
+      #contactPage #message form section.bigBox {
+        align-items: flex-start; }
+      #contactPage #message form #submitBtn {
+        margin-right: 4vw; }
+      #contactPage #message form section {
+        display: flex;
+        align-items: center; }
+        #contactPage #message form section h3 {
+          width: 20vw;
+          font-size: 0.8em; }
+        #contactPage #message form section input {
+          width: 70vw; }
+        #contactPage #message form section #bigBox {
+          width: 70vw; } }
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   ui-view #home {
     width: 100vw;
@@ -153,13 +160,22 @@
       margin-bottom: 10vw;
       padding-bottom: 2vh;
       width: 95vw; }
-      #contactPage #message form section h3 {
-        width: 20vw;
-        margin-right: 8vw; }
-      #contactPage #message form section input {
-        width: 65vw; }
-      #contactPage #message form section #bigBox {
-        width: 65vw; } }
+      #contactPage #message form {
+        width: 95vw; }
+        #contactPage #message form section.bigBox {
+          align-items: flex-start; }
+        #contactPage #message form #submitBtn {
+          margin-right: 2vw; }
+        #contactPage #message form section {
+          align-items: center; }
+          #contactPage #message form section h3 {
+            width: 20vw;
+            margin-right: 4vw;
+            margin-left: 1vw; }
+          #contactPage #message form section input {
+            width: 65vw; }
+          #contactPage #message form section #bigBox {
+            width: 65vw; } }
 @media only screen and (min-width: 769px) {
   ui-view #home {
     width: 80vw; }
@@ -223,13 +239,26 @@
     margin-bottom: 10vw;
     padding-bottom: 2vh;
     width: 40vw; }
-    #contactPage #message form section h3 {
-      width: 5vw;
-      margin-right: 2vw; }
-    #contactPage #message form section input {
-      width: 30vw; }
-    #contactPage #message form section #bigBox {
-      width: 30vw;
-      margin-right: 1vw; } }
+    #contactPage #message form {
+      width: 40vw; }
+      #contactPage #message form section.bigBox {
+        display: flex;
+        align-items: flex-start; }
+        #contactPage #message form section.bigBox h3 {
+          width: 10vw;
+          margin-right: 2vw; }
+      #contactPage #message form #submitBtn {
+        margin-right: 1vw; }
+      #contactPage #message form section {
+        width: 35vw;
+        margin: 0 auto;
+        align-items: center; }
+        #contactPage #message form section h3 {
+          width: 10vw;
+          margin-right: 2vw; }
+        #contactPage #message form section input {
+          width: 25vw; }
+        #contactPage #message form section #bigBox {
+          width: 25vw; } }
 
 /*# sourceMappingURL=_queries.css.map */
