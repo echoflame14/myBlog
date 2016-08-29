@@ -15,9 +15,6 @@ body {
   background-color: #f6f6f6; }
 
 @media only screen and (max-width: 425px) and (min-width: 0px) {
-  body header#mainHeader h1 {
-    font-size: 1.4em; }
-
   ui-view #home {
     width: 100vw;
     display: flex;
@@ -339,54 +336,149 @@ ui-view {
       font-family: helvetica; }
 
 header#mainHeader {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 20vh;
-  margin-bottom: 5vh;
-  background: rgba(3, 17, 27, 0.7);
-  align-items: center; }
+  background: rgba(3, 17, 27, 0.7); }
   header#mainHeader h1 {
-    width: 100vw;
-    height: 15vh;
     text-align: center;
     color: white;
     text-shadow: -2px 2px 1px #03111b;
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.5em;
-    line-height: 15vh; }
+    font-family: 'Amatic SC', cursive; }
   header#mainHeader nav#mainNav {
-    width: 100vw;
-    height: 5vh;
     border-bottom: 2px solid #1EAAF1;
-    font-family: 'Titillium Web', sans-serif;
-    box-shadow: 0 1vh 50px #3E4950; }
+    font-family: 'Titillium Web', sans-serif; }
     header#mainHeader nav#mainNav ul {
       display: flex;
-      width: 90vw;
-      height: 5vh;
       margin: 0 auto;
       justify-content: space-around; }
       header#mainHeader nav#mainNav ul li {
         transition: all 240ms ease-in;
         text-align: center;
-        height: 5vh;
-        font-size: .9em;
-        line-height: 5vh; }
+        border-top-right-radius: 1em; }
         header#mainHeader nav#mainNav ul li a, header#mainHeader nav#mainNav ul li a:visited {
-          padding: 1vh 2vw;
-          height: 5vh;
+          border-top-right-radius: 1em;
           transition: all 0.222s ease-in;
           text-decoration: none;
           color: white; }
       header#mainHeader nav#mainNav ul a.active {
-        box-shadow: 1px -1px #03111b;
-        border: solid rgba(3, 17, 27, 0.7) 1px;
+        border-top-right-radius: 0.5em;
         border-bottom: none;
-        border-top-right-radius: 0.1vw;
         background-color: #03111b;
         color: black; }
 
+@media only screen and (max-width: 425px) and (min-width: 0px) {
+  body header#mainHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100vw; }
+    body header#mainHeader h1 {
+      height: 15vh;
+      line-height: 15vh;
+      font-size: 1.6em; }
+    body header#mainHeader nav#mainNav {
+      height: 5vh;
+      width: 100vw; }
+      body header#mainHeader nav#mainNav ul {
+        margin: 0 auto;
+        margin-bottom: 1vh;
+        height: 4vh;
+        width: 75vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        body header#mainHeader nav#mainNav ul li {
+          font-size: .9em; }
+          body header#mainHeader nav#mainNav ul li a, body header#mainHeader nav#mainNav ul li a:visited {
+            padding: 1.1vh;
+            transition: all 0.222s ease-in;
+            text-decoration: none;
+            color: white; }
+        body header#mainHeader nav#mainNav ul a.active {
+          border-bottom: none;
+          border-top-right-radius: 0.1vw;
+          background-color: #03111b;
+          color: black; } }
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  body header#mainHeader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100vw; }
+    body header#mainHeader h1 {
+      height: 15vh;
+      line-height: 15vh;
+      font-size: 1.6em; }
+    body header#mainHeader nav#mainNav {
+      height: 5vh;
+      width: 100vw; }
+      body header#mainHeader nav#mainNav ul {
+        margin: 0 auto;
+        margin-bottom: 1vh;
+        height: 4vh;
+        width: 75vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        body header#mainHeader nav#mainNav ul li {
+          font-size: .9em; }
+          body header#mainHeader nav#mainNav ul li a, body header#mainHeader nav#mainNav ul li a:visited {
+            padding: 1.1vh;
+            transition: all 0.222s ease-in;
+            text-decoration: none;
+            color: white; } }
+@media only screen and (min-width: 769px) {
+  header#mainHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 20vh;
+    margin-bottom: 5vh;
+    background: rgba(3, 17, 27, 0.7);
+    align-items: center; }
+    header#mainHeader h1 {
+      width: 100vw;
+      height: 15vh;
+      text-align: center;
+      color: white;
+      text-shadow: -2px 2px 1px #03111b;
+      font-family: 'Amatic SC', cursive;
+      font-size: 2.5em;
+      line-height: 15vh; }
+    header#mainHeader nav#mainNav {
+      width: 100vw;
+      height: 5vh;
+      border-bottom: 2px solid #1EAAF1;
+      font-family: 'Titillium Web', sans-serif;
+      box-shadow: 0 1vh 50px #3E4950; }
+      header#mainHeader nav#mainNav ul {
+        display: flex;
+        width: 90vw;
+        height: 5vh;
+        margin: 0 auto;
+        justify-content: space-around; }
+        header#mainHeader nav#mainNav ul li {
+          transition: all 240ms ease-in;
+          text-align: center;
+          height: 5vh;
+          font-size: .9em;
+          line-height: 5vh; }
+          header#mainHeader nav#mainNav ul li a, header#mainHeader nav#mainNav ul li a:visited {
+            padding: 1vh 2vw;
+            height: 5vh;
+            transition: all 0.222s ease-in;
+            text-decoration: none;
+            color: white; }
+        header#mainHeader nav#mainNav ul a.active {
+          box-shadow: 1px -1px #03111b;
+          border: solid rgba(3, 17, 27, 0.7) 1px;
+          border-bottom: none;
+          background-color: #03111b;
+          color: black; } }
 #contactPage {
   display: flex;
   justify-content: space-around; }
