@@ -1,50 +1,23 @@
 /*
-Error: Undefined variable: "$op-blue".
-        on line 17 of _proj.scss
+Error: Undefined variable: "$white".
+        on line 5 of _proj.scss
 
-12: 		section.body{
-13: 			display:flex;
-14: 
-15: 			margin-top:2vh;
-16: 
-17: 			border-top:1px solid $op-blue;
-18: 			border-bottom:1px solid $op-blue;
-19: 			border-bottom-right-radius:0.5vw;
-20: 
-21: 			justify-content:space-between;
-22: 			align-items:center;
+1: #projPage{
+2: 	display:flex;
+3: 
+4: 	margin:0 auto;
+5: 	background:$white;
+6: 	flex-wrap:wrap;
+7: 	justify-content:space-around;
+8: 	align-items:flex-start;
+9: 	.card{
+10: 		display:flex;
 
 Backtrace:
-_proj.scss:17
+_proj.scss:5
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -93,4 +66,4 @@ _proj.scss:17
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$op-blue\".\A         on line 17 of _proj.scss\A \A 12: 		section.body{\A 13: 			display:flex;\A 14: \A 15: 			margin-top:2vh;\A 16: \A 17: 			border-top:1px solid $op-blue;\A 18: 			border-bottom:1px solid $op-blue;\A 19: 			border-bottom-right-radius:0.5vw;\A 20: \A 21: 			justify-content:space-between;\A 22: 			align-items:center;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 5 of _proj.scss\A \A 1: #projPage{\A 2: 	display:flex;\A 3: \A 4: 	margin:0 auto;\A 5: 	background:$white;\A 6: 	flex-wrap:wrap;\A 7: 	justify-content:space-around;\A 8: 	align-items:flex-start;\A 9: 	.card{\A 10: 		display:flex;"; }

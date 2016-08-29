@@ -2,7 +2,7 @@
 	display:flex;
 
 	margin:0 auto;
-
+	background:$white;
 	flex-wrap:wrap;
 	justify-content:space-around;
 	align-items:flex-start;
@@ -85,6 +85,9 @@
 
 				justify-content:space-between;
 				align-items:center;
+				img.vert2,img.hor1{
+					display:none;
+				}
 				img{
 					width:80vw;
 					margin:0 auto;
@@ -130,7 +133,7 @@
 @media only screen and (max-width: 768px) and (min-width: 426px){
 	#projPage{
 		display:flex;
-
+		flex-direction:column;
 		width:100vw;
 		margin:0 auto;
 
@@ -138,16 +141,19 @@
 		align-items:flex-left;
 		.card{
 			display:flex;
-			flex-direction:column;
+			flex-direction:row;
 
-			width:40vw;
+			width:90vw;
 			margin:0 auto;
 			margin-bottom:8vh;
 
 			justify-content:space-around;
 			section.body{
+				padding-top:4vh;
+				padding-bottom:4vh;
+				width:90vw;
 				display:flex;
-				flex-direction:column;
+				flex-direction:row;
 
 				margin-top:2vh;
 
@@ -157,6 +163,9 @@
 
 				justify-content:space-between;
 				align-items:center;
+				img.vert2,img.hor1{
+					display:none;
+				}
 				img{
 					width:40vw;
 					margin:0 auto;
@@ -202,27 +211,33 @@
 @media only screen and (min-width: 769px){
 	#projPage{
 		display:flex;
+		flex-direction:column;
 		width:75vw;
 		margin:0 auto;
 		justify-content:space-around;
 		align-items:flex-left;
 		.card{
-			width:30vw;
+			width:60vw;
 			display:flex;
-			float:left;
+			margin:0 auto;
 			margin-bottom:10vh;
 			section.body{
+				padding-top:2.5vh;
+				padding-bottom:2.5vh;
 				display:flex;
-
+				background:white;
 				margin-top:2vh;
 
-				border-top:3px solid $op-blue;
-				border-bottom:3px solid $op-blue;
+				border-top:0.4vh solid $blue;
+				border-bottom:0.4vh solid $blue;
 				border-bottom-right-radius:0.5vw;
 				border-top-right-radius:0.5vw;
 				justify-content:space-between;
 				align-items:center;
-				img{
+				img.hor{
+					width:20vw;
+				}
+				img.vert{
 					transition:all 0.24s ease-in-out;
 					width:10vw;
 					border:3px solid white;
@@ -230,7 +245,7 @@
 				}
 				img:hover{
 					cursor:pointer;
-					transform:scale(1.01);
+					transform:scale(1.04);
 
 					box-shadow:0.3vw 0.3vw 0.5vw $sup-op-black;
 				}

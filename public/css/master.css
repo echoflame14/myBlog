@@ -442,6 +442,7 @@ header#mainHeader {
 #projPage {
   display: flex;
   margin: 0 auto;
+  background: #f6f6f6;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start; }
@@ -502,6 +503,8 @@ header#mainHeader {
         border-bottom-right-radius: 0.5vw;
         justify-content: space-between;
         align-items: center; }
+        #projPage .card section.body img.vert2, #projPage .card section.body img.hor1 {
+          display: none; }
         #projPage .card section.body img {
           width: 80vw;
           margin: 0 auto;
@@ -531,26 +534,32 @@ header#mainHeader {
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   #projPage {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     margin: 0 auto;
     justify-content: space-around;
     align-items: flex-left; }
     #projPage .card {
       display: flex;
-      flex-direction: column;
-      width: 40vw;
+      flex-direction: row;
+      width: 90vw;
       margin: 0 auto;
       margin-bottom: 8vh;
       justify-content: space-around; }
       #projPage .card section.body {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        width: 90vw;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 2vh;
         border-top: 1px solid rgba(30, 170, 241, 0.37);
         border-bottom: 1px solid rgba(30, 170, 241, 0.37);
         border-bottom-right-radius: 0.5vw;
         justify-content: space-between;
         align-items: center; }
+        #projPage .card section.body img.vert2, #projPage .card section.body img.hor1 {
+          display: none; }
         #projPage .card section.body img {
           width: 40vw;
           margin: 0 auto;
@@ -580,32 +589,38 @@ header#mainHeader {
 @media only screen and (min-width: 769px) {
   #projPage {
     display: flex;
+    flex-direction: column;
     width: 75vw;
     margin: 0 auto;
     justify-content: space-around;
     align-items: flex-left; }
     #projPage .card {
-      width: 30vw;
+      width: 60vw;
       display: flex;
-      float: left;
+      margin: 0 auto;
       margin-bottom: 10vh; }
       #projPage .card section.body {
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
         display: flex;
+        background: white;
         margin-top: 2vh;
-        border-top: 3px solid rgba(30, 170, 241, 0.37);
-        border-bottom: 3px solid rgba(30, 170, 241, 0.37);
+        border-top: 0.4vh solid #1EAAF1;
+        border-bottom: 0.4vh solid #1EAAF1;
         border-bottom-right-radius: 0.5vw;
         border-top-right-radius: 0.5vw;
         justify-content: space-between;
         align-items: center; }
-        #projPage .card section.body img {
+        #projPage .card section.body img.hor {
+          width: 20vw; }
+        #projPage .card section.body img.vert {
           transition: all 0.24s ease-in-out;
           width: 10vw;
           border: 3px solid white;
           box-shadow: 0.1vw 0.1vw 0.3vw rgba(3, 17, 27, 0.7); }
         #projPage .card section.body img:hover {
           cursor: pointer;
-          transform: scale(1.01);
+          transform: scale(1.04);
           box-shadow: 0.3vw 0.3vw 0.5vw rgba(3, 17, 27, 0.4); }
         #projPage .card section.body article {
           padding: 3vh 0;
