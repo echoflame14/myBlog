@@ -1,6 +1,6 @@
 
 <div id="home">
-  <div id="aboutMe">
+  <div class="wow fadeInRight" id="aboutMe" data-wow-duration="1s" data-wow-delay=".5s">
     <header><a ui-sref="/about" title="About">
         <h1>ABOUT ME</h1></a></header>
     <article><img src="https://avatars3.githubusercontent.com/u/16170598?v=3&amp;s=460" alt="A picture of me"/>
@@ -11,7 +11,7 @@
     </article>
   </div>
   <div class="container">
-    <div class="post" ng-repeat="item in posts">
+    <div class="post wow fadeInLeft" ng-repeat="item in posts" data-wow-duration="1.2s">
       <header>
         <h1>{{item.posttitle}}</h1>
         <h4>{{item.posttime}}</h4>

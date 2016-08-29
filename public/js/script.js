@@ -38,3 +38,6 @@ cont.click(function(){
 // val.click(function(){
 // 	alert(name.value());
 // });
+$(document).ready(function(){
+	new WOW().init();
+});

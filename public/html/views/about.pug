@@ -1,15 +1,15 @@
 #aboutPage
 	#aboutMe
 		header.mainHeader
-			img(src="https://avatars3.githubusercontent.com/u/16170598?v=3&s=460", alt="A picture of me")
+			img(src="https://avatars3.githubusercontent.com/u/16170598?v=3&s=460", alt="A picture of me", data-wow-duration="1s").wow.slideInLeft
 			section
 
-				article
+				article(data-wow-duration="1.2s").wow.fadeIn
 					h2 Hi I'm Josh Peterson
 					h4 I'm a student at DevMountain.
 					h4 Honing my Web Development skills.
 		section.body
-			article
+			article(data-wow-delay="1s").wow.fadeIn
 				ul
 					a(href='https://github.com/echoflame14', title="GitHub")
 						li
@@ -28,10 +28,10 @@
 
 
 	#skills
-		header
+		header(data-wow-delay="1.7s").wow.fadeInRight
 			h1 Skills
-		h4.fEnd FrontEnd
-		section.frontEnd
+		h4(data-wow-delay="1.85s").wow.fadeInRight.fEnd FrontEnd
+		section(data-wow-delay="1.9s").wow.fadeInRight.frontEnd
 			img(src="./img/frontEndMan.jpg").disp
 			ul
 				li
@@ -55,8 +55,8 @@
 				li
 					img(src="./img/git.png")
 					h4 Git / Github
-		h4.bEnd back_End
-		section.backEnd
+		h4(data-wow-delay="1.95s").wow.fadeInRight.bEnd back_End
+		section(data-wow-delay="2s").wow.fadeInRight.backEnd
 			img(src="./img/backendPic.jpeg").disp
 			ul
 				li

@@ -1,5 +1,5 @@
 #home
-	#aboutMe
+	#aboutMe(data-wow-duration="1s", data-wow-delay=".5s").wow.fadeInRight
 		header
 			a(ui-sref="/about", title="About")
 				h1 ABOUT ME
@@ -10,7 +10,7 @@
 				a(ui-sref="/contact")
 					p Contact Me
 	.container
-		div(ng-repeat="item in posts").post
+		div(ng-repeat="item in posts", data-wow-duration="1.2s").post.wow.fadeInLeft
 			header
 				h1 {{item.posttitle}}
 				h4 {{item.posttime}}
