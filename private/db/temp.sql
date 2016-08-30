@@ -25,5 +25,5 @@
 	-- 	postId serial references messages(messid),
 	-- 	rating int
 	-- );
-delete from messages
-	where messid = 14;
+-- delete from messages
+-- 	where messid = 14;
