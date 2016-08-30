@@ -1,23 +1,23 @@
 angular.module("app").service("srvc", function($http){
 	this.posts = function(){
 		return $http.get("/posts").then(function(response){
-			console.log("then in service completed", response);
+
 			return response.data;
 		});
 	};
 	this.makePost = function(){
-		console.log("make a post bruh");
+
 	};
 
 	this.postMessage = function(name,email,message){
-		console.log(message);
+
 
 		var bulba = {
 			messname:name,
 			messemail: email,
 			messmess: message
 		};
-		console.log("ran this.postMessage");
+
 		return $http({
 			method: "post",
 			url: "/message",
@@ -45,6 +45,17 @@ angular.module("app").service("srvc", function($http){
 		});
 	};
 
+	this.ratePost = function(id, rating){
+		var arr = {
+			postid: id,
+			rating: rating
+		};
+		return $http({
+			method:"post",
+			url:"/secret/postrating",
+			data: arr
+		});
+	};
 
 	this.delPost = function(del){
 		return $http({
@@ -53,4 +64,32 @@ angular.module("app").service("srvc", function($http){
 
 		});
 	};
+
+	this.getMessages = function(){
+		return $http({
+			method: "get",
+			url: "/secret/mess"
+		}).then(function(err,resp){
+			if(err){
+				return err;
+			}
+			else{
+				return resp.data;
+			}
+		});
+	};
+	this.getRatings = function(){
+		return $http({
+			method: "get",
+			url: "/secret/ratings"
+		}).then(function(err,resp){
+			if(err){
+				return err;
+			}
+			else{
+				return resp.data;
+			}
+		});
+	};
+
 });

@@ -1912,5 +1912,26 @@ header#mainHeader {
             #aboutPage #skills .backEnd ul li img {
               width: 1.5vw;
               border-radius: none; } }
+#secretPage {
+  display: flex;
+  flex-direction: column;
+  width: 100vw; }
+  #secretPage form {
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    width: 80vw; }
+  #secretPage section.container {
+    width: 80vw;
+    margin: 0 auto; }
+    #secretPage section.container table {
+      margin-bottom: 5vh; }
+      #secretPage section.container table tbody tr {
+        width: 80vw;
+        height: 5vh; }
+        #secretPage section.container table tbody tr td {
+          border: 1px solid black;
+          height: 5vh;
+          width: 10vw;
+          padding: 1vh; }
 
 /*# sourceMappingURL=master.css.map */

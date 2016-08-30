@@ -22,5 +22,7 @@ app.get("/posts", mainCtrl.getPosts);
 app.put("/secret/:postid", mainCtrl.putPost);
 app.post("/secret/post", mainCtrl.postPost);
 app.delete("/secret/:postid", mainCtrl.deletePost);
-
+app.get("/secret/mess", mainCtrl.getMessages);
+app.get("/secret/ratings", mainCtrl.getRatings);
 app.post("/message", mainCtrl.postMess);
+app.post("/secret/postrating", mainCtrl.ratePost);

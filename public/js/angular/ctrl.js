@@ -4,11 +4,11 @@ angular.module("app").controller("ctrl",function($scope,srvc,$location){
 		$scope.posts = resp;
 	});
 	function sayHi(){
-		console.log("hi");
+
 	}
 	var navBar = $("#mainNav");
 	function checkView(req){
-		console.log($location.$$url);
+
 		//jquery logic to animate the navbar state
 		var home = $("#home");
 		var about = $("#about");
@@ -47,12 +47,12 @@ angular.module("app").controller("ctrl",function($scope,srvc,$location){
 
 
 	$scope.postMessage = function(name,email,message){
-		console.log(name,email,message);
-		console.log("got 2 running $scope.postMessage");
-		srvc.postMessage(name,email,message).then(function(){
+
+		srvc.postMessage(name,email,message).then(function(resp){
 			$scope.name = "";
 			$scope.email = "";
 			$scope.message ="";
+			console.log("the response from srvc.postMessage = ", resp);
 			alert("Sent");
 		});
 	};
@@ -69,6 +69,13 @@ angular.module("app").controller("ctrl",function($scope,srvc,$location){
 		});
 	};
 
+	$scope.ratePost = function(id, rating){
+		console.log("id = ", id, "rating = ", rating);
+		srvc.ratePost(id, rating).then(function(resp){
+			console.log("This is what we get back from srvc.ratePost", resp);
+		});
+	};
+
 	$scope.delPost = function(del){
 		console.log(del);
 		srvc.delPost(del).then(function(){
@@ -77,4 +84,15 @@ angular.module("app").controller("ctrl",function($scope,srvc,$location){
 			alert("deleted");
 		});
 	};
+
+	$scope.messages = srvc.getMessages().then(function(resp){
+		console.log(resp);
+		$scope.messages = resp.data;
+	});
+
+	$scope.ratings = srvc.getRatings().then(function(resp){
+		console.log(resp);
+		$scope.ratings = resp.data;
+	});
+
 });
