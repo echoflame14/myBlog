@@ -19,9 +19,11 @@
 -- 	messEmail varchar(140),
 -- 	messMess varchar(1000)
 -- );
-	drop table rest;
-	drop table names;
-	create table names(
-		postId serial references messages(messid),
-		rating int
-	);
+	-- drop table rest;
+	-- drop table names;
+	-- create table names(
+	-- 	postId serial references messages(messid),
+	-- 	rating int
+	-- );
+delete from messages
+	where messid = 14;
