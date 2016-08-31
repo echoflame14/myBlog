@@ -468,6 +468,24 @@ ui-view {
     ui-view #home #aboutMe article p {
       font-family: "Open Sans Condensed", sans-serif; }
 
+.scrollToTop {
+  width: 100px;
+  height: 130px;
+  padding: 10px;
+  text-align: center;
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position: fixed;
+  bottom: 75px;
+  right: 40px;
+  display: none;
+  background: red; }
+
+.scrollToTop:hover {
+  text-decoration: none; }
+
 header#mainHeader {
   background: rgba(3, 17, 27, 0.7); }
   header#mainHeader h1 {

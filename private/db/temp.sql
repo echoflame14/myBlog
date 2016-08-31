@@ -1,12 +1,12 @@
-\c blog;
---create table posts
---	postId serial primary key,
---	postText text,
---	postTitle varchar,
---	postTime varchar,
---	postImgSrc varchar,
---	postImgAlt varchar
---);
+
+create table posts(
+	postId serial primary key,
+	postText text,
+	postTitle varchar,
+	postTime varchar,
+	postImgSrc varchar,
+	postImgAlt varchar
+);
 	-- create table m(
 	-- 	mId serial primary key,
 	-- 	mName varchar(120),

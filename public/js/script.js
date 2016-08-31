@@ -40,4 +40,5 @@ cont.click(function(){
 // });
 $(document).ready(function(){
 	new WOW().init();
+	//Check to see if the window is top if not then display button
 });

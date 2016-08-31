@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$black".
-        on line 44 of _home.scss
+        on line 45 of _home.scss
 
-39: 			}
-40: 			article{
-41: 
-42: 				padding:3vh 0;
-43: 
-44: 				border-bottom: 2px $black solid;
-45: 
-46: 				p{
-47: 					font-family: 'Sintony', sans-serif;
-48: 				}
-49: 				i{
+40: 			}
+41: 			article{
+42: 
+43: 				padding:3vh 0;
+44: 
+45: 				border-bottom: 2px $black solid;
+46: 
+47: 				p{
+48: 					font-family: 'Sintony', sans-serif;
+49: 				}
+50: 				i{
 
 Backtrace:
-_home.scss:44
+_home.scss:45
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -104,4 +104,4 @@ _home.scss:44
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 44 of _home.scss\A \A 39: 			}\A 40: 			article{\A 41: \A 42: 				padding:3vh 0;\A 43: \A 44: 				border-bottom: 2px $black solid;\A 45: \A 46: 				p{\A 47: 					font-family: 'Sintony', sans-serif;\A 48: 				}\A 49: 				i{"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 45 of _home.scss\A \A 40: 			}\A 41: 			article{\A 42: \A 43: 				padding:3vh 0;\A 44: \A 45: 				border-bottom: 2px $black solid;\A 46: \A 47: 				p{\A 48: 					font-family: 'Sintony', sans-serif;\A 49: 				}\A 50: 				i{"; }

@@ -1,6 +1,7 @@
 ui-view{
 	width:100vw;
 	#home{
+
 		margin:0 auto;
 		.container{
 			display:-webkit-box;
@@ -89,4 +90,22 @@ ui-view{
 			}
 		}
 	}
+}
+.scrollToTop{
+	width:100px;
+	height:130px;
+	padding:10px;
+	text-align:center;
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:75px;
+	right:40px;
+	display:none;
+	background: red;
+}
+.scrollToTop:hover{
+text-decoration:none;
 }
