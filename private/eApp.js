@@ -7,12 +7,12 @@ var app = module.exports = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("../public"));
-var port = 3000;
+var port = 80;
 app.listen(port,function(){
 	console.log("listening on port:",port);
 });
 //end app.use and app.listen config
-var connectionString = "postgress://josh@localhost/blog"; // "postgess://username/host/databaseName"
+var connectionString = "postgress://postgres:Gtars123@localhost/blog"; // "postgess://username/host/databaseName"
 var massiveInstance = massive.connectSync({connectionString : connectionString}); // who knows
 app.set("db", massiveInstance); // setting the "db" obj to equal th massive.connectSync
 var db = app.get("db"); // setting var db to app.get "db"
