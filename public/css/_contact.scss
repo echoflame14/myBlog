@@ -1,196 +1,170 @@
-
-#contactPage{
-	display:-webkit-box;
-	display:-ms-flexbox;
-	display:flex;
-
-
-	-ms-flex-pack:distribute;
-
-
-	    justify-content:space-around;
-	#deets:hover{
-		-webkit-transform:scale(1.007);
-		        transform:scale(1.007);
-		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;
-	}
-	#deets{
-
-		-webkit-transition:box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-
-		transition:box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-
-		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-		position:relative;
-
-		border-top-left-radius:0.3vw;
-		border-top-right-radius:0.3vw;
-		border-bottom-right-radius:0.2vw;
-		background-color:white;
-		box-shadow:0.1vw 0.1vw 0.5vw $highlight-shadow;
-
-		header{
-			display:-webkit-box;
-			display:-ms-flexbox;
-			display:flex;
-
-			height:5vh;
-			margin-bottom:3vh;
-			text-align:center;
-
-			color:white;
-
-			border-top-left-radius:0.2vw;
-			border-top-right-radius:0.2vw;
-			background:$trout;
-			font-family: 'Julius Sans One', sans-serif;
-			-webkit-box-align:center;
-			    -ms-flex-align:center;
-			        align-items:center;
-			-ms-flex-pack:distribute;
-			    justify-content:space-around;
-		}
-		section{
-
-			ul{
-				display:-webkit-box;
-				display:-ms-flexbox;
-				display:flex;
-				-webkit-box-orient:vertical;
-				-webkit-box-direction:normal;
-				    -ms-flex-direction:column;
-				        flex-direction:column;
-
-				margin:0 auto;
-
-				-ms-flex-pack:distribute;
-
-				    justify-content:space-around;
-				li{
-					border-bottom:0.17em solid $blue;
-					text-align:left;
-					display:-webkit-box;
-					display:-ms-flexbox;
-					display:flex;
-					margin:0 auto;
-					margin-bottom:3vh;
-					-webkit-box-align:center;
-					    -ms-flex-align:center;
-					        align-items:center;
-					h1{
-						padding:0.5em;
-						background:$blue;
-						font-family: 'Roboto Condensed', sans-serif;
-						color:white;
-						text-align:center;
-					}
-
-					h2{
-					font-family: 'Roboto Condensed', sans-serif
-
-					}
-				}
-			}
-		}
-	}
-	#message:hover{
-		-webkit-transform:scale(1.007);
-		        transform:scale(1.007);
-		box-shadow:0.3vw 0.3vw 0.8vw $highlight-shadow;
-	}
-
-	#message{
-		-webkit-transition:box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-		transition:box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-		transition:transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-		position: relative;
-
-		border-top-left-radius:0.3vw;
-		border-top-right-radius:0.3vw;
-		background-color:white;
-		box-shadow:0.1vw 0.1vw 0.5vw $highlight-shadow;
-		header{
-			display:-webkit-box;
-			display:-ms-flexbox;
-			display:flex;
-
-			height:5vh;
-			margin-bottom:3vh;
-
-			text-align:center;
-			border-top-left-radius:0.2vw;
-			border-top-right-radius:0.2vw;
-			color:white;
-
-			background:$trout ;
-
-			font-family: 'Julius Sans One', sans-serif;
-			-webkit-box-align:center;
-			    -ms-flex-align:center;
-			        align-items:center;
-			-ms-flex-pack:distribute;
-			    justify-content:space-around;
-		}
-		section{
-			form{
-				section{
-					display:-webkit-box;
-					display:-ms-flexbox;
-					display:flex;
-
-					margin-bottom:3vh;
-
-					text-ailgn:left;
-					-ms-flex-pack:distribute;
-					    justify-content:space-around;
-					h3{
-						text-align:left;
-						padding:0.5em;
-						background:$blue;
-						font-family: 'Roboto Condensed', sans-serif;
-						color:white;
-						text-align:center;
-
-					}
-					input{
-						height:3vh;
-
-						color:black;
-						border:solid black 1px;
-						border-top-left-radius:0.1em;
-						border-top-right-radius:0.3em;
-						border-bottom-right-radius:0.2em;
-						background-color:white;
-
-						line-height:1em;
-					}
-					#bigBox{
-						border:solid black 1px;
-						border-top-left-radius:0.1em;
-						border-top-right-radius:0.3em;
-						border-bottom-right-radius:0.2em;
-					}
-				}
-				input{
-					float: right;
-					color:white;
-					border:none;
-					border-radius:0.1em;
-					background-color: $submitGreen;
-					padding:0.5em;
-					display:-webkit-box;
-					display:-ms-flexbox;
-					display:flex;
-					-webkit-box-align:center;
-					    -ms-flex-align:center;
-					        align-items:center;
-					-ms-flex-pack:distribute;
-					    justify-content:space-around;
-				}
-			}
-		}
-	}
+#contactPage {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    #deets:hover {
+        -webkit-transform: scale(1.007);
+        -ms-transform: scale(1.007);
+        transform: scale(1.007);
+        box-shadow: 0.3vw 0.3vw 0.8vw $highlight-shadow;
+    }
+    #deets {
+        transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+        position: relative;
+        border-top-left-radius: 0.3vw;
+        border-top-right-radius: 0.3vw;
+        border-bottom-right-radius: 0.2vw;
+        background-color: white;
+        box-shadow: 0.1vw 0.1vw 0.5vw $highlight-shadow;
+        header {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            height: 5vh;
+            margin-bottom: 3vh;
+            text-align: center;
+            color: white;
+            border-top-left-radius: 0.2vw;
+            border-top-right-radius: 0.2vw;
+            background: $trout;
+            font-family: 'Julius Sans One', sans-serif;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+        }
+        section {
+            ul {
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -ms-flex-direction: column;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                margin: 0 auto;
+                -ms-flex-pack: distribute;
+                -webkit-justify-content: space-around;
+                justify-content: space-around;
+                li {
+                    border-bottom: 0.17em solid $blue;
+                    text-align: left;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 3vh;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    h1 {
+                        padding: 0.5em;
+                        background: $blue;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        color: white;
+                        text-align: center;
+                    }
+                    h2 {
+                        font-family: 'Roboto Condensed', sans-serif
+                    }
+                }
+            }
+        }
+    }
+    #message:hover {
+        -webkit-transform: scale(1.007);
+        -ms-transform: scale(1.007);
+        transform: scale(1.007);
+        box-shadow: 0.3vw 0.3vw 0.8vw $highlight-shadow;
+    }
+    #message {
+        transition: box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+        position: relative;
+        border-top-left-radius: 0.3vw;
+        border-top-right-radius: 0.3vw;
+        background-color: white;
+        box-shadow: 0.1vw 0.1vw 0.5vw $highlight-shadow;
+        header {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            height: 5vh;
+            margin-bottom: 3vh;
+            text-align: center;
+            border-top-left-radius: 0.2vw;
+            border-top-right-radius: 0.2vw;
+            color: white;
+            background: $trout;
+            font-family: 'Julius Sans One', sans-serif;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+        }
+        section {
+            form {
+                section {
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    margin-bottom: 3vh;
+                    text-ailgn: left;
+                    -ms-flex-pack: distribute;
+                    -webkit-justify-content: space-around;
+                    justify-content: space-around;
+                    h3 {
+                        text-align: left;
+                        padding: 0.5em;
+                        background: $blue;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        color: white;
+                        text-align: center;
+                    }
+                    input {
+                        height: 3vh;
+                        color: black;
+                        border: solid black 1px;
+                        border-top-left-radius: 0.1em;
+                        border-top-right-radius: 0.3em;
+                        border-bottom-right-radius: 0.2em;
+                        background-color: white;
+                        line-height: 1em;
+                    }
+                    #bigBox {
+                        border: solid black 1px;
+                        border-top-left-radius: 0.1em;
+                        border-top-right-radius: 0.3em;
+                        border-bottom-right-radius: 0.2em;
+                    }
+                }
+                input {
+                    float: right;
+                    color: white;
+                    border: none;
+                    border-radius: 0.1em;
+                    background-color: $submitGreen;
+                    padding: 0.5em;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    -ms-flex-pack: distribute;
+                    -webkit-justify-content: space-around;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
 }

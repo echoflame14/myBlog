@@ -1,111 +1,95 @@
-ui-view{
-	width:100vw;
-	#home{
-
-		margin:0 auto;
-		.container{
-			display:-webkit-box;
-			display:-ms-flexbox;
-			display:flex;
-			-webkit-box-orient:vertical;
-			-webkit-box-direction:reverse;
-			    -ms-flex-direction:column-reverse;
-			        flex-direction:column-reverse;
-		}
-		.post{
-			margin:2vh 2vh;
-			padding-bottom:0;
-			margin-bottom:10vh;
-
-
-			header{
-
-				font-family: 'Open Sans Condensed', sans-serif;
-				margin-bottom:3vh;
-
-				text-align:center;
-				h1{
-					margin-bottom:1vh;
-
-					font-family: 'Roboto Condensed', sans-serif;
-				}
-			}
-			img{
-				border-top-right-radius:0.5em;
-				border-top-left-radius:0.25em;
-				border-bottom-left-radius:0.25em;
-				border-bottom-right-radius:0.25em;
-
-				box-shadow:0 0 1em black;
-			}
-			article{
-
-				padding:3vh 0;
-
-				border-bottom: 2px $black solid;
-
-				p{
-					font-family: 'Sintony', sans-serif;
-				}
-				i{
-					font-size:10vw;
-					color:red;
-					background:black;
-				}
-			}
-		}
-		#aboutMe{
-			header{
-				margin-bottom:3vh;
-				padding:2vh 0;
-				cursor:pointer;
-
-
-
-				font-family: 'Roboto Condensed', sans-serif;
-			}
-			img{
-				margin-bottom:3vh;
-				border:2px solid $op-black;
-				box-shadow: 1px 1px 5px $black;
-				border-radius:100%;
-			}
-			article{
-
-				a, a:visited{
-					color:black;
-
-					corsor:pointer;
-					p{
-
-
-						/*width assigned with queries*/
-
-					font-family: 'Roboto Condensed', sans-serif;
-					}
-				}
-				p{
-					font-family: 'Open Sans Condensed', sans-serif
-				}
-			}
-		}
-	}
+ui-view {
+    width: 100vw;
+    #home {
+        margin: 0 auto;
+        .container {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -ms-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+        }
+        .post {
+            margin: 2vh 2vh;
+            padding-bottom: 0;
+            margin-bottom: 10vh;
+            header {
+                font-family: 'Open Sans Condensed', sans-serif;
+                margin-bottom: 3vh;
+                text-align: center;
+                h1 {
+                    margin-bottom: 1vh;
+                    font-family: 'Roboto Condensed', sans-serif;
+                }
+            }
+            img {
+                border-top-right-radius: 0.5em;
+                border-top-left-radius: 0.25em;
+                border-bottom-left-radius: 0.25em;
+                border-bottom-right-radius: 0.25em;
+                box-shadow: 0 0 1em black;
+            }
+            article {
+                padding: 3vh 0;
+                border-bottom: 2px $black solid;
+                p {
+                    font-family: 'Sintony', sans-serif;
+                }
+                i {
+                    font-size: 10vw;
+                    color: red;
+                    background: black;
+                }
+            }
+        }
+        #aboutMe {
+            header {
+                margin-bottom: 3vh;
+                padding: 2vh 0;
+                cursor: pointer;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            img {
+                margin-bottom: 3vh;
+                border: 2px solid $op-black;
+                box-shadow: 1px 1px 5px $black;
+                border-radius: 100%;
+            }
+            article {
+                a,
+                a:visited {
+                    color: black;
+                    corsor: pointer;
+                    p {
+                        /*width assigned with queries*/
+                        font-family: 'Roboto Condensed', sans-serif;
+                    }
+                }
+                p {
+                    font-family: 'Open Sans Condensed', sans-serif
+                }
+            }
+        }
+    }
 }
-.scrollToTop{
-	width:100px;
-	height:130px;
-	padding:10px;
-	text-align:center;
-	background: whiteSmoke;
-	font-weight: bold;
-	color: #444;
-	text-decoration: none;
-	position:fixed;
-	bottom:75px;
-	right:40px;
-	display:none;
-	background: red;
+
+.scrollToTop {
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position: fixed;
+    bottom: 75px;
+    right: 40px;
+    display: none;
+    background: red;
 }
-.scrollToTop:hover{
-text-decoration:none;
+
+.scrollToTop:hover {
+    text-decoration: none;
 }

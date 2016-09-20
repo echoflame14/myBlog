@@ -1,14 +1,19 @@
-*{
-	box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
-a, a:hover, a:visited{
-	text-decoration:none;
-	color:black;
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: black;
 }
-html{
-	min-width:198px;
+
+html {
+    min-width: 198px;
 }
-body{
-	min-width:198px;
-	background-color: $white;
+
+body {
+    min-width: 198px;
+    background-color: $white;
 }

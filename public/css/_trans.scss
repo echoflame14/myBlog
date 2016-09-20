@@ -1,35 +1,34 @@
 /*animations and transitions*/
 
-#home{ /* about me button scaling on hover*/
-	#aboutMe{
-		header{
-			-webkit-transition: all 0.2s ease-in-out;
-			transition: all 0.2s ease-in-out;
-		}
-		header:hover{
-			-webkit-transform: scale(1.01);
-			        transform: scale(1.01);
-		}
-	}
+#home {
+    /* about me button scaling on hover*/
+    #aboutMe {
+        header {
+            transition: all 0.2s ease-in-out;
+        }
+        header:hover {
+            -webkit-transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            transform: scale(1.01);
+        }
+    }
 }
 
-#home{
-	#aboutMe{
-		article{
-			.content{
-				a{
-					p{
-						-webkit-transition: all, 0.1s, ease-in;
-						transition: all, 0.1s, ease-in;
-					}
-					p:hover{
-
-						-webkit-transform: scale(1.05);
-
-						        transform: scale(1.05);
-					}
-				}
-			}
-		}
-	}
+#home {
+    #aboutMe {
+        article {
+            .content {
+                a {
+                    p {
+                        transition: all, 0.1s, ease-in;
+                    }
+                    p:hover {
+                        -webkit-transform: scale(1.05);
+                        -ms-transform: scale(1.05);
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
 }
