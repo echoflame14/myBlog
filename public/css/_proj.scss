@@ -47,6 +47,7 @@
                 box-shadow: 0.3vw 0.3vw 0.5vw $sup-op-black;
             }
             article {
+
                 display: -ms-flexbox;
                 display: -webkit-flex;
                 display: flex;
@@ -64,7 +65,10 @@
                     text-shadow: -1px 1px $op-black;
                     font-family: 'Julius Sans One', sans-serif;
                     font-size: 1.2em;
+						  cursor:pointer;
+
                 }
+
                 p {
                     padding-bottom: 1.2vh;
                     padding-left: 0.5vw;
@@ -348,7 +352,7 @@
                         padding-bottom: 1.4vh;
                         text-shadow: -1px 1px $op-black;
                         font-family: 'Julius Sans One', sans-serif;
-                        font-size: 1.2em;
+                        font-size: .9em;
                     }
                     p {
                         padding-bottom: 1.2vh;

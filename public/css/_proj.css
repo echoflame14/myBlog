@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 7 of _proj.scss
+        on line 6 of _proj.scss
 
-2: 	display:-webkit-box;
-3: 	display:-ms-flexbox;
-4: 	display:flex;
-5: 
-6: 	margin:0 auto;
-7: 	background:$white;
-8: 	-ms-flex-wrap:wrap;
-9: 	    flex-wrap:wrap;
-10: 	-ms-flex-pack:distribute;
-11: 	    justify-content:space-around;
-12: 	-webkit-box-align:start;
+1: #projPage {
+2:     display: -ms-flexbox;
+3:     display: -webkit-flex;
+4:     display: flex;
+5:     margin: 0 auto;
+6:     background: $white;
+7:     -ms-flex-wrap: wrap;
+8:     -webkit-flex-wrap: wrap;
+9:     flex-wrap: wrap;
+10:     -ms-flex-pack: distribute;
+11:     -webkit-justify-content: space-around;
 
 Backtrace:
-_proj.scss:7
+_proj.scss:6
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -67,4 +67,4 @@ _proj.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 7 of _proj.scss\A \A 2: 	display:-webkit-box;\A 3: 	display:-ms-flexbox;\A 4: 	display:flex;\A 5: \A 6: 	margin:0 auto;\A 7: 	background:$white;\A 8: 	-ms-flex-wrap:wrap;\A 9: 	    flex-wrap:wrap;\A 10: 	-ms-flex-pack:distribute;\A 11: 	    justify-content:space-around;\A 12: 	-webkit-box-align:start;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 6 of _proj.scss\A \A 1: #projPage {\A 2:     display: -ms-flexbox;\A 3:     display: -webkit-flex;\A 4:     display: flex;\A 5:     margin: 0 auto;\A 6:     background: $white;\A 7:     -ms-flex-wrap: wrap;\A 8:     -webkit-flex-wrap: wrap;\A 9:     flex-wrap: wrap;\A 10:     -ms-flex-pack: distribute;\A 11:     -webkit-justify-content: space-around;"; }
