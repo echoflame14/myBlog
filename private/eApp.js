@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("../public"));
 // var port = 80; only for when live
-var port = 3000;
+var port = 80;
 app.listen(port, function () {
 	console.log("listening on port:", port);
 });
