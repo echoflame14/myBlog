@@ -9,12 +9,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("../public"));
 // var port = 80; only for when live
-var port = 3000;
+var port = 8000;
 app.listen(port, function () {
 	console.log("listening on port:", port);
 });
 //end app.use and app.listen config
-var connectionString = "postgress://postgres:Gtars123@localhost/blog"; // "postgess://username/host/databaseName"
+var connectionString = "postgres://joshuapeterson:Usana123@localhost:5432/sample_db"; // "postgess://username/host/databaseName"
 var massiveInstance = massive.connectSync({
 	connectionString: connectionString
 }); // who knows
